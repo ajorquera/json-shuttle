@@ -1,0 +1,10 @@
+services:
+  nginx:
+    build: 
+      context: .
+      target: dev
+    ports:
+      - "8080:80"
+    volumes:
+      - ./docs:/var/www
+      - ./logs:/var/log/nginx

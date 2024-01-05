@@ -1,0 +1,24 @@
+{
+  "items": [
+    {
+      "name": "123helpme",
+      "slug": "123helpme",
+      "base_currency": "USD"
+    },
+    {
+      "name": "2kmtcentral",
+      "slug": "2kmtcentral",
+      "base_currency": "USD"
+    },
+    {
+      "name": "ballislife",
+      "slug": "ballislife",
+      "base_currency": "USD"
+    },
+    {
+      "name": "bartleby",
+      "slug": "bartleby",
+      "base_currency": "USD"
+    }
+  ]
+}

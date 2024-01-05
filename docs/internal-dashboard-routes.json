@@ -1,0 +1,29 @@
+{
+  "items": [
+    {
+      "path": "/account/:accountSlug/account-management/account",
+      "apiUrl": "/api/:accountSlug/account-details",
+      "icon": "circle-user",
+      "label": "Account",
+      "children": []
+    },
+    {
+      "path": "/account/:accountSlug/account-management/partners",
+      "apiUrl": "/api/:accountSlug/account-partner-details",
+      "icon": "users",
+      "label": "Partners"
+    },
+    {
+      "path": "/account/:accountSlug/account-management/sections",
+      "apiUrl": "/api/:accountSlug/account-section-details",
+      "icon": "table-columns",
+      "label": "Sections"
+    },
+    {
+      "path": "/account/:accountSlug/account-management/units",
+      "apiUrl": "/api/:accountSlug/account-unit-details",
+      "icon": "note-sticky",
+      "label": "Units"
+    }
+  ]
+}

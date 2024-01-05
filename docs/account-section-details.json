@@ -1,0 +1,38 @@
+{
+  "fields": [
+    {
+      "label": "Sections",
+      "type": "header"
+    },
+    {
+      "label": "talk",
+      "type": "cardAccordion",
+      "options": {
+        "fields": [
+          {
+            "label": "CC_T_D_1",
+            "value": "/1006408/CC_T_D_1",
+            "name": 535
+          },
+          {
+            "label": "CC_T_D_A",
+            "value": "/1006408/CC_T_D_A",
+            "name": 533
+          },
+          {
+            "label": "CC_T_M_1",
+            "value": "/1006408/CC_T_M_1",
+            "name": 529
+          },
+          {
+            "label": "CC_T_M_A",
+            "value": "/1006408/CC_T_M_A",
+            "name": 534
+          }
+        ],
+        "hideSubmitButton": true
+      }
+    }
+  ],
+  "hideSubmitButton": true
+}
