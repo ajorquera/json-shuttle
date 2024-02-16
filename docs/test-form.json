@@ -1,0 +1,111 @@
+{
+  "fields": [
+    {
+      "type": "header",
+      "label": "Hi, im a \"header\" "
+    },
+    {
+      "type": "hr"
+    },
+    {
+      "type": "paragraph",
+      "label": "Some elements dont have any text. And this is a \"paragraph\""
+    },
+    {
+      "label": "PropertyA",
+      "value": "valueA"
+    },
+    {
+      "label": "Text",
+      "name": "text",
+      "type": "text",
+      "options": {
+        "placeholder": "This is a placeholder"
+      }
+    },
+    {
+      "label": "Select",
+      "value": "option1",
+      "name": "select",
+      "type": "select",
+      "options": {
+        "options": [
+          {
+            "label": "Option 1",
+            "value": "option1"
+          },
+          {
+            "label": "Option 2",
+            "value": "option2"
+          }
+        ]
+      }
+    },
+    {
+      "label": "Is On",
+      "name": "checkbox",
+      "type": "checkbox"
+    },
+    {
+      "label": "Switch",
+      "name": "switch",
+      "type": "switch",
+      "value": true
+    },
+    {
+      "label": "Textarea",
+      "name": "textarea",
+      "type": "textarea",
+      "options": {
+        "resize": false,
+        "width": 300,
+        "placeholder": "This is my placeholder"
+      }
+    },
+    {
+      "label": "Card Accordion",
+      "type": "cardAccordion",
+      "options": {
+        "description": "This is my description",
+        "buttonLabel": "Save my card"
+      }
+    },
+    {
+      "type": "hidden",
+      "name": "hidden",
+      "value": "whatever"
+    },
+    {
+      "label": "Number",
+      "name": "number",
+      "type": "number",
+      "options": {
+        "placeholder": "Number",
+        "width": 100
+      }
+    },
+    {
+      "label": "Condition",
+      "type": "condition",
+      "options": {
+        "property": "select",
+        "conditions": {
+          "option1": [
+            {
+              "label": "Option 1",
+              "name": "option1",
+              "type": "text"
+            }
+          ],
+          "option2": [
+            {
+              "label": "Option 2",
+              "name": "option2",
+              "type": "text"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

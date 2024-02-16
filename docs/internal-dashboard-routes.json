@@ -1,6 +1,12 @@
 {
   "items": [
     {
+      "path": "/test",
+      "apiUrl": "/test-form",
+      "icon": "vial",
+      "label": "Simple Test"
+    },
+    {
       "path": "/account-management",
       "apiUrl": "/manage-account",
       "icon": "cog",
