@@ -1,16 +1,16 @@
 {
   "items": [
     {
-      "path": "/test",
-      "apiUrl": "/test-form",
-      "icon": "vial",
-      "label": "Simple Test"
-    },
-    {
       "path": "/account-management",
       "apiUrl": "/manage-account",
       "icon": "cog",
       "label": "Manage Accounts"
+    },
+    {
+      "path": "/account-management/:accountSlug/test-form",
+      "apiUrl": "/test-form",
+      "icon": "vial",
+      "label": "Simple Test"
     },
     {
       "path": "/account-management/:accountSlug/account",
