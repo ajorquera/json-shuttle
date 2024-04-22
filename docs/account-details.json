@@ -1,334 +1,114 @@
 {
+  "header": {
+    "title": "Account Setup"
+  },
   "fields": [
     {
-      "label": "Account",
-      "type": "header"
-    },
-    {
-      "label": "New Item",
-      "type": "newItemButton",
+      "type": "card",
       "options": {
-        "title": "New Item",
-        "fields": []
-      }
-    },
-    {
-      "label": "Account Setup",
-      "id": "account_setup",
-      "options": {
+        "pb": 20,
         "fields": [
           {
-            "label": "Account Name",
-            "value": "collegeconfidential",
-            "name": "account_name"
-          },
-          {
-            "label": "Enabled",
-            "value": true,
-            "name": "enabled",
-            "type": "switch"
-          },
-          {
-            "label": "Currency",
-            "value": "USD",
-            "name": "base_currency",
-            "type": "select",
+            "type": "header",
+            "label": "Account Setup",
             "options": {
-              "options": [
+              "variant": "h1"
+            }
+          },
+          {
+            "type": "grid",
+            "options": {
+              "columns": 2,
+              "gap": 10,
+              "fields": [
                 {
-                  "label": "USD",
-                  "value": "USD"
+                  "type": "text",
+                  "label": "Account Name",
+                  "name": "accountName",
+                  "options": {
+                    "fullWidth": true,
+                    "variant": "standard"
+                  }
                 },
                 {
-                  "label": "GBP",
-                  "value": "GBP"
-                },
-                {
-                  "label": "EUR",
-                  "value": "EUR"
+                  "type": "text",
+                  "label": "Account Domain",
+                  "name": "accountDomain",
+                  "options": {
+                    "fullWidth": true,
+                    "variant": "standard"
+                  }
                 }
               ]
             }
           },
           {
-            "label": "Show Gross Earnings",
-            "value": false,
-            "name": "earnings_show_gross",
-            "type": "switch"
-          }
-        ],
-        "hideSubmitButton": true
-      },
-      "type": "cardAccordion"
-    },
-    {
-      "label": "GAM Setup",
-      "options": {
-        "fields": [
-          {
-            "label": "GAM Network Name",
-            "value": null,
-            "name": "gam_network_name"
-          },
-          {
-            "label": "GAM Network ID",
-            "value": "1006408",
-            "name": "ad_server_account_id"
-          },
-          {
-            "label": "GAM Parent Ad Unit ID",
-            "value": "",
-            "name": "site_ad_unit_id"
-          },
-          {
-            "label": "GAM MCM Status",
-            "value": "o&o",
-            "name": "mcm_status"
-          },
-          {
-            "label": "GAM Child Network ID",
-            "value": "",
-            "name": "gam_child_publisher_id"
-          },
-          {
-            "label": "Account Websites",
-            "value": "",
-            "name": "account_websites",
-            "type": "text"
-          }
-        ],
-        "hideSubmitButton": true
-      },
-      "type": "cardAccordion"
-    },
-    {
-      "label": "Sellers.json / Ads.txt",
-      "options": {
-        "fields": [
-          {
-            "label": "Account Domain",
-            "value": "collegeconfidential.com",
-            "name": "account_domain",
-            "type": "text"
-          },
-          {
-            "label": "Account Owner",
-            "value": "College Confidential, LLC",
-            "name": "account_owner",
-            "type": "text"
-          },
-          {
-            "label": "Seller ID",
-            "value": "9392",
-            "name": "_seller_id"
-          },
-          {
-            "label": "Ads.txt Outside LNGTD",
-            "value": false,
-            "name": "adstxt_outside_lngtd",
-            "type": "switch"
-          },
-          {
-            "label": "Additional Ads.txt Entries",
-            "value": "",
-            "name": "adstxt_entries",
-            "type": "text"
-          }
-        ],
-        "hideSubmitButton": true
-      },
-      "type": "cardAccordion"
-    },
-    {
-      "label": "Analytics and Reporting",
-      "options": {
-        "fields": [
-          {
-            "label": "Prebid GAM Order ID",
-            "value": "2683623509, 2878839240",
-            "name": "prebid_gam_order_id",
-            "type": "text"
-          },
-          {
-            "label": "LNGTD Advertiser ID",
-            "value": "4862193073",
-            "name": "lngtd_advertiser_id",
-            "type": "text"
-          },
-          {
-            "label": "Google Analytics Account ID",
-            "value": "",
-            "name": "analytics_account_id",
-            "type": "text"
-          }
-        ],
-        "hideSubmitButton": false
-      },
-      "type": "cardAccordion"
-    },
-    {
-      "label": "Refresh & Focus Options",
-      "options": {
-        "fields": [
-          {
-            "label": "Allow Refresh",
-            "value": true,
-            "name": "allow_refresh",
-            "type": "switch"
-          },
-          {
-            "label": "Refresh Interval",
-            "value": 40000,
-            "name": "refresh_interval",
-            "type": "text"
-          },
-          {
-            "label": "Init Requires Focus",
-            "value": true,
-            "name": "init_requires_focus",
-            "type": "switch"
-          },
-          {
-            "label": "Refresh Requires Focus",
-            "value": false,
-            "name": "refresh_requires_focus",
-            "type": "switch"
-          },
-          {
-            "label": "Refresh Requires User Interaction",
-            "value": false,
-            "name": "refresh_requires_user_interaction",
-            "type": "switch"
-          },
-          {
-            "label": "Line Item Types to Exclude from Refresh",
-            "value": "",
-            "name": "line_item_types_to_exclude_from_refresh"
+            "type": "text",
+            "label": "Account Description",
+            "name": "accountDescription",
+            "options": {
+              "fullWidth": true,
+              "variant": "standard"
+            }
           }
         ]
-      },
-      "type": "cardAccordion"
+      }
     },
     {
-      "label": "Prebid Options",
+      "type": "card",
       "options": {
         "fields": [
           {
-            "label": "Prebid UserID Modules",
-            "value": "",
-            "name": "prebid_userid_modules"
+            "type": "header",
+            "label": "GAM Setup"
           },
           {
-            "label": "Prebid Analytics Modules",
-            "value": "",
-            "name": "prebid_analytics_modules"
-          },
-          {
-            "label": "Prebid Base Modules",
-            "value": "",
-            "name": "prebid_base_modules"
-          },
-          {
-            "label": "Prebid Version",
-            "value": "",
-            "name": "prebid_version"
+            "type": "grid",
+            "options": {
+              "columns": 2,
+              "gap": 10,
+              "fields": [
+                {
+                  "type": "text",
+                  "label": "GAM Network Name",
+                  "name": "gamId",
+                  "options": {
+                    "fullWidth": true,
+                    "variant": "standard"
+                  }
+                },
+                {
+                  "type": "text",
+                  "label": "GAM Network ID",
+                  "name": "gamName",
+                  "options": {
+                    "fullWidth": true,
+                    "variant": "standard"
+                  }
+                },
+                {
+                  "type": "text",
+                  "label": "GAM Parent Ad Unit ID",
+                  "name": "gamName",
+                  "options": {
+                    "fullWidth": true,
+                    "variant": "standard"
+                  }
+                },
+                {
+                  "type": "text",
+                  "label": "GAM MCM Status",
+                  "name": "gamName",
+                  "options": {
+                    "fullWidth": true,
+                    "variant": "standard"
+                  }
+                }
+              ]
+            }
           }
         ]
-      },
-      "type": "cardAccordion"
-    },
-    {
-      "label": "Flooring Options",
-      "options": {
-        "fields": [
-          {
-            "label": "Allow Dynamic Floors",
-            "value": true,
-            "name": "allow_dynamic_floors",
-            "type": "switch"
-          },
-          {
-            "label": "Floor Minimum (Cents)",
-            "value": 5.0,
-            "name": "floor_minimum_cents",
-            "type": "text"
-          },
-          {
-            "label": "AdX Multiplier",
-            "value": 2.0,
-            "name": "adx_multiplier",
-            "type": "text"
-          }
-        ]
-      },
-      "type": "cardAccordion"
-    },
-    {
-      "label": "Additional Options",
-      "options": {
-        "fields": [
-          {
-            "label": "Desktop Timeout",
-            "value": 2000,
-            "name": "desktop_timeout",
-            "type": "text"
-          },
-          {
-            "label": "Mobile Timeout",
-            "value": 2500,
-            "name": "mobile_timeout",
-            "type": "text"
-          },
-          {
-            "label": "Enable IntentIQ",
-            "value": true,
-            "name": "enable_intentiq",
-            "type": "switch"
-          },
-          {
-            "label": "Enable Confiant",
-            "value": true,
-            "name": "enable_confiant",
-            "type": "switch"
-          },
-          {
-            "label": "Confiant ID",
-            "value": "0vuYYypr3Hr10FLx2-weS1MEgCg",
-            "name": "confiant_id",
-            "type": "text"
-          },
-          {
-            "label": "Confiant Geos",
-            "value": "US,CA",
-            "name": "confiant_geos",
-            "type": "text"
-          },
-          {
-            "label": "Enable Sourcepoint",
-            "value": true,
-            "name": "enable_sourcepoint",
-            "type": "switch"
-          },
-          {
-            "label": "Sourcepoint ID Override",
-            "value": "",
-            "name": "sourcepoint_id_override"
-          },
-          {
-            "label": "Sourcepoint Geos",
-            "value": "",
-            "name": "sourcepoint_geos"
-          },
-          {
-            "label": "Filter Non-Active Bidders (Smart Requests)",
-            "value": true,
-            "name": "should_filter_non_active_bidders",
-            "type": "switch"
-          }
-        ]
-      },
-      "type": "cardAccordion"
+      }
     }
-  ],
-  "hideSubmitButton": true
+  ]
 }
