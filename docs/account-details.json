@@ -13,7 +13,7 @@
             "type": "header",
             "label": "Account Setup",
             "options": {
-              "variant": "h1"
+              "variant": "h2"
             }
           },
           {
@@ -64,7 +64,10 @@
         "fields": [
           {
             "type": "header",
-            "label": "GAM Setup"
+            "label": "GAM Setup",
+            "options": {
+              "variant": "h2"
+            }
           },
           {
             "type": "grid",
@@ -139,7 +142,7 @@
             "type": "header",
             "label": "Sellers.json / Ads.txt",
             "options": {
-              "variant": "h1"
+              "variant": "h2"
             }
           },
           {
