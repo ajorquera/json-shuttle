@@ -78,6 +78,7 @@
                   "type": "text",
                   "label": "GAM Network Name",
                   "name": "gamId",
+                  "value": "This is a test value",
                   "options": {
                     "fullWidth": true,
                     "variant": "standard"
@@ -86,7 +87,7 @@
                 {
                   "type": "text",
                   "label": "GAM Network ID",
-                  "name": "gamName",
+                  "name": "gamNetworkId",
                   "options": {
                     "fullWidth": true,
                     "variant": "standard"
@@ -95,7 +96,7 @@
                 {
                   "type": "text",
                   "label": "GAM Parent Ad Unit ID",
-                  "name": "gamName",
+                  "name": "gamParentAdUnitId",
                   "options": {
                     "fullWidth": true,
                     "variant": "standard"
@@ -104,7 +105,7 @@
                 {
                   "type": "text",
                   "label": "GAM MCM Status",
-                  "name": "gamName",
+                  "name": "gamMcmStatus",
                   "options": {
                     "fullWidth": true,
                     "variant": "standard"
