@@ -3,6 +3,16 @@
     "title": "Account Setup"
   },
   "isNewForm": true,
+  "validation": {
+    "accountName": {
+      "type": "string",
+      "required": true
+    },
+    "accountDomain": {
+      "type": "string",
+      "required": true
+    }
+  },
   "fields": [
     {
       "type": "card",
@@ -31,7 +41,8 @@
                       "readOnly": true
                     },
                     "fullWidth": true,
-                    "variant": "standard"
+                    "variant": "standard",
+                    "color": "secondary"
                   }
                 },
                 {
@@ -40,7 +51,8 @@
                   "name": "accountDomain",
                   "options": {
                     "fullWidth": true,
-                    "variant": "standard"
+                    "variant": "standard",
+                    "color": "secondary"
                   }
                 }
               ]
@@ -52,7 +64,8 @@
             "name": "accountDescription",
             "options": {
               "fullWidth": true,
-              "variant": "standard"
+              "variant": "standard",
+              "color": "secondary"
             }
           }
         ]
@@ -81,7 +94,8 @@
                   "value": "This is a test value",
                   "options": {
                     "fullWidth": true,
-                    "variant": "standard"
+                    "variant": "standard",
+                    "color": "secondary"
                   }
                 },
                 {
@@ -90,7 +104,8 @@
                   "name": "gamNetworkId",
                   "options": {
                     "fullWidth": true,
-                    "variant": "standard"
+                    "variant": "standard",
+                    "color": "secondary"
                   }
                 },
                 {
@@ -99,7 +114,8 @@
                   "name": "gamParentAdUnitId",
                   "options": {
                     "fullWidth": true,
-                    "variant": "standard"
+                    "variant": "standard",
+                    "color": "secondary"
                   }
                 },
                 {
@@ -108,7 +124,8 @@
                   "name": "gamMcmStatus",
                   "options": {
                     "fullWidth": true,
-                    "variant": "standard"
+                    "variant": "standard",
+                    "color": "secondary"
                   }
                 },
                 {
@@ -117,7 +134,8 @@
                   "name": "gamCHildNetworkId",
                   "options": {
                     "fullWidth": true,
-                    "variant": "standard"
+                    "variant": "standard",
+                    "color": "secondary"
                   }
                 },
                 {
@@ -126,7 +144,8 @@
                   "name": "prebidGAMOrderId",
                   "options": {
                     "fullWidth": true,
-                    "variant": "standard"
+                    "variant": "standard",
+                    "color": "secondary"
                   }
                 }
               ]
