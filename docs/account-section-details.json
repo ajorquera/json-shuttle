@@ -60,22 +60,39 @@
           {
             "unit": "300x250",
             "elementId": "div-gpt-ad-123456789-0",
-            "sizes": ["300x250"],
-            "deviceTypes": ["desktop", "tablet", "phone"],
+            "sizes": [
+              "300x250",
+              "300x600",
+              "728x90"
+            ],
+            "deviceTypes": [
+              "desktop",
+              "tablet",
+              "phone"
+            ],
             "unitType": "leaderboard"
           },
           {
             "unit": "300x600",
             "elementId": "div-gpt-ad-123456789-1",
-            "sizes": ["300x600"],
-            "deviceTypes": ["desktop", "tablet"],
+            "sizes": [
+              "300x600"
+            ],
+            "deviceTypes": [
+              "desktop",
+              "tablet"
+            ],
             "unitType": "leaderboard"
           },
           {
             "unit": "728x90",
             "elementId": "div-gpt-ad-123456789-2",
-            "sizes": ["728x90"],
-            "deviceTypes": ["desktop"],
+            "sizes": [
+              "728x90"
+            ],
+            "deviceTypes": [
+              "desktop"
+            ],
             "unitType": "leaderboard"
           }
         ]
