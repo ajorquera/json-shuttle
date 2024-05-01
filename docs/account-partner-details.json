@@ -281,7 +281,7 @@
   "isNewForm": true,
   "fields": [
     {
-      "type": "tableConfig",
+      "type": "configTable",
       "options": {
         "value": [
           {

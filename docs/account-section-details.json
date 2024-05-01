@@ -1,38 +1,85 @@
 {
+  "isNewForm": true,
+  "header": {
+    "title": "Sections",
+    "actions": [
+      {
+        "type": "newItemButton",
+        "label": "New Section",
+        "options": {
+          "title": "New Section",
+          "fields": [
+            {
+              "type": "text",
+              "label": "Name",
+              "name": "name"
+            },
+            {
+              "type": "text",
+              "label": "Slug",
+              "name": "slug"
+            }
+          ]
+        }
+      }
+    ]
+  },
   "fields": [
     {
-      "label": "Sections",
-      "type": "header"
-    },
-    {
-      "label": "talk",
-      "type": "cardAccordion",
+      "type": "configTable",
+      "label": "header",
       "options": {
-        "fields": [
+        "columns": [
           {
-            "label": "CC_T_D_1",
-            "value": "/1006408/CC_T_D_1",
-            "name": 535
+            "label": "Unit",
+            "type": "text",
+            "name": "unit"
           },
           {
-            "label": "CC_T_D_A",
-            "value": "/1006408/CC_T_D_A",
-            "name": 533
+            "label": "Element ID",
+            "type": "text",
+            "name": "elementId"
           },
           {
-            "label": "CC_T_M_1",
-            "value": "/1006408/CC_T_M_1",
-            "name": 529
+            "label": "Sizes",
+            "type": "tags",
+            "name": "sizes"
           },
           {
-            "label": "CC_T_M_A",
-            "value": "/1006408/CC_T_M_A",
-            "name": 534
+            "label": "Device Types",
+            "type": "devices",
+            "name": "deviceTypes"
+          },
+          {
+            "label": "Unit Type",
+            "type": "text",
+            "name": "unitType"
           }
         ],
-        "hideSubmitButton": true
+        "value": [
+          {
+            "unit": "300x250",
+            "elementId": "div-gpt-ad-123456789-0",
+            "sizes": ["300x250"],
+            "deviceTypes": ["desktop", "tablet", "phone"],
+            "unitType": "leaderboard"
+          },
+          {
+            "unit": "300x600",
+            "elementId": "div-gpt-ad-123456789-1",
+            "sizes": ["300x600"],
+            "deviceTypes": ["desktop", "tablet"],
+            "unitType": "leaderboard"
+          },
+          {
+            "unit": "728x90",
+            "elementId": "div-gpt-ad-123456789-2",
+            "sizes": ["728x90"],
+            "deviceTypes": ["desktop"],
+            "unitType": "leaderboard"
+          }
+        ]
       }
     }
-  ],
-  "hideSubmitButton": true
+  ]
 }
