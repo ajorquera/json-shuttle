@@ -1,0 +1,102 @@
+{
+  "isNewForm": true,
+  "header": {
+    "title": "Sections",
+    "actions": [
+      {
+        "type": "newItemButton",
+        "label": "New Section",
+        "options": {
+          "title": "New Section",
+          "fields": [
+            {
+              "type": "text",
+              "label": "Name",
+              "name": "name"
+            },
+            {
+              "type": "text",
+              "label": "Slug",
+              "name": "slug"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "fields": [
+    {
+      "type": "configTable",
+      "label": "header",
+      "options": {
+        "columns": [
+          {
+            "label": "Unit",
+            "type": "text",
+            "name": "unit"
+          },
+          {
+            "label": "Element ID",
+            "type": "text",
+            "name": "elementId"
+          },
+          {
+            "label": "Sizes",
+            "type": "tags",
+            "name": "sizes"
+          },
+          {
+            "label": "Device Types",
+            "type": "devices",
+            "name": "deviceTypes"
+          },
+          {
+            "label": "Unit Type",
+            "type": "text",
+            "name": "unitType"
+          }
+        ],
+        "value": [
+          {
+            "unit": "300x250",
+            "elementId": "div-gpt-ad-123456789-0",
+            "sizes": [
+              "300x250",
+              "300x600",
+              "728x90"
+            ],
+            "deviceTypes": [
+              "desktop",
+              "tablet",
+              "phone"
+            ],
+            "unitType": "leaderboard"
+          },
+          {
+            "unit": "300x600",
+            "elementId": "div-gpt-ad-123456789-1",
+            "sizes": [
+              "300x600"
+            ],
+            "deviceTypes": [
+              "desktop",
+              "tablet"
+            ],
+            "unitType": "leaderboard"
+          },
+          {
+            "unit": "728x90",
+            "elementId": "div-gpt-ad-123456789-2",
+            "sizes": [
+              "728x90"
+            ],
+            "deviceTypes": [
+              "desktop"
+            ],
+            "unitType": "leaderboard"
+          }
+        ]
+      }
+    }
+  ]
+}

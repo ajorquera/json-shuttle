@@ -20,16 +20,35 @@
       "children": []
     },
     {
+      "path": "/account-management/:accountSlug/new-account",
+      "apiUrl": "/api/:accountSlug/new-account-details",
+      "icon": "circle-user",
+      "label": "New Account",
+      "children": []
+    },
+    {
       "path": "/account-management/:accountSlug/partners",
       "apiUrl": "/api/:accountSlug/account-partner-details",
       "icon": "users",
       "label": "Partners"
     },
     {
+      "path": "/account-management/:accountSlug/new-partners",
+      "apiUrl": "/api/:accountSlug/new-account-partner-details",
+      "icon": "users",
+      "label": "New Partners"
+    },
+    {
       "path": "/account-management/:accountSlug/sections",
       "apiUrl": "/api/:accountSlug/account-section-details",
       "icon": "table-columns",
       "label": "Sections"
+    },
+    {
+      "path": "/account-management/:accountSlug/new-sections",
+      "apiUrl": "/api/:accountSlug/new-account-section-details",
+      "icon": "table-columns",
+      "label": "New Sections"
     },
     {
       "path": "/account-management/:accountSlug/units",
