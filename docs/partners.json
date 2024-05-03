@@ -19,6 +19,11 @@
       "name": "bartleby",
       "slug": "bartleby",
       "base_currency": "USD"
+    },
+    {
+      "name": "collegeconfidential",
+      "slug": "collegeconfidential",
+      "base_currency": "USD"
     }
   ]
 }
