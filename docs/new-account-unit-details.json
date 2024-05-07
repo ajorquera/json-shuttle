@@ -1,0 +1,105 @@
+{
+  "header": {
+    "title": "Units"
+  },
+  "isNewForm": true,
+  "fields": [
+    {
+      "type": "configTable",
+      "configFields": [
+        {
+          "name": "unit",
+          "label": "Name",
+          "type": "text"
+        },
+        {
+          "label": "Sizes",
+          "name": "sizes",
+          "type": "tags"
+        },
+        {
+          "label": "Devices",
+          "name": "devices",
+          "type": "devices"
+        },
+        {
+          "label": "Enabled",
+          "name": "enabled",
+          "type": "switch"
+        }
+      ],
+      "options": {
+        "columns": [
+          {
+            "name": "unit",
+            "label": "Name",
+            "type": "text"
+          },
+          {
+            "label": "Sizes",
+            "name": "sizes",
+            "type": "tags"
+          },
+          {
+            "label": "Devices",
+            "name": "devices",
+            "type": "devices"
+          },
+          {
+            "label": "Enabled",
+            "name": "enabled",
+            "type": "switch"
+          }
+        ],
+        "value": [
+          {
+            "unit": "ugg_1",
+            "sizes": [
+              "200x400",
+              "100x500"
+            ],
+            "devices": [
+              "desktop"
+            ],
+            "enabled": true
+          },
+          {
+            "unit": "ugg_2",
+            "sizes": [
+              "200x400",
+              "100x500"
+            ],
+            "devices": [
+              "desktop",
+              "tablet"
+            ],
+            "enabled": true
+          },
+          {
+            "unit": "ugg_3",
+            "sizes": [
+              "200x400",
+              "100x500"
+            ],
+            "devices": [
+              "mobile"
+            ],
+            "enabled": true
+          },
+          {
+            "unit": "ugg_4",
+            "sizes": [
+              "200x400",
+              "100x500"
+            ],
+            "devices": [
+              "desktop",
+              "mobile"
+            ],
+            "enabled": true
+          }
+        ]
+      }
+    }
+  ]
+}
