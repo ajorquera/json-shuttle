@@ -1,102 +1,827 @@
 {
-  "isNewForm": true,
-  "header": {
-    "title": "Sections",
-    "actions": [
-      {
-        "type": "newItemButton",
-        "label": "New Section",
-        "options": {
-          "title": "New Section",
-          "fields": [
-            {
-              "type": "text",
-              "label": "Name",
-              "name": "name"
-            },
-            {
-              "type": "text",
-              "label": "Slug",
-              "name": "slug"
-            }
-          ]
-        }
-      }
-    ]
-  },
   "fields": [
     {
-      "type": "configTable",
-      "label": "header",
+      "label": "TEST SECTION THREE",
       "options": {
         "columns": [
           {
             "label": "Unit",
-            "type": "text",
-            "name": "unit"
+            "name": "unit",
+            "type": "text"
           },
           {
             "label": "Element ID",
-            "type": "text",
-            "name": "elementId"
+            "name": "elementId",
+            "type": "text"
           },
           {
             "label": "Sizes",
-            "type": "tags",
-            "name": "sizes"
+            "name": "sizes",
+            "type": "tags"
           },
           {
             "label": "Device Types",
-            "type": "devices",
-            "name": "deviceTypes"
+            "name": "deviceTypes",
+            "type": "devices"
           },
           {
             "label": "Unit Type",
-            "type": "text",
-            "name": "unitType"
+            "name": "unitType",
+            "type": "text"
           }
         ],
         "value": [
           {
-            "unit": "300x250",
-            "elementId": "div-gpt-ad-123456789-0",
-            "sizes": [
-              "300x250",
-              "300x600",
-              "728x90"
-            ],
             "deviceTypes": [
-              "desktop",
-              "tablet",
-              "phone"
-            ],
-            "unitType": "leaderboard"
-          },
-          {
-            "unit": "300x600",
-            "elementId": "div-gpt-ad-123456789-1",
-            "sizes": [
-              "300x600"
-            ],
-            "deviceTypes": [
+              "mobile",
               "desktop",
               "tablet"
             ],
-            "unitType": "leaderboard"
+            "elementId": "sdfdsf",
+            "sizes": [
+              ""
+            ],
+            "unit": "27",
+            "unitType": ""
           },
           {
-            "unit": "728x90",
-            "elementId": "div-gpt-ad-123456789-2",
-            "sizes": [
-              "728x90"
+            "deviceTypes": [
+              "mobile",
+              "desktop",
+              "tablet"
             ],
+            "elementId": "",
+            "sizes": [
+              "300x250"
+            ],
+            "unit": "BR_TribalFusion_300x250_1_Passback-44",
+            "unitType": ""
+          },
+          {
+            "deviceTypes": [
+              "mobile",
+              "desktop",
+              "tablet"
+            ],
+            "elementId": "123",
+            "sizes": [
+              ""
+            ],
+            "unit": "BR_Undertone_300x250_ATF_1_Passback-59",
+            "unitType": ""
+          },
+          {
+            "deviceTypes": [
+              "mobile",
+              "desktop",
+              "tablet"
+            ],
+            "elementId": "123",
+            "sizes": [
+              ""
+            ],
+            "unit": "BR_Undertone_300x250_ATF_1_Passback-60",
+            "unitType": ""
+          },
+          {
+            "deviceTypes": [
+              "mobile",
+              "desktop",
+              "tablet"
+            ],
+            "elementId": "123",
+            "sizes": [
+              ""
+            ],
+            "unit": "BR_Undertone_300x250_ATF_1_Passback-61",
+            "unitType": ""
+          },
+          {
+            "deviceTypes": [
+              "mobile",
+              "desktop",
+              "tablet"
+            ],
+            "elementId": "test",
+            "sizes": [
+              "728x90",
+              " 300x250",
+              " 160x600"
+            ],
+            "unit": "Bookrags Test Unit 2-45",
+            "unitType": ""
+          },
+          {
+            "deviceTypes": [
+              "mobile",
+              "desktop",
+              "tablet"
+            ],
+            "elementId": "test",
+            "sizes": [
+              "728x90",
+              " 300x250",
+              " 160x600"
+            ],
+            "unit": "Bookrags Test Unit 2-46",
+            "unitType": ""
+          },
+          {
+            "deviceTypes": [
+              "mobile",
+              "desktop",
+              "tablet"
+            ],
+            "elementId": "test",
+            "sizes": [
+              "728x90",
+              " 300x250",
+              " 160x600"
+            ],
+            "unit": "Bookrags Test Unit 2-47",
+            "unitType": ""
+          },
+          {
             "deviceTypes": [
               "desktop"
             ],
-            "unitType": "leaderboard"
+            "elementId": "using_size_override",
+            "sizes": [
+              "728x728",
+              " 970x970",
+              " 300x300",
+              " 160x160",
+              " 320x320"
+            ],
+            "unit": "Bookrags Test Unit 2-48",
+            "unitType": "sidebar-sticky"
+          },
+          {
+            "deviceTypes": [
+              "mobile",
+              "desktop",
+              "tablet"
+            ],
+            "elementId": "test",
+            "sizes": [
+              "728x90",
+              " 300x250",
+              " 160x600"
+            ],
+            "unit": "Bookrags Test Unit 2-49",
+            "unitType": ""
+          },
+          {
+            "deviceTypes": [
+              "mobile",
+              "desktop",
+              "tablet"
+            ],
+            "elementId": "test",
+            "sizes": [
+              "728x90",
+              " 300x250",
+              " 160x600"
+            ],
+            "unit": "Bookrags Test Unit 2-50",
+            "unitType": ""
+          },
+          {
+            "deviceTypes": [
+              "mobile",
+              "desktop",
+              "tablet"
+            ],
+            "elementId": "test",
+            "sizes": [
+              "728x728",
+              " 970x970",
+              " 300x300",
+              " 160x160",
+              " 320x320"
+            ],
+            "unit": "Bookrags Test Unit 2-51",
+            "unitType": "sidebar-sticky"
+          },
+          {
+            "deviceTypes": [
+              "mobile",
+              "desktop",
+              "tablet"
+            ],
+            "elementId": "test",
+            "sizes": [
+              "728x90",
+              " 300x250",
+              " 160x600"
+            ],
+            "unit": "Bookrags Test Unit 2-52",
+            "unitType": ""
+          },
+          {
+            "deviceTypes": [
+              "mobile",
+              "desktop",
+              "tablet"
+            ],
+            "elementId": "test",
+            "sizes": [
+              "728x728",
+              " 970x970",
+              " 300x300",
+              " 160x160",
+              " 320x320"
+            ],
+            "unit": "Bookrags Test Unit 2-53",
+            "unitType": "sidebar-sticky"
+          },
+          {
+            "deviceTypes": [
+              "mobile",
+              "desktop",
+              "tablet"
+            ],
+            "elementId": "test",
+            "sizes": [
+              "728x90",
+              " 300x250",
+              " 160x600"
+            ],
+            "unit": "Bookrags Test Unit 2-54",
+            "unitType": ""
+          },
+          {
+            "deviceTypes": [
+              "mobile",
+              "desktop",
+              "tablet"
+            ],
+            "elementId": "test",
+            "sizes": [
+              "728x90",
+              " 300x250",
+              " 160x600"
+            ],
+            "unit": "Bookrags Test Unit 2-55",
+            "unitType": ""
+          },
+          {
+            "deviceTypes": [
+              "mobile"
+            ],
+            "elementId": "test",
+            "sizes": [
+              "728x90",
+              " 300x250",
+              " 160x600"
+            ],
+            "unit": "Bookrags Test Unit 2-56",
+            "unitType": ""
+          },
+          {
+            "deviceTypes": [
+              "mobile",
+              "desktop",
+              "tablet"
+            ],
+            "elementId": "test",
+            "sizes": [
+              "728x90",
+              " 300x250",
+              " 160x600"
+            ],
+            "unit": "Bookrags Test Unit 2-57",
+            "unitType": ""
+          },
+          {
+            "deviceTypes": [
+              "mobile",
+              "desktop",
+              "tablet"
+            ],
+            "elementId": "test",
+            "sizes": [
+              "728x90",
+              " 300x250",
+              " 160x600"
+            ],
+            "unit": "Bookrags Test Unit 2-58",
+            "unitType": ""
+          },
+          {
+            "deviceTypes": [
+              "mobile",
+              "desktop",
+              "tablet"
+            ],
+            "elementId": "1234",
+            "sizes": [
+              "728x90",
+              " 300x250",
+              " 160x600"
+            ],
+            "unit": "Bookrags Test Unit 2-62",
+            "unitType": ""
+          },
+          {
+            "deviceTypes": [
+              "mobile",
+              "desktop",
+              "tablet"
+            ],
+            "elementId": "1234",
+            "sizes": [
+              "728x90",
+              " 300x250",
+              " 160x600"
+            ],
+            "unit": "Bookrags Test Unit 2-63",
+            "unitType": ""
+          },
+          {
+            "deviceTypes": [
+              "mobile",
+              "desktop",
+              "tablet"
+            ],
+            "elementId": "1234",
+            "sizes": [
+              "728x90",
+              " 300x250",
+              " 160x600"
+            ],
+            "unit": "Bookrags Test Unit 2-64",
+            "unitType": ""
+          },
+          {
+            "deviceTypes": [
+              "mobile",
+              "desktop",
+              "tablet"
+            ],
+            "elementId": "678",
+            "sizes": [
+              "728x90",
+              " 300x250",
+              " 160x600"
+            ],
+            "unit": "Bookrags Test Unit 2-65",
+            "unitType": ""
+          },
+          {
+            "deviceTypes": [
+              "mobile",
+              "desktop",
+              "tablet"
+            ],
+            "elementId": "789",
+            "sizes": [
+              "728x90",
+              " 300x250",
+              " 160x600"
+            ],
+            "unit": "Bookrags Test Unit 2-66",
+            "unitType": ""
+          },
+          {
+            "deviceTypes": [
+              "mobile",
+              "desktop",
+              "tablet"
+            ],
+            "elementId": "98086",
+            "sizes": [
+              "728x90",
+              " 300x250",
+              " 160x600"
+            ],
+            "unit": "Bookrags Test Unit 2-67",
+            "unitType": ""
+          },
+          {
+            "deviceTypes": [
+              "mobile",
+              "desktop",
+              "tablet"
+            ],
+            "elementId": "",
+            "sizes": [
+              "300x250",
+              " 160x600",
+              " 300x600",
+              " 300x1050",
+              " 336x280"
+            ],
+            "unit": "GS_300x250_ATF_1-36",
+            "unitType": ""
+          },
+          {
+            "deviceTypes": [
+              "mobile",
+              "desktop",
+              "tablet"
+            ],
+            "elementId": "",
+            "sizes": [
+              "300x250",
+              " 160x600",
+              " 300x600",
+              " 300x1050",
+              " 336x280"
+            ],
+            "unit": "GS_300x250_ATF_1-37",
+            "unitType": ""
+          },
+          {
+            "deviceTypes": [
+              "mobile",
+              "desktop",
+              "tablet"
+            ],
+            "elementId": "",
+            "sizes": [
+              "300x250",
+              " 160x600",
+              " 300x600",
+              " 300x1050",
+              " 336x280"
+            ],
+            "unit": "GS_300x250_ATF_2-29",
+            "unitType": ""
+          },
+          {
+            "deviceTypes": [
+              "mobile",
+              "desktop",
+              "tablet"
+            ],
+            "elementId": "",
+            "sizes": [
+              "300x250",
+              " 160x600",
+              " 300x600",
+              " 300x1050",
+              " 336x280"
+            ],
+            "unit": "GS_300x250_ATF_2-32",
+            "unitType": ""
+          },
+          {
+            "deviceTypes": [
+              "mobile",
+              "desktop",
+              "tablet"
+            ],
+            "elementId": "",
+            "sizes": [
+              "300x250",
+              " 320x50",
+              " 320x100"
+            ],
+            "unit": "GS_300x250_Mobile_1-34",
+            "unitType": ""
+          },
+          {
+            "deviceTypes": [
+              "mobile",
+              "desktop",
+              "tablet"
+            ],
+            "elementId": "",
+            "sizes": [
+              "300x250",
+              " 320x50",
+              " 320x100"
+            ],
+            "unit": "GS_300x250_Mobile_1-35",
+            "unitType": ""
+          },
+          {
+            "deviceTypes": [
+              "mobile",
+              "desktop",
+              "tablet"
+            ],
+            "elementId": "",
+            "sizes": [
+              "300x250",
+              " 320x50",
+              " 320x100"
+            ],
+            "unit": "GS_300x250_Mobile_2-30",
+            "unitType": ""
+          },
+          {
+            "deviceTypes": [
+              "mobile",
+              "desktop",
+              "tablet"
+            ],
+            "elementId": "test1",
+            "sizes": [
+              "300x250",
+              " 320x50",
+              " 320x100"
+            ],
+            "unit": "GS_300x250_Mobile_2-40",
+            "unitType": ""
+          },
+          {
+            "deviceTypes": [
+              "mobile",
+              "desktop",
+              "tablet"
+            ],
+            "elementId": "test1",
+            "sizes": [
+              "300x250",
+              " 320x50",
+              " 320x100"
+            ],
+            "unit": "GS_300x250_Mobile_2-41",
+            "unitType": ""
+          },
+          {
+            "deviceTypes": [
+              "mobile",
+              "desktop",
+              "tablet"
+            ],
+            "elementId": "test1",
+            "sizes": [
+              "300x250",
+              " 320x50",
+              " 320x100"
+            ],
+            "unit": "GS_300x250_Mobile_2-42",
+            "unitType": ""
+          },
+          {
+            "deviceTypes": [
+              "mobile",
+              "desktop",
+              "tablet"
+            ],
+            "elementId": "test2",
+            "sizes": [
+              "300x250",
+              " 320x50",
+              " 320x100"
+            ],
+            "unit": "GS_300x250_Mobile_2-43",
+            "unitType": "1x1"
           }
         ]
-      }
+      },
+      "type": "configTable"
+    },
+    {
+      "label": "test section1",
+      "options": {
+        "columns": [
+          {
+            "label": "Unit",
+            "name": "unit",
+            "type": "text"
+          },
+          {
+            "label": "Element ID",
+            "name": "elementId",
+            "type": "text"
+          },
+          {
+            "label": "Sizes",
+            "name": "sizes",
+            "type": "tags"
+          },
+          {
+            "label": "Device Types",
+            "name": "deviceTypes",
+            "type": "devices"
+          },
+          {
+            "label": "Unit Type",
+            "name": "unitType",
+            "type": "text"
+          }
+        ],
+        "value": [
+          {
+            "deviceTypes": [
+              "mobile",
+              "desktop",
+              "tablet"
+            ],
+            "elementId": "testpassback",
+            "sizes": [
+              "728x90",
+              " 160x600",
+              " 234x60"
+            ],
+            "unit": "BR_Rubicon_728x90_BTF_Passback-68",
+            "unitType": ""
+          },
+          {
+            "deviceTypes": [
+              "mobile",
+              "desktop",
+              "tablet"
+            ],
+            "elementId": "test",
+            "sizes": [
+              "728x90",
+              " 300x250",
+              " 160x600"
+            ],
+            "unit": "Bookrags Test Unit 2-45",
+            "unitType": ""
+          },
+          {
+            "deviceTypes": [
+              "desktop"
+            ],
+            "elementId": "using_size_override",
+            "sizes": [
+              "728x728",
+              " 970x970",
+              " 300x300",
+              " 160x160",
+              " 320x320"
+            ],
+            "unit": "Bookrags Test Unit 2-48",
+            "unitType": "sidebar-sticky"
+          },
+          {
+            "deviceTypes": [
+              "mobile",
+              "desktop",
+              "tablet"
+            ],
+            "elementId": "test",
+            "sizes": [
+              "728x90",
+              " 300x250",
+              " 160x600"
+            ],
+            "unit": "Bookrags Test Unit 2-55",
+            "unitType": ""
+          }
+        ]
+      },
+      "type": "configTable"
+    },
+    {
+      "label": "test section2",
+      "options": {
+        "columns": [
+          {
+            "label": "Unit",
+            "name": "unit",
+            "type": "text"
+          },
+          {
+            "label": "Element ID",
+            "name": "elementId",
+            "type": "text"
+          },
+          {
+            "label": "Sizes",
+            "name": "sizes",
+            "type": "tags"
+          },
+          {
+            "label": "Device Types",
+            "name": "deviceTypes",
+            "type": "devices"
+          },
+          {
+            "label": "Unit Type",
+            "name": "unitType",
+            "type": "text"
+          }
+        ],
+        "value": [
+          {
+            "deviceTypes": [
+              "mobile",
+              "desktop",
+              "tablet"
+            ],
+            "elementId": "testpassback",
+            "sizes": [
+              "728x90",
+              " 160x600",
+              " 234x60"
+            ],
+            "unit": "BR_Rubicon_728x90_BTF_Passback-68",
+            "unitType": ""
+          },
+          {
+            "deviceTypes": [
+              "mobile",
+              "desktop",
+              "tablet"
+            ],
+            "elementId": "test",
+            "sizes": [
+              "728x90",
+              " 300x250",
+              " 160x600"
+            ],
+            "unit": "Bookrags Test Unit 2-45",
+            "unitType": ""
+          },
+          {
+            "deviceTypes": [
+              "mobile",
+              "desktop",
+              "tablet"
+            ],
+            "elementId": "test",
+            "sizes": [
+              "728x90",
+              " 300x250",
+              " 160x600"
+            ],
+            "unit": "Bookrags Test Unit 2-50",
+            "unitType": ""
+          },
+          {
+            "deviceTypes": [
+              "mobile",
+              "desktop",
+              "tablet"
+            ],
+            "elementId": "1234",
+            "sizes": [
+              "728x90",
+              " 300x250",
+              " 160x600"
+            ],
+            "unit": "Bookrags Test Unit 2-63",
+            "unitType": ""
+          }
+        ]
+      },
+      "type": "configTable"
+    },
+    {
+      "label": "test section3",
+      "options": {
+        "columns": [
+          {
+            "label": "Unit",
+            "name": "unit",
+            "type": "text"
+          },
+          {
+            "label": "Element ID",
+            "name": "elementId",
+            "type": "text"
+          },
+          {
+            "label": "Sizes",
+            "name": "sizes",
+            "type": "tags"
+          },
+          {
+            "label": "Device Types",
+            "name": "deviceTypes",
+            "type": "devices"
+          },
+          {
+            "label": "Unit Type",
+            "name": "unitType",
+            "type": "text"
+          }
+        ],
+        "value": []
+      },
+      "type": "configTable"
     }
-  ]
+  ],
+  "header": {
+    "actions": [
+      {
+        "label": "+ Add New Section",
+        "options": {
+          "buttonProps": {
+            "variant": "secondary"
+          },
+          "fields": [
+            {
+              "label": "Section Name",
+              "name": "name",
+              "type": "text"
+            }
+          ],
+          "title": "New Section"
+        },
+        "type": "newItemButton"
+      }
+    ],
+    "title": "Sections",
+    "type": "header"
+  },
+  "isNewForm": true
 }
