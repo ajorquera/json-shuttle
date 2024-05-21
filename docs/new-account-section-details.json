@@ -15,7 +15,7 @@
                 {
                   "label": "Unit",
                   "name": "unit",
-                  "type": "text"
+                  "type": "link"
                 },
                 {
                   "label": "Element ID",
@@ -62,7 +62,10 @@
                   "sizes": [
                     "300x250"
                   ],
-                  "unit": "BR_TribalFusion_300x250_1_Passback-44",
+                  "unit": {
+                    "href": "../units?&openByElementId=246",
+                    "label": "GS_300x250_ATF_1-36"
+                  },
                   "unitType": ""
                 },
                 {
