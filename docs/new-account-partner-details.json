@@ -283,6 +283,7 @@
     {
       "type": "configTable",
       "options": {
+        "p": 3,
         "value": [
           {
             "partner_name": "AdaptMX",
