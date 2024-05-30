@@ -17,7 +17,6 @@
     {
       "type": "card",
       "options": {
-        "pb": 20,
         "fields": [
           {
             "type": "header",
