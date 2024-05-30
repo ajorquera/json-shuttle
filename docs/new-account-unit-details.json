@@ -29,7 +29,6 @@
         }
       ],
       "options": {
-        "p": 3,
         "columns": [
           {
             "name": "unit",
