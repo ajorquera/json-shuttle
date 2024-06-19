@@ -26,6 +26,15 @@
                                         "href": "../units",
                                         "m": 10
                                     }
+                                },
+                                {
+                                    "type": "textarea",
+                                    "label": "Text Area",
+                                    "name": "textarea",
+                                    "options": {
+                                        "width": "100%",
+                                        "fullWidth": true
+                                    }
                                 }
                             ]
                         }
