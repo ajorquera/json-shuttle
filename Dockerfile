@@ -1,13 +1,11 @@
 from nginx as dev
-RUN yum update
-RUN yum install nginx-module-njs
+RUN apt install nginx-module-njs
 COPY ./nginx.conf /etc/nginx/nginx.conf
 COPY ./njs/ /etc/nginx/njs/
 
 
 from --platform=linux/amd64 nginx:alpine
-RUN yum update
-RUN yum install nginx-module-njs
+RUN apt install nginx-module-njs
 COPY ./nginx.conf /etc/nginx/nginx.conf
 COPY ./njs/ /etc/nginx/njs/
 COPY ./docs /var/www
