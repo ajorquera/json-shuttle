@@ -1,32 +1,145 @@
 {
   "header": {
-    "title": "Units"
+    "title": "Units",
+    "filters": [
+      {
+        "name": "unit",
+        "type": "search",
+        "options": {
+          "label": "Unit Name"
+        }
+      },
+      {
+        "label": "Sizes",
+        "name": "sizes",
+        "type": "selectTag",
+        "options": {
+          "label": "Sizes"
+        }
+      },
+      {
+        "label": "Devices",
+        "name": "devices",
+        "type": "selectTag",
+        "options": {
+          "label": "Devices",
+          "onlyOptions": true,
+          "options": [
+            {
+              "label": "Desktop",
+              "value": "desktop"
+            },
+            {
+              "label": "Tablet",
+              "value": "tablet"
+            },
+            {
+              "label": "Mobile",
+              "value": "mobile"
+            }
+          ]
+        }
+      },
+      {
+        "label": "Enabled",
+        "name": "enabled",
+        "type": "switch"
+      }
+    ]
   },
   "isNewForm": true,
   "fields": [
     {
       "type": "configTable",
       "configFields": [
-        {
-          "name": "unit",
-          "label": "Name",
-          "type": "text"
-        },
-        {
-          "label": "Sizes",
-          "name": "sizes",
-          "type": "tags"
-        },
-        {
-          "label": "Devices",
-          "name": "devices",
-          "type": "devices"
-        },
-        {
-          "label": "Enabled",
-          "name": "enabled",
-          "type": "switch"
-        }
+        [
+          {
+            "name": "unit",
+            "label": "Name",
+            "type": "text"
+          },
+          {
+            "label": "Sizes",
+            "name": "sizes",
+            "type": "tags"
+          },
+          {
+            "label": "Devices",
+            "name": "devices",
+            "type": "devices"
+          },
+          {
+            "label": "Enabled",
+            "name": "enabled",
+            "type": "switch"
+          }
+        ],
+        [
+          {
+            "name": "unit",
+            "label": "Name",
+            "type": "text"
+          },
+          {
+            "label": "Sizes",
+            "name": "sizes",
+            "type": "tags"
+          },
+          {
+            "label": "Devices",
+            "name": "devices",
+            "type": "devices"
+          },
+          {
+            "label": "Enabled",
+            "name": "enabled",
+            "type": "switch"
+          }
+        ],
+        [
+          {
+            "name": "unit",
+            "label": "Name",
+            "type": "text"
+          },
+          {
+            "label": "Sizes",
+            "name": "sizes",
+            "type": "tags"
+          },
+          {
+            "label": "Devices",
+            "name": "devices",
+            "type": "devices"
+          },
+          {
+            "label": "Enabled",
+            "name": "enabled",
+            "type": "switch"
+          }
+        ],
+        [
+          {
+            "name": "unit",
+            "label": "Name",
+            "type": "text"
+          },
+          {
+            "label": "Sizes",
+            "name": "sizes",
+            "type": "tags"
+          },
+          {
+            "label": "Devices",
+            "name": "devices",
+            "type": "devices"
+          },
+          {
+            "label": "Enabled",
+            "name": "enabled",
+            "type": "switch"
+          }
+        ]
       ],
       "options": {
         "columns": [
