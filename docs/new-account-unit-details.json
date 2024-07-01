@@ -2595,6 +2595,13 @@
       },
       {
         "type": "selectTag",
+        "name": "partners",
+        "options": {
+          "label": "Partners"
+        }
+      },
+      {
+        "type": "selectTag",
         "name": "devices",
         "options": {
           "label": "Devices",
