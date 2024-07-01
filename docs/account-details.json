@@ -11,35 +11,6 @@
                         "type": "header"
                     },
                     {
-                        "type": "grid",
-                        "options": {
-                            "my": 10,
-                            "fields": [
-                                {
-                                    "label": "Link",
-                                    "type": "string"
-                                },
-                                {
-                                    "type": "link",
-                                    "label": "Units",
-                                    "options": {
-                                        "href": "../units",
-                                        "m": 10
-                                    }
-                                },
-                                {
-                                    "type": "textarea",
-                                    "label": "Text Area",
-                                    "name": "textarea",
-                                    "options": {
-                                        "width": "100%",
-                                        "fullWidth": true
-                                    }
-                                }
-                            ]
-                        }
-                    },
-                    {
                         "options": {
                             "columns": 2,
                             "fields": [
@@ -52,7 +23,11 @@
                                         "inputProps": {
                                             "readOnly": true
                                         },
-                                        "variant": "standard"
+                                        "variant": "standard",
+                                        "help": {
+                                            "content": "Required",
+                                            "icon": "asterisk"
+                                        }
                                     },
                                     "type": "text",
                                     "value": "gradesaver"
@@ -404,7 +379,13 @@
                                     "label": "Ads.txt Outside LNGTD",
                                     "name": "adstxt_outside_lngtd",
                                     "options": {
-                                        "color": "secondary"
+                                        "color": "secondary",
+                                        "help": {
+                                            "content": "Required",
+                                            "icon": "asterisk",
+                                            "placement": "right",
+                                            "size": "sm"
+                                        }
                                     },
                                     "type": "switch",
                                     "value": false
