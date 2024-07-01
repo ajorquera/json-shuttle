@@ -1,218 +1,2878 @@
 {
+  "fields": [
+    {
+      "label": "",
+      "options": {
+        "columns": [
+          {
+            "label": "Unit",
+            "name": "unit",
+            "type": "text"
+          },
+          {
+            "label": "Sizes",
+            "name": "sizes",
+            "type": "tags"
+          },
+          {
+            "label": "Device",
+            "name": "devices",
+            "type": "devices"
+          },
+          {
+            "label": "Enabled",
+            "name": "enabled",
+            "type": "switch"
+          }
+        ],
+        "configFields": [
+          [
+            {
+              "label": "Unit Settings",
+              "options": {
+                "variant": "h2"
+              },
+              "type": "header"
+            },
+            {
+              "label": "Name",
+              "name": "unit",
+              "options": {
+                "fullWidth": true,
+                "variant": "standard"
+              },
+              "type": "text"
+            },
+            {
+              "label": "Enabled",
+              "name": "enabled",
+              "options": {
+                "fullWidth": true,
+                "variant": "secondary"
+              },
+              "type": "switch"
+            },
+            {
+              "label": "GAM Unit ID",
+              "name": "gam_id",
+              "options": {
+                "fullWidth": true,
+                "inputProps": {
+                  "readOnly": true
+                },
+                "variant": "standard"
+              },
+              "type": "text"
+            },
+            {
+              "label": "GAM Path",
+              "name": "gam_path",
+              "options": {
+                "fullWidth": true,
+                "inputProps": {
+                  "readOnly": true
+                },
+                "variant": "standard"
+              },
+              "type": "text"
+            },
+            {
+              "label": "Element ID",
+              "name": "element_id",
+              "options": {
+                "fullWidth": true,
+                "variant": "standard"
+              },
+              "type": "text"
+            },
+            {
+              "label": "Sections",
+              "name": "sections",
+              "options": {
+                "fullWidth": true,
+                "options": [
+                  {
+                    "label": "default",
+                    "value": "4"
+                  }
+                ]
+              },
+              "type": "selectTag"
+            },
+            {
+              "label": "Sizes",
+              "name": "size_override",
+              "options": {
+                "fullWidth": true,
+                "options": [
+                  {
+                    "label": "728x90",
+                    "value": "1"
+                  },
+                  {
+                    "label": "300x250",
+                    "value": "2"
+                  },
+                  {
+                    "label": "160x600",
+                    "value": "3"
+                  },
+                  {
+                    "label": "320x50",
+                    "value": "4"
+                  },
+                  {
+                    "label": "300x600",
+                    "value": "5"
+                  },
+                  {
+                    "label": "1x1",
+                    "value": "6"
+                  },
+                  {
+                    "label": "970x90",
+                    "value": "7"
+                  },
+                  {
+                    "label": "320x100",
+                    "value": "8"
+                  },
+                  {
+                    "label": "970x250",
+                    "value": "9"
+                  },
+                  {
+                    "label": "300x1050",
+                    "value": "10"
+                  },
+                  {
+                    "label": "468x60",
+                    "value": "11"
+                  },
+                  {
+                    "label": "970x66",
+                    "value": "12"
+                  },
+                  {
+                    "label": "400x300v",
+                    "value": "13"
+                  },
+                  {
+                    "label": "640x480v",
+                    "value": "14"
+                  },
+                  {
+                    "label": "320x480",
+                    "value": "15"
+                  },
+                  {
+                    "label": "480x320",
+                    "value": "16"
+                  },
+                  {
+                    "label": "768x1024",
+                    "value": "17"
+                  },
+                  {
+                    "label": "1024x768",
+                    "value": "18"
+                  },
+                  {
+                    "label": "1x1597",
+                    "value": "19"
+                  },
+                  {
+                    "label": "2x2",
+                    "value": "20"
+                  },
+                  {
+                    "label": "3x3",
+                    "value": "21"
+                  },
+                  {
+                    "label": "10x10",
+                    "value": "22"
+                  },
+                  {
+                    "label": "11x11",
+                    "value": "23"
+                  },
+                  {
+                    "label": "88x31",
+                    "value": "24"
+                  },
+                  {
+                    "label": "94x19",
+                    "value": "25"
+                  },
+                  {
+                    "label": "100x120",
+                    "value": "26"
+                  },
+                  {
+                    "label": "120x15",
+                    "value": "27"
+                  },
+                  {
+                    "label": "120x20",
+                    "value": "28"
+                  },
+                  {
+                    "label": "120x60",
+                    "value": "29"
+                  },
+                  {
+                    "label": "120x240",
+                    "value": "30"
+                  },
+                  {
+                    "label": "120x600",
+                    "value": "31"
+                  },
+                  {
+                    "label": "180x150",
+                    "value": "32"
+                  },
+                  {
+                    "label": "216x36",
+                    "value": "33"
+                  },
+                  {
+                    "label": "234x60",
+                    "value": "34"
+                  },
+                  {
+                    "label": "300x50",
+                    "value": "35"
+                  },
+                  {
+                    "label": "300x75",
+                    "value": "36"
+                  },
+                  {
+                    "label": "300x100",
+                    "value": "37"
+                  },
+                  {
+                    "label": "300x150",
+                    "value": "38"
+                  },
+                  {
+                    "label": "300x175",
+                    "value": "39"
+                  },
+                  {
+                    "label": "490x25",
+                    "value": "40"
+                  },
+                  {
+                    "label": "500x300",
+                    "value": "41"
+                  },
+                  {
+                    "label": "640x50",
+                    "value": "42"
+                  },
+                  {
+                    "label": "640x300",
+                    "value": "43"
+                  },
+                  {
+                    "label": "850x30",
+                    "value": "44"
+                  },
+                  {
+                    "label": "980x30",
+                    "value": "45"
+                  },
+                  {
+                    "label": "1x1599",
+                    "value": "46"
+                  },
+                  {
+                    "label": "768x70",
+                    "value": "47"
+                  },
+                  {
+                    "label": "1024x70",
+                    "value": "48"
+                  },
+                  {
+                    "label": "224x90",
+                    "value": "49"
+                  },
+                  {
+                    "label": "400x300",
+                    "value": "50"
+                  },
+                  {
+                    "label": "480x32",
+                    "value": "51"
+                  },
+                  {
+                    "label": "189x189",
+                    "value": "52"
+                  },
+                  {
+                    "label": "200x200",
+                    "value": "53"
+                  },
+                  {
+                    "label": "250x250",
+                    "value": "54"
+                  },
+                  {
+                    "label": "12x12",
+                    "value": "55"
+                  },
+                  {
+                    "label": "120x40",
+                    "value": "56"
+                  },
+                  {
+                    "label": "320x250",
+                    "value": "57"
+                  },
+                  {
+                    "label": "250x50",
+                    "value": "58"
+                  },
+                  {
+                    "label": "2500x250",
+                    "value": "59"
+                  },
+                  {
+                    "label": "768x90",
+                    "value": "60"
+                  },
+                  {
+                    "label": "698x1024",
+                    "value": "61"
+                  },
+                  {
+                    "label": "300x135",
+                    "value": "62"
+                  },
+                  {
+                    "label": "216x35",
+                    "value": "63"
+                  },
+                  {
+                    "label": "1024x71",
+                    "value": "64"
+                  },
+                  {
+                    "label": "1024x72",
+                    "value": "65"
+                  },
+                  {
+                    "label": "1024x79",
+                    "value": "66"
+                  },
+                  {
+                    "label": "1024x95",
+                    "value": "67"
+                  },
+                  {
+                    "label": "1024x96",
+                    "value": "68"
+                  },
+                  {
+                    "label": "1024x97",
+                    "value": "69"
+                  },
+                  {
+                    "label": "1024x98",
+                    "value": "70"
+                  },
+                  {
+                    "label": "1024x99",
+                    "value": "71"
+                  },
+                  {
+                    "label": "1024x100",
+                    "value": "72"
+                  },
+                  {
+                    "label": "1024x101",
+                    "value": "73"
+                  },
+                  {
+                    "label": "1024x102",
+                    "value": "74"
+                  },
+                  {
+                    "label": "1024x103",
+                    "value": "75"
+                  },
+                  {
+                    "label": "1024x104",
+                    "value": "76"
+                  },
+                  {
+                    "label": "1024x120",
+                    "value": "77"
+                  },
+                  {
+                    "label": "1024x121",
+                    "value": "78"
+                  },
+                  {
+                    "label": "1024x160",
+                    "value": "79"
+                  },
+                  {
+                    "label": "1024x161",
+                    "value": "80"
+                  },
+                  {
+                    "label": "1024x163",
+                    "value": "81"
+                  },
+                  {
+                    "label": "1024x164",
+                    "value": "82"
+                  },
+                  {
+                    "label": "1024x173",
+                    "value": "83"
+                  },
+                  {
+                    "label": "1024x198",
+                    "value": "84"
+                  },
+                  {
+                    "label": "1024x199",
+                    "value": "85"
+                  },
+                  {
+                    "label": "1024x200",
+                    "value": "86"
+                  },
+                  {
+                    "label": "1024x201",
+                    "value": "87"
+                  },
+                  {
+                    "label": "1024x202",
+                    "value": "88"
+                  },
+                  {
+                    "label": "1024x203",
+                    "value": "89"
+                  },
+                  {
+                    "label": "1024x204",
+                    "value": "90"
+                  },
+                  {
+                    "label": "1024x205",
+                    "value": "91"
+                  },
+                  {
+                    "label": "1024x206",
+                    "value": "92"
+                  },
+                  {
+                    "label": "1024x207",
+                    "value": "93"
+                  },
+                  {
+                    "label": "1024x208",
+                    "value": "94"
+                  },
+                  {
+                    "label": "1024x209",
+                    "value": "95"
+                  },
+                  {
+                    "label": "1024x211",
+                    "value": "96"
+                  },
+                  {
+                    "label": "1024x262",
+                    "value": "97"
+                  },
+                  {
+                    "label": "1024x269",
+                    "value": "98"
+                  },
+                  {
+                    "label": "1024x270",
+                    "value": "99"
+                  },
+                  {
+                    "label": "1024x271",
+                    "value": "100"
+                  },
+                  {
+                    "label": "1024x305",
+                    "value": "101"
+                  },
+                  {
+                    "label": "1024x334",
+                    "value": "102"
+                  },
+                  {
+                    "label": "1024x389",
+                    "value": "103"
+                  },
+                  {
+                    "label": "1024x390",
+                    "value": "104"
+                  },
+                  {
+                    "label": "1024x391",
+                    "value": "105"
+                  },
+                  {
+                    "label": "1024x392",
+                    "value": "106"
+                  },
+                  {
+                    "label": "1024x411",
+                    "value": "107"
+                  },
+                  {
+                    "label": "1024x418",
+                    "value": "108"
+                  },
+                  {
+                    "label": "1024x421",
+                    "value": "109"
+                  },
+                  {
+                    "label": "1024x422",
+                    "value": "110"
+                  },
+                  {
+                    "label": "1024x423",
+                    "value": "111"
+                  },
+                  {
+                    "label": "1024x424",
+                    "value": "112"
+                  },
+                  {
+                    "label": "1024x425",
+                    "value": "113"
+                  },
+                  {
+                    "label": "1024x426",
+                    "value": "114"
+                  },
+                  {
+                    "label": "1024x427",
+                    "value": "115"
+                  },
+                  {
+                    "label": "1024x428",
+                    "value": "116"
+                  },
+                  {
+                    "label": "1024x429",
+                    "value": "117"
+                  },
+                  {
+                    "label": "1024x430",
+                    "value": "118"
+                  },
+                  {
+                    "label": "1024x431",
+                    "value": "119"
+                  },
+                  {
+                    "label": "1024x88",
+                    "value": "120"
+                  },
+                  {
+                    "label": "640x250",
+                    "value": "121"
+                  },
+                  {
+                    "label": "111x11",
+                    "value": "122"
+                  },
+                  {
+                    "label": "468x25",
+                    "value": "123"
+                  },
+                  {
+                    "label": "850x31",
+                    "value": "124"
+                  },
+                  {
+                    "label": "320x240",
+                    "value": "125"
+                  },
+                  {
+                    "label": "180x250",
+                    "value": "126"
+                  },
+                  {
+                    "label": "320x150",
+                    "value": "127"
+                  },
+                  {
+                    "label": "120x160",
+                    "value": "128"
+                  },
+                  {
+                    "label": "125x125",
+                    "value": "129"
+                  },
+                  {
+                    "label": "950x30",
+                    "value": "130"
+                  },
+                  {
+                    "label": "168x28",
+                    "value": "131"
+                  },
+                  {
+                    "label": "224x60",
+                    "value": "132"
+                  },
+                  {
+                    "label": "224x168",
+                    "value": "133"
+                  },
+                  {
+                    "label": "100x175",
+                    "value": "134"
+                  },
+                  {
+                    "label": "960x320",
+                    "value": "135"
+                  },
+                  {
+                    "label": "4x4",
+                    "value": "149"
+                  },
+                  {
+                    "label": "5x5",
+                    "value": "150"
+                  },
+                  {
+                    "label": "6x6",
+                    "value": "151"
+                  },
+                  {
+                    "label": "7x7",
+                    "value": "152"
+                  },
+                  {
+                    "label": "320x51",
+                    "value": "153"
+                  },
+                  {
+                    "label": "768x50",
+                    "value": "154"
+                  },
+                  {
+                    "label": "336x280",
+                    "value": "155"
+                  },
+                  {
+                    "label": "728x728",
+                    "value": "156"
+                  },
+                  {
+                    "label": "970x970",
+                    "value": "157"
+                  },
+                  {
+                    "label": "300x300",
+                    "value": "158"
+                  },
+                  {
+                    "label": "160x160",
+                    "value": "159"
+                  },
+                  {
+                    "label": "320x320",
+                    "value": "160"
+                  }
+                ]
+              },
+              "type": "selectTag"
+            },
+            {
+              "label": "Devices",
+              "options": {
+                "variant": "h2"
+              },
+              "type": "header"
+            },
+            {
+              "label": "Enabled for Desktop",
+              "name": "device_type_desktop",
+              "options": {
+                "fullWidth": true,
+                "variant": "secondary"
+              },
+              "type": "switch"
+            },
+            {
+              "label": "Enabled for Mobile",
+              "name": "device_type_mobile",
+              "options": {
+                "fullWidth": true,
+                "variant": "secondary"
+              },
+              "type": "switch"
+            },
+            {
+              "label": "Enabled for Tablet",
+              "name": "device_type_tablet",
+              "options": {
+                "fullWidth": true,
+                "variant": "secondary"
+              },
+              "type": "switch"
+            },
+            {
+              "label": "Optional Settings",
+              "options": {
+                "variant": "h2"
+              },
+              "type": "header"
+            },
+            {
+              "label": "Enable Refresh",
+              "name": "refresh",
+              "options": {
+                "fullWidth": true,
+                "variant": "secondary"
+              },
+              "type": "switch"
+            },
+            {
+              "label": "Enable Lazy Load",
+              "name": "lazy_load",
+              "options": {
+                "fullWidth": true,
+                "variant": "secondary"
+              },
+              "type": "switch"
+            },
+            {
+              "label": "Unit Configuration",
+              "options": {
+                "variant": "h2"
+              },
+              "type": "header"
+            },
+            {
+              "label": "Unit Type",
+              "name": "unit_type",
+              "options": {
+                "fullWidth": true,
+                "options": [
+                  {
+                    "label": "default",
+                    "value": ""
+                  },
+                  {
+                    "label": "sticky banner",
+                    "value": "banner-sticky"
+                  },
+                  {
+                    "label": "desktop anchor",
+                    "value": "danchor"
+                  },
+                  {
+                    "label": "mobile anchor",
+                    "value": "manchor"
+                  },
+                  {
+                    "label": "video",
+                    "value": "video"
+                  },
+                  {
+                    "label": "video with third party player",
+                    "value": "video-third-party"
+                  },
+                  {
+                    "label": "video auction only",
+                    "value": "video-auction-only"
+                  },
+                  {
+                    "label": "sidebar sticky",
+                    "value": "sidebar-sticky"
+                  },
+                  {
+                    "label": "1x1",
+                    "value": "1x1"
+                  },
+                  {
+                    "label": "out-of-page",
+                    "value": "out-of-page"
+                  },
+                  {
+                    "label": "interstitial-gam",
+                    "value": "interstitial"
+                  },
+                  {
+                    "label": "moment-display",
+                    "value": "moment-display"
+                  },
+                  {
+                    "label": "moment-video",
+                    "value": "moment-video"
+                  },
+                  {
+                    "label": "moment-video-instream",
+                    "value": "moment-video-instream"
+                  },
+                  {
+                    "label": "outstream",
+                    "value": "outstream"
+                  },
+                  {
+                    "label": "outstream in banner",
+                    "value": "outstream-in-banner"
+                  },
+                  {
+                    "label": "dynamic-parent",
+                    "value": "dynamic-parent"
+                  }
+                ]
+              },
+              "type": "select"
+            },
+            {
+              "name": "header_unit_id",
+              "type": "hidden"
+            }
+          ],
+          [
+            {
+              "label": "Unit Settings",
+              "options": {
+                "variant": "h2"
+              },
+              "type": "header"
+            },
+            {
+              "label": "Name",
+              "name": "unit",
+              "options": {
+                "fullWidth": true,
+                "variant": "standard"
+              },
+              "type": "text"
+            },
+            {
+              "label": "Enabled",
+              "name": "enabled",
+              "options": {
+                "fullWidth": true,
+                "variant": "secondary"
+              },
+              "type": "switch"
+            },
+            {
+              "label": "GAM Unit ID",
+              "name": "gam_id",
+              "options": {
+                "fullWidth": true,
+                "inputProps": {
+                  "readOnly": true
+                },
+                "variant": "standard"
+              },
+              "type": "text"
+            },
+            {
+              "label": "GAM Path",
+              "name": "gam_path",
+              "options": {
+                "fullWidth": true,
+                "inputProps": {
+                  "readOnly": true
+                },
+                "variant": "standard"
+              },
+              "type": "text"
+            },
+            {
+              "label": "Element ID",
+              "name": "element_id",
+              "options": {
+                "fullWidth": true,
+                "variant": "standard"
+              },
+              "type": "text"
+            },
+            {
+              "label": "Sections",
+              "name": "sections",
+              "options": {
+                "fullWidth": true,
+                "options": [
+                  {
+                    "label": "default",
+                    "value": "4"
+                  }
+                ]
+              },
+              "type": "selectTag"
+            },
+            {
+              "label": "Sizes",
+              "name": "size_override",
+              "options": {
+                "fullWidth": true,
+                "options": [
+                  {
+                    "label": "728x90",
+                    "value": "1"
+                  },
+                  {
+                    "label": "300x250",
+                    "value": "2"
+                  },
+                  {
+                    "label": "160x600",
+                    "value": "3"
+                  },
+                  {
+                    "label": "320x50",
+                    "value": "4"
+                  },
+                  {
+                    "label": "300x600",
+                    "value": "5"
+                  },
+                  {
+                    "label": "1x1",
+                    "value": "6"
+                  },
+                  {
+                    "label": "970x90",
+                    "value": "7"
+                  },
+                  {
+                    "label": "320x100",
+                    "value": "8"
+                  },
+                  {
+                    "label": "970x250",
+                    "value": "9"
+                  },
+                  {
+                    "label": "300x1050",
+                    "value": "10"
+                  },
+                  {
+                    "label": "468x60",
+                    "value": "11"
+                  },
+                  {
+                    "label": "970x66",
+                    "value": "12"
+                  },
+                  {
+                    "label": "400x300v",
+                    "value": "13"
+                  },
+                  {
+                    "label": "640x480v",
+                    "value": "14"
+                  },
+                  {
+                    "label": "320x480",
+                    "value": "15"
+                  },
+                  {
+                    "label": "480x320",
+                    "value": "16"
+                  },
+                  {
+                    "label": "768x1024",
+                    "value": "17"
+                  },
+                  {
+                    "label": "1024x768",
+                    "value": "18"
+                  },
+                  {
+                    "label": "1x1597",
+                    "value": "19"
+                  },
+                  {
+                    "label": "2x2",
+                    "value": "20"
+                  },
+                  {
+                    "label": "3x3",
+                    "value": "21"
+                  },
+                  {
+                    "label": "10x10",
+                    "value": "22"
+                  },
+                  {
+                    "label": "11x11",
+                    "value": "23"
+                  },
+                  {
+                    "label": "88x31",
+                    "value": "24"
+                  },
+                  {
+                    "label": "94x19",
+                    "value": "25"
+                  },
+                  {
+                    "label": "100x120",
+                    "value": "26"
+                  },
+                  {
+                    "label": "120x15",
+                    "value": "27"
+                  },
+                  {
+                    "label": "120x20",
+                    "value": "28"
+                  },
+                  {
+                    "label": "120x60",
+                    "value": "29"
+                  },
+                  {
+                    "label": "120x240",
+                    "value": "30"
+                  },
+                  {
+                    "label": "120x600",
+                    "value": "31"
+                  },
+                  {
+                    "label": "180x150",
+                    "value": "32"
+                  },
+                  {
+                    "label": "216x36",
+                    "value": "33"
+                  },
+                  {
+                    "label": "234x60",
+                    "value": "34"
+                  },
+                  {
+                    "label": "300x50",
+                    "value": "35"
+                  },
+                  {
+                    "label": "300x75",
+                    "value": "36"
+                  },
+                  {
+                    "label": "300x100",
+                    "value": "37"
+                  },
+                  {
+                    "label": "300x150",
+                    "value": "38"
+                  },
+                  {
+                    "label": "300x175",
+                    "value": "39"
+                  },
+                  {
+                    "label": "490x25",
+                    "value": "40"
+                  },
+                  {
+                    "label": "500x300",
+                    "value": "41"
+                  },
+                  {
+                    "label": "640x50",
+                    "value": "42"
+                  },
+                  {
+                    "label": "640x300",
+                    "value": "43"
+                  },
+                  {
+                    "label": "850x30",
+                    "value": "44"
+                  },
+                  {
+                    "label": "980x30",
+                    "value": "45"
+                  },
+                  {
+                    "label": "1x1599",
+                    "value": "46"
+                  },
+                  {
+                    "label": "768x70",
+                    "value": "47"
+                  },
+                  {
+                    "label": "1024x70",
+                    "value": "48"
+                  },
+                  {
+                    "label": "224x90",
+                    "value": "49"
+                  },
+                  {
+                    "label": "400x300",
+                    "value": "50"
+                  },
+                  {
+                    "label": "480x32",
+                    "value": "51"
+                  },
+                  {
+                    "label": "189x189",
+                    "value": "52"
+                  },
+                  {
+                    "label": "200x200",
+                    "value": "53"
+                  },
+                  {
+                    "label": "250x250",
+                    "value": "54"
+                  },
+                  {
+                    "label": "12x12",
+                    "value": "55"
+                  },
+                  {
+                    "label": "120x40",
+                    "value": "56"
+                  },
+                  {
+                    "label": "320x250",
+                    "value": "57"
+                  },
+                  {
+                    "label": "250x50",
+                    "value": "58"
+                  },
+                  {
+                    "label": "2500x250",
+                    "value": "59"
+                  },
+                  {
+                    "label": "768x90",
+                    "value": "60"
+                  },
+                  {
+                    "label": "698x1024",
+                    "value": "61"
+                  },
+                  {
+                    "label": "300x135",
+                    "value": "62"
+                  },
+                  {
+                    "label": "216x35",
+                    "value": "63"
+                  },
+                  {
+                    "label": "1024x71",
+                    "value": "64"
+                  },
+                  {
+                    "label": "1024x72",
+                    "value": "65"
+                  },
+                  {
+                    "label": "1024x79",
+                    "value": "66"
+                  },
+                  {
+                    "label": "1024x95",
+                    "value": "67"
+                  },
+                  {
+                    "label": "1024x96",
+                    "value": "68"
+                  },
+                  {
+                    "label": "1024x97",
+                    "value": "69"
+                  },
+                  {
+                    "label": "1024x98",
+                    "value": "70"
+                  },
+                  {
+                    "label": "1024x99",
+                    "value": "71"
+                  },
+                  {
+                    "label": "1024x100",
+                    "value": "72"
+                  },
+                  {
+                    "label": "1024x101",
+                    "value": "73"
+                  },
+                  {
+                    "label": "1024x102",
+                    "value": "74"
+                  },
+                  {
+                    "label": "1024x103",
+                    "value": "75"
+                  },
+                  {
+                    "label": "1024x104",
+                    "value": "76"
+                  },
+                  {
+                    "label": "1024x120",
+                    "value": "77"
+                  },
+                  {
+                    "label": "1024x121",
+                    "value": "78"
+                  },
+                  {
+                    "label": "1024x160",
+                    "value": "79"
+                  },
+                  {
+                    "label": "1024x161",
+                    "value": "80"
+                  },
+                  {
+                    "label": "1024x163",
+                    "value": "81"
+                  },
+                  {
+                    "label": "1024x164",
+                    "value": "82"
+                  },
+                  {
+                    "label": "1024x173",
+                    "value": "83"
+                  },
+                  {
+                    "label": "1024x198",
+                    "value": "84"
+                  },
+                  {
+                    "label": "1024x199",
+                    "value": "85"
+                  },
+                  {
+                    "label": "1024x200",
+                    "value": "86"
+                  },
+                  {
+                    "label": "1024x201",
+                    "value": "87"
+                  },
+                  {
+                    "label": "1024x202",
+                    "value": "88"
+                  },
+                  {
+                    "label": "1024x203",
+                    "value": "89"
+                  },
+                  {
+                    "label": "1024x204",
+                    "value": "90"
+                  },
+                  {
+                    "label": "1024x205",
+                    "value": "91"
+                  },
+                  {
+                    "label": "1024x206",
+                    "value": "92"
+                  },
+                  {
+                    "label": "1024x207",
+                    "value": "93"
+                  },
+                  {
+                    "label": "1024x208",
+                    "value": "94"
+                  },
+                  {
+                    "label": "1024x209",
+                    "value": "95"
+                  },
+                  {
+                    "label": "1024x211",
+                    "value": "96"
+                  },
+                  {
+                    "label": "1024x262",
+                    "value": "97"
+                  },
+                  {
+                    "label": "1024x269",
+                    "value": "98"
+                  },
+                  {
+                    "label": "1024x270",
+                    "value": "99"
+                  },
+                  {
+                    "label": "1024x271",
+                    "value": "100"
+                  },
+                  {
+                    "label": "1024x305",
+                    "value": "101"
+                  },
+                  {
+                    "label": "1024x334",
+                    "value": "102"
+                  },
+                  {
+                    "label": "1024x389",
+                    "value": "103"
+                  },
+                  {
+                    "label": "1024x390",
+                    "value": "104"
+                  },
+                  {
+                    "label": "1024x391",
+                    "value": "105"
+                  },
+                  {
+                    "label": "1024x392",
+                    "value": "106"
+                  },
+                  {
+                    "label": "1024x411",
+                    "value": "107"
+                  },
+                  {
+                    "label": "1024x418",
+                    "value": "108"
+                  },
+                  {
+                    "label": "1024x421",
+                    "value": "109"
+                  },
+                  {
+                    "label": "1024x422",
+                    "value": "110"
+                  },
+                  {
+                    "label": "1024x423",
+                    "value": "111"
+                  },
+                  {
+                    "label": "1024x424",
+                    "value": "112"
+                  },
+                  {
+                    "label": "1024x425",
+                    "value": "113"
+                  },
+                  {
+                    "label": "1024x426",
+                    "value": "114"
+                  },
+                  {
+                    "label": "1024x427",
+                    "value": "115"
+                  },
+                  {
+                    "label": "1024x428",
+                    "value": "116"
+                  },
+                  {
+                    "label": "1024x429",
+                    "value": "117"
+                  },
+                  {
+                    "label": "1024x430",
+                    "value": "118"
+                  },
+                  {
+                    "label": "1024x431",
+                    "value": "119"
+                  },
+                  {
+                    "label": "1024x88",
+                    "value": "120"
+                  },
+                  {
+                    "label": "640x250",
+                    "value": "121"
+                  },
+                  {
+                    "label": "111x11",
+                    "value": "122"
+                  },
+                  {
+                    "label": "468x25",
+                    "value": "123"
+                  },
+                  {
+                    "label": "850x31",
+                    "value": "124"
+                  },
+                  {
+                    "label": "320x240",
+                    "value": "125"
+                  },
+                  {
+                    "label": "180x250",
+                    "value": "126"
+                  },
+                  {
+                    "label": "320x150",
+                    "value": "127"
+                  },
+                  {
+                    "label": "120x160",
+                    "value": "128"
+                  },
+                  {
+                    "label": "125x125",
+                    "value": "129"
+                  },
+                  {
+                    "label": "950x30",
+                    "value": "130"
+                  },
+                  {
+                    "label": "168x28",
+                    "value": "131"
+                  },
+                  {
+                    "label": "224x60",
+                    "value": "132"
+                  },
+                  {
+                    "label": "224x168",
+                    "value": "133"
+                  },
+                  {
+                    "label": "100x175",
+                    "value": "134"
+                  },
+                  {
+                    "label": "960x320",
+                    "value": "135"
+                  },
+                  {
+                    "label": "4x4",
+                    "value": "149"
+                  },
+                  {
+                    "label": "5x5",
+                    "value": "150"
+                  },
+                  {
+                    "label": "6x6",
+                    "value": "151"
+                  },
+                  {
+                    "label": "7x7",
+                    "value": "152"
+                  },
+                  {
+                    "label": "320x51",
+                    "value": "153"
+                  },
+                  {
+                    "label": "768x50",
+                    "value": "154"
+                  },
+                  {
+                    "label": "336x280",
+                    "value": "155"
+                  },
+                  {
+                    "label": "728x728",
+                    "value": "156"
+                  },
+                  {
+                    "label": "970x970",
+                    "value": "157"
+                  },
+                  {
+                    "label": "300x300",
+                    "value": "158"
+                  },
+                  {
+                    "label": "160x160",
+                    "value": "159"
+                  },
+                  {
+                    "label": "320x320",
+                    "value": "160"
+                  }
+                ]
+              },
+              "type": "selectTag"
+            },
+            {
+              "label": "Devices",
+              "options": {
+                "variant": "h2"
+              },
+              "type": "header"
+            },
+            {
+              "label": "Enabled for Desktop",
+              "name": "device_type_desktop",
+              "options": {
+                "fullWidth": true,
+                "variant": "secondary"
+              },
+              "type": "switch"
+            },
+            {
+              "label": "Enabled for Mobile",
+              "name": "device_type_mobile",
+              "options": {
+                "fullWidth": true,
+                "variant": "secondary"
+              },
+              "type": "switch"
+            },
+            {
+              "label": "Enabled for Tablet",
+              "name": "device_type_tablet",
+              "options": {
+                "fullWidth": true,
+                "variant": "secondary"
+              },
+              "type": "switch"
+            },
+            {
+              "label": "Optional Settings",
+              "options": {
+                "variant": "h2"
+              },
+              "type": "header"
+            },
+            {
+              "label": "Enable Refresh",
+              "name": "refresh",
+              "options": {
+                "fullWidth": true,
+                "variant": "secondary"
+              },
+              "type": "switch"
+            },
+            {
+              "label": "Enable Lazy Load",
+              "name": "lazy_load",
+              "options": {
+                "fullWidth": true,
+                "variant": "secondary"
+              },
+              "type": "switch"
+            },
+            {
+              "label": "Unit Configuration",
+              "options": {
+                "variant": "h2"
+              },
+              "type": "header"
+            },
+            {
+              "label": "Unit Type",
+              "name": "unit_type",
+              "options": {
+                "fullWidth": true,
+                "options": [
+                  {
+                    "label": "default",
+                    "value": ""
+                  },
+                  {
+                    "label": "sticky banner",
+                    "value": "banner-sticky"
+                  },
+                  {
+                    "label": "desktop anchor",
+                    "value": "danchor"
+                  },
+                  {
+                    "label": "mobile anchor",
+                    "value": "manchor"
+                  },
+                  {
+                    "label": "video",
+                    "value": "video"
+                  },
+                  {
+                    "label": "video with third party player",
+                    "value": "video-third-party"
+                  },
+                  {
+                    "label": "video auction only",
+                    "value": "video-auction-only"
+                  },
+                  {
+                    "label": "sidebar sticky",
+                    "value": "sidebar-sticky"
+                  },
+                  {
+                    "label": "1x1",
+                    "value": "1x1"
+                  },
+                  {
+                    "label": "out-of-page",
+                    "value": "out-of-page"
+                  },
+                  {
+                    "label": "interstitial-gam",
+                    "value": "interstitial"
+                  },
+                  {
+                    "label": "moment-display",
+                    "value": "moment-display"
+                  },
+                  {
+                    "label": "moment-video",
+                    "value": "moment-video"
+                  },
+                  {
+                    "label": "moment-video-instream",
+                    "value": "moment-video-instream"
+                  },
+                  {
+                    "label": "outstream",
+                    "value": "outstream"
+                  },
+                  {
+                    "label": "outstream in banner",
+                    "value": "outstream-in-banner"
+                  },
+                  {
+                    "label": "dynamic-parent",
+                    "value": "dynamic-parent"
+                  }
+                ]
+              },
+              "type": "select"
+            },
+            {
+              "name": "header_unit_id",
+              "type": "hidden"
+            }
+          ],
+          [
+            {
+              "label": "Unit Settings",
+              "options": {
+                "variant": "h2"
+              },
+              "type": "header"
+            },
+            {
+              "label": "Name",
+              "name": "unit",
+              "options": {
+                "fullWidth": true,
+                "variant": "standard"
+              },
+              "type": "text"
+            },
+            {
+              "label": "Enabled",
+              "name": "enabled",
+              "options": {
+                "fullWidth": true,
+                "variant": "secondary"
+              },
+              "type": "switch"
+            },
+            {
+              "label": "GAM Unit ID",
+              "name": "gam_id",
+              "options": {
+                "fullWidth": true,
+                "inputProps": {
+                  "readOnly": true
+                },
+                "variant": "standard"
+              },
+              "type": "text"
+            },
+            {
+              "label": "GAM Path",
+              "name": "gam_path",
+              "options": {
+                "fullWidth": true,
+                "inputProps": {
+                  "readOnly": true
+                },
+                "variant": "standard"
+              },
+              "type": "text"
+            },
+            {
+              "label": "Element ID",
+              "name": "element_id",
+              "options": {
+                "fullWidth": true,
+                "variant": "standard"
+              },
+              "type": "text"
+            },
+            {
+              "label": "Sections",
+              "name": "sections",
+              "options": {
+                "fullWidth": true,
+                "options": [
+                  {
+                    "label": "default",
+                    "value": "4"
+                  }
+                ]
+              },
+              "type": "selectTag"
+            },
+            {
+              "label": "Sizes",
+              "name": "size_override",
+              "options": {
+                "fullWidth": true,
+                "options": [
+                  {
+                    "label": "728x90",
+                    "value": "1"
+                  },
+                  {
+                    "label": "300x250",
+                    "value": "2"
+                  },
+                  {
+                    "label": "160x600",
+                    "value": "3"
+                  },
+                  {
+                    "label": "320x50",
+                    "value": "4"
+                  },
+                  {
+                    "label": "300x600",
+                    "value": "5"
+                  },
+                  {
+                    "label": "1x1",
+                    "value": "6"
+                  },
+                  {
+                    "label": "970x90",
+                    "value": "7"
+                  },
+                  {
+                    "label": "320x100",
+                    "value": "8"
+                  },
+                  {
+                    "label": "970x250",
+                    "value": "9"
+                  },
+                  {
+                    "label": "300x1050",
+                    "value": "10"
+                  },
+                  {
+                    "label": "468x60",
+                    "value": "11"
+                  },
+                  {
+                    "label": "970x66",
+                    "value": "12"
+                  },
+                  {
+                    "label": "400x300v",
+                    "value": "13"
+                  },
+                  {
+                    "label": "640x480v",
+                    "value": "14"
+                  },
+                  {
+                    "label": "320x480",
+                    "value": "15"
+                  },
+                  {
+                    "label": "480x320",
+                    "value": "16"
+                  },
+                  {
+                    "label": "768x1024",
+                    "value": "17"
+                  },
+                  {
+                    "label": "1024x768",
+                    "value": "18"
+                  },
+                  {
+                    "label": "1x1597",
+                    "value": "19"
+                  },
+                  {
+                    "label": "2x2",
+                    "value": "20"
+                  },
+                  {
+                    "label": "3x3",
+                    "value": "21"
+                  },
+                  {
+                    "label": "10x10",
+                    "value": "22"
+                  },
+                  {
+                    "label": "11x11",
+                    "value": "23"
+                  },
+                  {
+                    "label": "88x31",
+                    "value": "24"
+                  },
+                  {
+                    "label": "94x19",
+                    "value": "25"
+                  },
+                  {
+                    "label": "100x120",
+                    "value": "26"
+                  },
+                  {
+                    "label": "120x15",
+                    "value": "27"
+                  },
+                  {
+                    "label": "120x20",
+                    "value": "28"
+                  },
+                  {
+                    "label": "120x60",
+                    "value": "29"
+                  },
+                  {
+                    "label": "120x240",
+                    "value": "30"
+                  },
+                  {
+                    "label": "120x600",
+                    "value": "31"
+                  },
+                  {
+                    "label": "180x150",
+                    "value": "32"
+                  },
+                  {
+                    "label": "216x36",
+                    "value": "33"
+                  },
+                  {
+                    "label": "234x60",
+                    "value": "34"
+                  },
+                  {
+                    "label": "300x50",
+                    "value": "35"
+                  },
+                  {
+                    "label": "300x75",
+                    "value": "36"
+                  },
+                  {
+                    "label": "300x100",
+                    "value": "37"
+                  },
+                  {
+                    "label": "300x150",
+                    "value": "38"
+                  },
+                  {
+                    "label": "300x175",
+                    "value": "39"
+                  },
+                  {
+                    "label": "490x25",
+                    "value": "40"
+                  },
+                  {
+                    "label": "500x300",
+                    "value": "41"
+                  },
+                  {
+                    "label": "640x50",
+                    "value": "42"
+                  },
+                  {
+                    "label": "640x300",
+                    "value": "43"
+                  },
+                  {
+                    "label": "850x30",
+                    "value": "44"
+                  },
+                  {
+                    "label": "980x30",
+                    "value": "45"
+                  },
+                  {
+                    "label": "1x1599",
+                    "value": "46"
+                  },
+                  {
+                    "label": "768x70",
+                    "value": "47"
+                  },
+                  {
+                    "label": "1024x70",
+                    "value": "48"
+                  },
+                  {
+                    "label": "224x90",
+                    "value": "49"
+                  },
+                  {
+                    "label": "400x300",
+                    "value": "50"
+                  },
+                  {
+                    "label": "480x32",
+                    "value": "51"
+                  },
+                  {
+                    "label": "189x189",
+                    "value": "52"
+                  },
+                  {
+                    "label": "200x200",
+                    "value": "53"
+                  },
+                  {
+                    "label": "250x250",
+                    "value": "54"
+                  },
+                  {
+                    "label": "12x12",
+                    "value": "55"
+                  },
+                  {
+                    "label": "120x40",
+                    "value": "56"
+                  },
+                  {
+                    "label": "320x250",
+                    "value": "57"
+                  },
+                  {
+                    "label": "250x50",
+                    "value": "58"
+                  },
+                  {
+                    "label": "2500x250",
+                    "value": "59"
+                  },
+                  {
+                    "label": "768x90",
+                    "value": "60"
+                  },
+                  {
+                    "label": "698x1024",
+                    "value": "61"
+                  },
+                  {
+                    "label": "300x135",
+                    "value": "62"
+                  },
+                  {
+                    "label": "216x35",
+                    "value": "63"
+                  },
+                  {
+                    "label": "1024x71",
+                    "value": "64"
+                  },
+                  {
+                    "label": "1024x72",
+                    "value": "65"
+                  },
+                  {
+                    "label": "1024x79",
+                    "value": "66"
+                  },
+                  {
+                    "label": "1024x95",
+                    "value": "67"
+                  },
+                  {
+                    "label": "1024x96",
+                    "value": "68"
+                  },
+                  {
+                    "label": "1024x97",
+                    "value": "69"
+                  },
+                  {
+                    "label": "1024x98",
+                    "value": "70"
+                  },
+                  {
+                    "label": "1024x99",
+                    "value": "71"
+                  },
+                  {
+                    "label": "1024x100",
+                    "value": "72"
+                  },
+                  {
+                    "label": "1024x101",
+                    "value": "73"
+                  },
+                  {
+                    "label": "1024x102",
+                    "value": "74"
+                  },
+                  {
+                    "label": "1024x103",
+                    "value": "75"
+                  },
+                  {
+                    "label": "1024x104",
+                    "value": "76"
+                  },
+                  {
+                    "label": "1024x120",
+                    "value": "77"
+                  },
+                  {
+                    "label": "1024x121",
+                    "value": "78"
+                  },
+                  {
+                    "label": "1024x160",
+                    "value": "79"
+                  },
+                  {
+                    "label": "1024x161",
+                    "value": "80"
+                  },
+                  {
+                    "label": "1024x163",
+                    "value": "81"
+                  },
+                  {
+                    "label": "1024x164",
+                    "value": "82"
+                  },
+                  {
+                    "label": "1024x173",
+                    "value": "83"
+                  },
+                  {
+                    "label": "1024x198",
+                    "value": "84"
+                  },
+                  {
+                    "label": "1024x199",
+                    "value": "85"
+                  },
+                  {
+                    "label": "1024x200",
+                    "value": "86"
+                  },
+                  {
+                    "label": "1024x201",
+                    "value": "87"
+                  },
+                  {
+                    "label": "1024x202",
+                    "value": "88"
+                  },
+                  {
+                    "label": "1024x203",
+                    "value": "89"
+                  },
+                  {
+                    "label": "1024x204",
+                    "value": "90"
+                  },
+                  {
+                    "label": "1024x205",
+                    "value": "91"
+                  },
+                  {
+                    "label": "1024x206",
+                    "value": "92"
+                  },
+                  {
+                    "label": "1024x207",
+                    "value": "93"
+                  },
+                  {
+                    "label": "1024x208",
+                    "value": "94"
+                  },
+                  {
+                    "label": "1024x209",
+                    "value": "95"
+                  },
+                  {
+                    "label": "1024x211",
+                    "value": "96"
+                  },
+                  {
+                    "label": "1024x262",
+                    "value": "97"
+                  },
+                  {
+                    "label": "1024x269",
+                    "value": "98"
+                  },
+                  {
+                    "label": "1024x270",
+                    "value": "99"
+                  },
+                  {
+                    "label": "1024x271",
+                    "value": "100"
+                  },
+                  {
+                    "label": "1024x305",
+                    "value": "101"
+                  },
+                  {
+                    "label": "1024x334",
+                    "value": "102"
+                  },
+                  {
+                    "label": "1024x389",
+                    "value": "103"
+                  },
+                  {
+                    "label": "1024x390",
+                    "value": "104"
+                  },
+                  {
+                    "label": "1024x391",
+                    "value": "105"
+                  },
+                  {
+                    "label": "1024x392",
+                    "value": "106"
+                  },
+                  {
+                    "label": "1024x411",
+                    "value": "107"
+                  },
+                  {
+                    "label": "1024x418",
+                    "value": "108"
+                  },
+                  {
+                    "label": "1024x421",
+                    "value": "109"
+                  },
+                  {
+                    "label": "1024x422",
+                    "value": "110"
+                  },
+                  {
+                    "label": "1024x423",
+                    "value": "111"
+                  },
+                  {
+                    "label": "1024x424",
+                    "value": "112"
+                  },
+                  {
+                    "label": "1024x425",
+                    "value": "113"
+                  },
+                  {
+                    "label": "1024x426",
+                    "value": "114"
+                  },
+                  {
+                    "label": "1024x427",
+                    "value": "115"
+                  },
+                  {
+                    "label": "1024x428",
+                    "value": "116"
+                  },
+                  {
+                    "label": "1024x429",
+                    "value": "117"
+                  },
+                  {
+                    "label": "1024x430",
+                    "value": "118"
+                  },
+                  {
+                    "label": "1024x431",
+                    "value": "119"
+                  },
+                  {
+                    "label": "1024x88",
+                    "value": "120"
+                  },
+                  {
+                    "label": "640x250",
+                    "value": "121"
+                  },
+                  {
+                    "label": "111x11",
+                    "value": "122"
+                  },
+                  {
+                    "label": "468x25",
+                    "value": "123"
+                  },
+                  {
+                    "label": "850x31",
+                    "value": "124"
+                  },
+                  {
+                    "label": "320x240",
+                    "value": "125"
+                  },
+                  {
+                    "label": "180x250",
+                    "value": "126"
+                  },
+                  {
+                    "label": "320x150",
+                    "value": "127"
+                  },
+                  {
+                    "label": "120x160",
+                    "value": "128"
+                  },
+                  {
+                    "label": "125x125",
+                    "value": "129"
+                  },
+                  {
+                    "label": "950x30",
+                    "value": "130"
+                  },
+                  {
+                    "label": "168x28",
+                    "value": "131"
+                  },
+                  {
+                    "label": "224x60",
+                    "value": "132"
+                  },
+                  {
+                    "label": "224x168",
+                    "value": "133"
+                  },
+                  {
+                    "label": "100x175",
+                    "value": "134"
+                  },
+                  {
+                    "label": "960x320",
+                    "value": "135"
+                  },
+                  {
+                    "label": "4x4",
+                    "value": "149"
+                  },
+                  {
+                    "label": "5x5",
+                    "value": "150"
+                  },
+                  {
+                    "label": "6x6",
+                    "value": "151"
+                  },
+                  {
+                    "label": "7x7",
+                    "value": "152"
+                  },
+                  {
+                    "label": "320x51",
+                    "value": "153"
+                  },
+                  {
+                    "label": "768x50",
+                    "value": "154"
+                  },
+                  {
+                    "label": "336x280",
+                    "value": "155"
+                  },
+                  {
+                    "label": "728x728",
+                    "value": "156"
+                  },
+                  {
+                    "label": "970x970",
+                    "value": "157"
+                  },
+                  {
+                    "label": "300x300",
+                    "value": "158"
+                  },
+                  {
+                    "label": "160x160",
+                    "value": "159"
+                  },
+                  {
+                    "label": "320x320",
+                    "value": "160"
+                  }
+                ]
+              },
+              "type": "selectTag"
+            },
+            {
+              "label": "Devices",
+              "options": {
+                "variant": "h2"
+              },
+              "type": "header"
+            },
+            {
+              "label": "Enabled for Desktop",
+              "name": "device_type_desktop",
+              "options": {
+                "fullWidth": true,
+                "variant": "secondary"
+              },
+              "type": "switch"
+            },
+            {
+              "label": "Enabled for Mobile",
+              "name": "device_type_mobile",
+              "options": {
+                "fullWidth": true,
+                "variant": "secondary"
+              },
+              "type": "switch"
+            },
+            {
+              "label": "Enabled for Tablet",
+              "name": "device_type_tablet",
+              "options": {
+                "fullWidth": true,
+                "variant": "secondary"
+              },
+              "type": "switch"
+            },
+            {
+              "label": "Optional Settings",
+              "options": {
+                "variant": "h2"
+              },
+              "type": "header"
+            },
+            {
+              "label": "Enable Refresh",
+              "name": "refresh",
+              "options": {
+                "fullWidth": true,
+                "variant": "secondary"
+              },
+              "type": "switch"
+            },
+            {
+              "label": "Enable Lazy Load",
+              "name": "lazy_load",
+              "options": {
+                "fullWidth": true,
+                "variant": "secondary"
+              },
+              "type": "switch"
+            },
+            {
+              "label": "Unit Configuration",
+              "options": {
+                "variant": "h2"
+              },
+              "type": "header"
+            },
+            {
+              "label": "Unit Type",
+              "name": "unit_type",
+              "options": {
+                "fullWidth": true,
+                "options": [
+                  {
+                    "label": "default",
+                    "value": ""
+                  },
+                  {
+                    "label": "sticky banner",
+                    "value": "banner-sticky"
+                  },
+                  {
+                    "label": "desktop anchor",
+                    "value": "danchor"
+                  },
+                  {
+                    "label": "mobile anchor",
+                    "value": "manchor"
+                  },
+                  {
+                    "label": "video",
+                    "value": "video"
+                  },
+                  {
+                    "label": "video with third party player",
+                    "value": "video-third-party"
+                  },
+                  {
+                    "label": "video auction only",
+                    "value": "video-auction-only"
+                  },
+                  {
+                    "label": "sidebar sticky",
+                    "value": "sidebar-sticky"
+                  },
+                  {
+                    "label": "1x1",
+                    "value": "1x1"
+                  },
+                  {
+                    "label": "out-of-page",
+                    "value": "out-of-page"
+                  },
+                  {
+                    "label": "interstitial-gam",
+                    "value": "interstitial"
+                  },
+                  {
+                    "label": "moment-display",
+                    "value": "moment-display"
+                  },
+                  {
+                    "label": "moment-video",
+                    "value": "moment-video"
+                  },
+                  {
+                    "label": "moment-video-instream",
+                    "value": "moment-video-instream"
+                  },
+                  {
+                    "label": "outstream",
+                    "value": "outstream"
+                  },
+                  {
+                    "label": "outstream in banner",
+                    "value": "outstream-in-banner"
+                  },
+                  {
+                    "label": "dynamic-parent",
+                    "value": "dynamic-parent"
+                  }
+                ]
+              },
+              "type": "select"
+            },
+            {
+              "name": "header_unit_id",
+              "type": "hidden"
+            }
+          ]
+        ],
+        "value": [
+          {
+            "device_type_desktop": false,
+            "device_type_mobile": false,
+            "device_type_tablet": false,
+            "devices": [
+              "mobile",
+              "desktop",
+              "tablet"
+            ],
+            "element_id": "",
+            "enabled": true,
+            "gam_id": "182949752",
+            "gam_path": "",
+            "header_unit_id": 80,
+            "lazy_load": false,
+            "refresh": false,
+            "sections": "4",
+            "size_override": "3,5",
+            "sizes": [
+              "160x600",
+              "300x600"
+            ],
+            "unit": "BR_160x600_ROS_BTF (1)",
+            "unit_type": ""
+          },
+          {
+            "device_type_desktop": true,
+            "device_type_mobile": false,
+            "device_type_tablet": false,
+            "devices": [
+              "desktop"
+            ],
+            "element_id": "",
+            "enabled": true,
+            "gam_id": "182949752",
+            "gam_path": "",
+            "header_unit_id": 38,
+            "lazy_load": false,
+            "refresh": false,
+            "sections": "4",
+            "size_override": "3,4,5,39,53,128,156,157,158,159,160",
+            "sizes": [
+              "160x600",
+              "320x50",
+              "300x600",
+              "300x175",
+              "200x200",
+              "120x160",
+              "728x728",
+              "970x970",
+              "300x300",
+              "160x160",
+              "320x320"
+            ],
+            "unit": "BR_160x600_ROS_BTF-38",
+            "unit_type": "danchor"
+          },
+          {
+            "device_type_desktop": true,
+            "device_type_mobile": false,
+            "device_type_tablet": false,
+            "devices": [
+              "desktop"
+            ],
+            "element_id": "test",
+            "enabled": true,
+            "gam_id": "182949872",
+            "gam_path": "",
+            "header_unit_id": 72,
+            "lazy_load": false,
+            "refresh": true,
+            "sections": "4",
+            "size_override": "1,4,156,157,158,159",
+            "sizes": [
+              "728x90",
+              "320x50",
+              "728x728",
+              "970x970",
+              "300x300",
+              "160x160"
+            ],
+            "unit": "BR_1x1_ROS-72",
+            "unit_type": "dynamic-parent"
+          }
+        ]
+      },
+      "type": "configTable"
+    }
+  ],
   "header": {
-    "title": "Units",
     "filters": [
       {
-        "name": "unit",
         "type": "search",
+        "name": "unit",
         "options": {
-          "label": "Unit Name"
+          "label": "Ad Unit"
         }
       },
       {
-        "label": "Sizes",
-        "name": "sizes",
         "type": "selectTag",
+        "name": "sizes",
         "options": {
           "label": "Sizes"
         }
       },
       {
-        "label": "Devices",
-        "name": "devices",
         "type": "selectTag",
+        "name": "devices",
         "options": {
           "label": "Devices",
-          "onlyOptions": true,
           "options": [
             {
               "label": "Desktop",
               "value": "desktop"
             },
             {
-              "label": "Tablet",
-              "value": "tablet"
-            },
-            {
               "label": "Mobile",
               "value": "mobile"
+            },
+            {
+              "label": "Tablet",
+              "value": "tablet"
             }
           ]
         }
+      }
+    ],
+    "actions": [
+      {
+        "label": "+ Create New Unit",
+        "options": {
+          "buttonProps": {
+            "variant": "secondary"
+          },
+          "fields": [
+            {
+              "label": "Sync Unit to GAM",
+              "name": "add_to_gam",
+              "options": {
+                "fullWidth": true,
+                "variant": "secondary"
+              },
+              "type": "switch",
+              "value": true
+            },
+            {
+              "options": {
+                "conditions": {
+                  "false": [
+                    {
+                      "label": "Longitude Unit Name *",
+                      "name": "lngtd_unit_name",
+                      "options": {
+                        "fullWidth": true,
+                        "variant": "standard"
+                      },
+                      "type": "text"
+                    }
+                  ],
+                  "true": [
+                    {
+                      "label": "GAM Network ID",
+                      "name": "gam_network_id",
+                      "options": {
+                        "fullWidth": true,
+                        "variant": "standard"
+                      },
+                      "type": null,
+                      "value": "22020501169"
+                    },
+                    {
+                      "label": "GAM Parent Unit ID",
+                      "name": "gam_parent_ad_unit_id",
+                      "options": {
+                        "fullWidth": true,
+                        "options": [
+                          {
+                            "label": "/22020501169/AAX/gradesaver (22750069248)",
+                            "value": "22750069248"
+                          },
+                          {
+                            "label": "/22020501169/gradesaver (22096843690)",
+                            "value": "22096843690"
+                          },
+                          {
+                            "label": "/22020501169/gradesaver/gradesaver_D_1 (22096776695)",
+                            "value": "22096776695"
+                          },
+                          {
+                            "label": "/22020501169/gradesaver/gradesaver_D_2 (22096776893)",
+                            "value": "22096776893"
+                          },
+                          {
+                            "label": "/22020501169/gradesaver/gradesaver_D_3 (22096776941)",
+                            "value": "22096776941"
+                          },
+                          {
+                            "label": "/22020501169/gradesaver/gradesaver_D_4 (22096776821)",
+                            "value": "22096776821"
+                          },
+                          {
+                            "label": "/22020501169/gradesaver/gradesaver_D_5 (22096777019)",
+                            "value": "22096777019"
+                          },
+                          {
+                            "label": "/22020501169/gradesaver/gradesaver_D_A (22096777070)",
+                            "value": "22096777070"
+                          },
+                          {
+                            "label": "/22020501169/gradesaver/gradesaver_D_V (22108563137)",
+                            "value": "22108563137"
+                          },
+                          {
+                            "label": "/22020501169/gradesaver/gradesaver_D_VL (22606123842)",
+                            "value": "22606123842"
+                          },
+                          {
+                            "label": "/22020501169/gradesaver/gradesaver_D_outstream (22684758355)",
+                            "value": "22684758355"
+                          },
+                          {
+                            "label": "/22020501169/gradesaver/gradesaver_M_1 (22097079429)",
+                            "value": "22097079429"
+                          },
+                          {
+                            "label": "/22020501169/gradesaver/gradesaver_M_2 (22096845976)",
+                            "value": "22096845976"
+                          },
+                          {
+                            "label": "/22020501169/gradesaver/gradesaver_M_3 (23096492356)",
+                            "value": "23096492356"
+                          },
+                          {
+                            "label": "/22020501169/gradesaver/gradesaver_M_A (22096845838)",
+                            "value": "22096845838"
+                          },
+                          {
+                            "label": "/22020501169/gradesaver/gradesaver_M_VL (22606126743)",
+                            "value": "22606126743"
+                          },
+                          {
+                            "label": "/22020501169/gradesaver/gradesaver_M_outstream (22685098295)",
+                            "value": "22685098295"
+                          },
+                          {
+                            "label": "/22020501169/gradesaver/gradesaver_interstitial (22811526153)",
+                            "value": "22811526153"
+                          }
+                        ]
+                      },
+                      "type": "text",
+                      "value": "22750069248"
+                    },
+                    {
+                      "label": "Override GAM Parent Unit ID",
+                      "name": "override_gam_parent_ad_unit_id",
+                      "options": {
+                        "fullWidth": true,
+                        "variant": "standard"
+                      },
+                      "type": "text"
+                    },
+                    {
+                      "label": "GAM Unit Name *",
+                      "name": "gam_unit_name",
+                      "options": {
+                        "fullWidth": true,
+                        "variant": "standard"
+                      },
+                      "type": "text"
+                    },
+                    {
+                      "label": "Longitude Unit Name *",
+                      "name": "lngtd_unit_name",
+                      "options": {
+                        "fullWidth": true,
+                        "variant": "standard"
+                      },
+                      "type": "text"
+                    }
+                  ]
+                },
+                "property": "add_to_gam"
+              },
+              "type": "condition"
+            }
+          ],
+          "title": "Create New Unit"
+        },
+        "type": "newItemButton"
       },
       {
-        "label": "Enabled",
-        "name": "enabled",
-        "type": "switch"
+        "label": "+ Copy Unit",
+        "options": {
+          "buttonProps": {
+            "variant": "secondary"
+          },
+          "fields": [
+            {
+              "label": "Create a new unit in the Longitude system tied to an existing GAM path",
+              "type": "paragraph"
+            },
+            {
+              "label": "Select Unit to Copy",
+              "name": "unit_to_copy",
+              "options": {
+                "fullWidth": true,
+                "options": [
+                  {
+                    "label": "BR_160x600_ROS_BTF (1)",
+                    "value": 80
+                  },
+                  {
+                    "label": "BR_160x600_ROS_BTF-38",
+                    "value": 38
+                  },
+                  {
+                    "label": "BR_1x1_ROS-72",
+                    "value": 72
+                  }
+                ]
+              },
+              "type": "select",
+              "value": 80
+            },
+            {
+              "label": "New Unit Name *",
+              "name": "lngtd_unit_name",
+              "options": {
+                "helperText": "New unit to be created in LNGTD system",
+                "placeholder": "gradesaver_M_1"
+              },
+              "type": "text"
+            }
+          ],
+          "title": "Copy Unit"
+        },
+        "type": "newItemButton"
+      },
+      {
+        "label": "- Archive Unit",
+        "options": {
+          "buttonProps": {
+            "variant": "secondary"
+          },
+          "fields": [
+            {
+              "label": "Select a unit to archive. Archived units will be disabled and hidden on Account Management pages",
+              "type": "paragraph"
+            },
+            {
+              "label": "Select Unit to Archive",
+              "name": "unit_to_archive",
+              "options": {
+                "fullWidth": true,
+                "options": [
+                  {
+                    "label": "BR_160x600_ROS_BTF (1)",
+                    "value": 80
+                  },
+                  {
+                    "label": "BR_160x600_ROS_BTF-38",
+                    "value": 38
+                  },
+                  {
+                    "label": "BR_1x1_ROS-72",
+                    "value": 72
+                  }
+                ]
+              },
+              "type": "select",
+              "value": 80
+            }
+          ],
+          "title": "Archive Unit"
+        },
+        "type": "newItemButton"
       }
-    ]
+    ],
+    "title": "Units",
+    "type": "header"
   },
   "isNewForm": true,
-  "fields": [
-    {
-      "type": "configTable",
-      "configFields": [
-        [
-          {
-            "name": "unit",
-            "label": "Name",
-            "type": "text"
-          },
-          {
-            "label": "Sizes",
-            "name": "sizes",
-            "type": "tags"
-          },
-          {
-            "label": "Devices",
-            "name": "devices",
-            "type": "devices"
-          },
-          {
-            "label": "Enabled",
-            "name": "enabled",
-            "type": "switch"
-          }
-        ],
-        [
-          {
-            "name": "unit",
-            "label": "Name",
-            "type": "text"
-          },
-          {
-            "label": "Sizes",
-            "name": "sizes",
-            "type": "tags"
-          },
-          {
-            "label": "Devices",
-            "name": "devices",
-            "type": "devices"
-          },
-          {
-            "label": "Enabled",
-            "name": "enabled",
-            "type": "switch"
-          }
-        ],
-        [
-          {
-            "name": "unit",
-            "label": "Name",
-            "type": "text"
-          },
-          {
-            "label": "Sizes",
-            "name": "sizes",
-            "type": "tags"
-          },
-          {
-            "label": "Devices",
-            "name": "devices",
-            "type": "devices"
-          },
-          {
-            "label": "Enabled",
-            "name": "enabled",
-            "type": "switch"
-          }
-        ],
-        [
-          {
-            "name": "unit",
-            "label": "Name",
-            "type": "text"
-          },
-          {
-            "label": "Sizes",
-            "name": "sizes",
-            "type": "tags"
-          },
-          {
-            "label": "Devices",
-            "name": "devices",
-            "type": "devices"
-          },
-          {
-            "label": "Enabled",
-            "name": "enabled",
-            "type": "switch"
-          }
-        ]
-      ],
-      "options": {
-        "columns": [
-          {
-            "name": "unit",
-            "label": "Name",
-            "type": "text"
-          },
-          {
-            "label": "Sizes",
-            "name": "sizes",
-            "type": "tags"
-          },
-          {
-            "label": "Devices",
-            "name": "devices",
-            "type": "devices"
-          },
-          {
-            "label": "Enabled",
-            "name": "enabled",
-            "type": "switch"
-          }
-        ],
-        "value": [
-          {
-            "unit": "ugg_1",
-            "sizes": [
-              "200x400",
-              "100x500"
-            ],
-            "devices": [
-              "desktop"
-            ],
-            "enabled": true
-          },
-          {
-            "unit": "ugg_2",
-            "sizes": [
-              "200x400",
-              "100x500"
-            ],
-            "devices": [
-              "desktop",
-              "tablet"
-            ],
-            "enabled": true
-          },
-          {
-            "unit": "ugg_3",
-            "sizes": [
-              "200x400",
-              "100x500"
-            ],
-            "devices": [
-              "mobile"
-            ],
-            "enabled": true
-          },
-          {
-            "unit": "ugg_4",
-            "sizes": [
-              "200x400",
-              "100x500"
-            ],
-            "devices": [
-              "desktop",
-              "mobile"
-            ],
-            "enabled": true
-          }
-        ]
-      }
-    }
-  ]
+  "validation": {},
+  "validationConfig": {
+    "errMessages": {}
+  }
 }
