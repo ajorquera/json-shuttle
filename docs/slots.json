@@ -515,7 +515,8 @@
             "configFields": [
               {
                 "type": "text",
-                "label": "Placement"
+                "label": "Placement",
+                "value": "solitaired_stats_D_1"
               }
             ]
           },
