@@ -6829,6 +6829,7 @@
         ],
         "value": [
           {
+            "id": 1939,
             "device_type_desktop": true,
             "device_type_mobile": false,
             "device_type_tablet": true,
