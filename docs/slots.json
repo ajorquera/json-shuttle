@@ -516,7 +516,8 @@
               {
                 "type": "text",
                 "label": "Placement",
-                "value": "solitaired_stats_D_1"
+                "value": "solitaired_stats_D_1",
+                "name": "placement"
               }
             ]
           },
