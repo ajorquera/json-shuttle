@@ -511,7 +511,13 @@
             "geos_exclude": "",
             "slot_sizes": "",
             "header_partner_id": 891,
-            "header_unit_id": 1939
+            "header_unit_id": 1939,
+            "configFields": [
+              {
+                "type": "text",
+                "label": "Placement"
+              }
+            ]
           },
           "TrustX": {
             "uid": "408754",
