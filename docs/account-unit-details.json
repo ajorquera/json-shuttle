@@ -6475,7 +6475,13 @@
             "lazy_load": true,
             "unit_type": "sidebar-sticky",
             "header_unit_id": 74,
-            "id": 74
+            "id": 74,
+            "editFieldsSchema": [
+              {
+                "label": "Input",
+                "type": "text"
+              }
+            ]
           },
           {
             "unit": "EvanAccount_D_3",
