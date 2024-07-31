@@ -1,0 +1,36 @@
+{
+  "items": [
+    {
+      "label": "Sections",
+      "diff": [
+        {
+          "type": "deleted",
+          "field": "Section 2"
+        }
+      ]
+    },
+    {
+      "label": "Partners",
+      "diff": [
+        {
+          "type": "changed",
+          "field": "Amazon A9",
+          "newValue": true
+        }
+      ]
+    },
+    {
+      "label": "Units",
+      "diff": [
+        {
+          "type": "added",
+          "field": "ugg_D_3_flex_container"
+        },
+        {
+          "type": "deleted",
+          "field": "ugg_D_5_flex_container"
+        }
+      ]
+    }
+  ]
+}
