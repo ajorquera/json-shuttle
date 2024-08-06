@@ -1,42 +1,48 @@
 {
-    "columns": [
-      {
-        "header": "Date",
-        "key": "date"
-      },
-      {
-        "header": "Status",
-        "key": "status"
-      },
-      {
-        "header": "Change By",
-        "key": "changeBy"
-      }
-    ],
-    "data": [
-      {
-        "date": "19/10/2023",
-        "status": "Approved",
-        "changeBy": "John Doe",
-        "diff": ""
-      },
-      {
-        "date": "20/10/2023",
-        "status": "Pending",
-        "changeBy": "John Doe",
-        "diff": "{ account: '2', partners: {},units: {}, hps: []  }"
-      },
-      {
-        "date": "20/10/2023",
-        "status": "Pending",
-        "changeBy": "John Doe",
-        "diff": "{ account: 3, partners: {},units: {}, hps: []  }"
-      },
-      {
-        "date": "20/10/2023",
-        "status": "Pending",
-        "changeBy": "John Doe",
-        "diff": "{ account: 5, partners: {},units: {}, hps: []  }"
-      }
-    ]
-  }
+  "items": [
+    {
+      "version": "1.0.0",
+      "date": "2021-10-01",
+      "status": "active",
+      "by": "John Doe",
+      "note": "Initial version",
+      "changes": [
+        {
+          "label": "Sections",
+          "diff": [
+            {
+              "type": "deleted",
+              "field": "Section 2"
+            },
+            {
+              "type": "added",
+              "field": "Section 3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "version": "1.0.0",
+      "date": "2021-10-01",
+      "status": "active",
+      "by": "John Doe",
+      "note": "Initial version",
+      "changes": [
+        {
+          "label": "Default",
+          "diff": [
+            {
+              "type": "changed",
+              "field": "Section 2"
+            },
+            {
+              "type": "changed",
+              "field": "Section 2"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
