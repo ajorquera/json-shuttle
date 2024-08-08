@@ -673,6 +673,7 @@
             "type": "serviceStatus",
             "title": "Live Intent",
             "name": "enable_liveintent",
+            "value": true,
             "options": {
                 "fields": [
                     {
