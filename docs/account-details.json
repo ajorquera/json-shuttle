@@ -669,41 +669,29 @@
             },
             "type": "card"
         },
-        {
+      {
             "type": "serviceStatus",
-            "name": "service_status",
-            "title": "Confiant",
+            "title": "Live Intent",
+            "name": "enable_liveintent",
             "options": {
                 "fields": [
                     {
+                        "type": "grid",
                         "options": {
                             "columns": 2,
                             "fields": [
                                 {
-                                    "label": "GA4 Account ID",
-                                    "name": "analytics_account_id",
+                                    "label": "Live Intent ID",
+                                    "name": "liveintent_id",
+                                    "type": "text",
+                                    "value": "did405",
                                     "options": {
-                                        "color": "secondary",
                                         "fullWidth": true,
                                         "variant": "standard"
-                                    },
-                                    "type": "text",
-                                    "value": ""
-                                },
-                                {
-                                    "label": "GA4 Property ID",
-                                    "name": "analytics_access_code",
-                                    "options": {
-                                        "color": "secondary",
-                                        "fullWidth": true,
-                                        "variant": "standard"
-                                    },
-                                    "type": "text",
-                                    "value": ""
+                                    }
                                 }
                             ]
-                        },
-                        "type": "grid"
+                        }
                     }
                 ]
             }
