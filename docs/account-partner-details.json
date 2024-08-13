@@ -51273,6 +51273,7 @@
         ]
       ],
       "options": {
+        "stickyHeader": true,
         "columns": [
           {
             "label": "Partner",
