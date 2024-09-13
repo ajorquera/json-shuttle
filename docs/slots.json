@@ -512,6 +512,7 @@
             "slot_sizes": "",
             "header_partner_id": 891,
             "header_unit_id": 1939,
+            "api": "/forms/mcm-invite",
             "configFields": [
               {
                 "type": "text",
