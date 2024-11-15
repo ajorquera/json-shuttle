@@ -8,5 +8,6 @@ app.use(express.json());
 app.use(routes);
 app.use(errorHandler);
 
+app.set('json spaces', 2)
 
 export default app;
