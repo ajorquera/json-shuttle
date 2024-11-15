@@ -1,0 +1,959 @@
+{
+    "fields": [
+        {
+            "options": {
+                "fields": [
+                    {
+                        "label": "Account Setup",
+                        "options": {
+                            "variant": "h2"
+                        },
+                        "type": "header"
+                    },
+                    {
+                        "options": {
+                            "columns": 2,
+                            "fields": [
+                                {
+                                    "label": "Account Name",
+                                    "name": "account_name",
+                                    "options": {
+                                        "color": "secondary",
+                                        "fullWidth": true,
+                                        "inputProps": {
+                                            "readOnly": true
+                                        },
+                                        "variant": "standard",
+                                        "help": {
+                                            "content": "Required",
+                                            "icon": "asterisk"
+                                        }
+                                    },
+                                    "type": "text",
+                                    "value": "gradesaver"
+                                },
+                                {
+                                    "label": "Account Domain",
+                                    "name": "account_domain",
+                                    "options": {
+                                        "color": "secondary",
+                                        "fullWidth": true,
+                                        "variant": "standard"
+                                    },
+                                    "type": "text",
+                                    "value": ""
+                                }
+                            ]
+                        },
+                        "type": "grid"
+                    },
+                    {
+                        "label": "Account Websites",
+                        "name": "account_websites",
+                        "options": {
+                            "color": "secondary",
+                            "fullWidth": true,
+                            "helperText": "Sites here will be submitted for approval in GAM",
+                            "resize": true,
+                            "variant": "standard"
+                        },
+                        "type": "text",
+                        "value": ""
+                    }
+                ],
+                "pb": 20
+            },
+            "type": "card"
+        },
+        {
+            "options": {
+                "fields": [
+                    {
+                        "label": "GAM Setup",
+                        "options": {
+                            "variant": "h2"
+                        },
+                        "type": "header"
+                    },
+                    {
+                        "label": "+ Send New MCM Invite",
+                        "options": {
+                            "buttonProps": {
+                                "variant": "secondary"
+                            },
+                            "fields": [
+                                {
+                                    "label": "Delegation Type",
+                                    "name": "delegation_type",
+                                    "options": {
+                                        "options": [
+                                            {
+                                                "label": "Manage Inventory",
+                                                "value": "MANAGE_INVENTORY"
+                                            },
+                                            {
+                                                "label": "Manage Account",
+                                                "value": "MANAGE_ACCOUNT"
+                                            }
+                                        ]
+                                    },
+                                    "type": "select",
+                                    "value": "MANAGE_INVENTORY"
+                                },
+                                {
+                                    "options": {
+                                        "conditions": {
+                                            "MANAGE_ACCOUNT": [
+                                                {
+                                                    "label": "Auto-Payment % to Parent",
+                                                    "name": "mcm_rev_share",
+                                                    "type": "text"
+                                                },
+                                                {
+                                                    "help": {
+                                                        "content": "Required",
+                                                        "icon": "asterisk",
+                                                        "placement": "right",
+                                                        "size": "sm"
+                                                    },
+                                                    "label": "Company Name",
+                                                    "name": "mcm_company",
+                                                    "options": {
+                                                        "placeholder": ""
+                                                    },
+                                                    "type": "text"
+                                                },
+                                                {
+                                                    "help": {
+                                                        "content": "Required",
+                                                        "icon": "asterisk",
+                                                        "placement": "right",
+                                                        "size": "sm"
+                                                    },
+                                                    "label": "Email Address",
+                                                    "name": "mcm_email",
+                                                    "options": {
+                                                        "helperText": "MCM invite will be sent to this address"
+                                                    },
+                                                    "type": "text"
+                                                },
+                                                {
+                                                    "help": {
+                                                        "content": "Required",
+                                                        "icon": "asterisk",
+                                                        "placement": "right",
+                                                        "size": "sm"
+                                                    },
+                                                    "label": "Child Network ID",
+                                                    "name": "child_network_id",
+                                                    "type": "text"
+                                                }
+                                            ],
+                                            "MANAGE_INVENTORY": [
+                                                {
+                                                    "help": {
+                                                        "content": "Required",
+                                                        "icon": "asterisk",
+                                                        "placement": "right",
+                                                        "size": "sm"
+                                                    },
+                                                    "label": "Company Name",
+                                                    "name": "mcm_company",
+                                                    "options": {
+                                                        "placeholder": ""
+                                                    },
+                                                    "type": "text"
+                                                },
+                                                {
+                                                    "help": {
+                                                        "content": "Required",
+                                                        "icon": "asterisk",
+                                                        "placement": "right",
+                                                        "size": "sm"
+                                                    },
+                                                    "label": "Email Address",
+                                                    "name": "mcm_email",
+                                                    "options": {
+                                                        "helperText": "MCM invite will be sent to this address"
+                                                    },
+                                                    "type": "text"
+                                                },
+                                                {
+                                                    "label": "Child Network ID",
+                                                    "name": "child_network_id",
+                                                    "type": "text"
+                                                }
+                                            ]
+                                        },
+                                        "property": "delegation_type"
+                                    },
+                                    "type": "condition"
+                                }
+                            ],
+                            "title": "MCM Child Information"
+                        },
+                        "type": "newItemButton"
+                    },
+                    {
+                        "options": {
+                            "columns": 2,
+                            "fields": [
+                                {
+                                    "label": "GAM Network Name",
+                                    "name": "gam_network_name",
+                                    "options": {
+                                        "color": "secondary",
+                                        "fullWidth": true,
+                                        "variant": "standard"
+                                    },
+                                    "type": "text",
+                                    "value": null
+                                },
+                                {
+                                    "label": "GAM Network ID",
+                                    "name": "ad_server_account_id",
+                                    "options": {
+                                        "color": "secondary",
+                                        "fullWidth": true,
+                                        "variant": "standard"
+                                    },
+                                    "type": "text",
+                                    "value": "22020501169"
+                                }
+                            ]
+                        },
+                        "type": "grid"
+                    },
+                    {
+                        "options": {
+                            "columns": 2,
+                            "fields": [
+                                {
+                                    "label": "GAM Parent Ad Unit ID",
+                                    "name": "site_ad_unit_id",
+                                    "options": {
+                                        "color": "secondary",
+                                        "fullWidth": true,
+                                        "variant": "standard"
+                                    },
+                                    "type": "text",
+                                    "value": "22096843690"
+                                },
+                                {
+                                    "label": "GAM MCM Status",
+                                    "name": "mcm_status",
+                                    "options": {
+                                        "color": "secondary",
+                                        "fullWidth": true,
+                                        "variant": "standard"
+                                    },
+                                    "type": "text",
+                                    "value": "not submitted"
+                                }
+                            ]
+                        },
+                        "type": "grid"
+                    },
+                    {
+                        "options": {
+                            "columns": 2,
+                            "fields": [
+                                {
+                                    "label": "GAM Child Network ID (Optional)",
+                                    "name": "gam_child_publisher_id",
+                                    "options": {
+                                        "color": "secondary",
+                                        "fullWidth": true,
+                                        "variant": "standard"
+                                    },
+                                    "type": "text",
+                                    "value": ""
+                                }
+                            ]
+                        },
+                        "type": "grid"
+                    },
+                    {
+                        "options": {
+                            "columns": 2,
+                            "fields": [
+                                {
+                                    "help": {
+                                        "content": "Required",
+                                        "icon": "asterisk",
+                                        "placement": "right",
+                                        "size": "sm"
+                                    },
+                                    "label": "Prebid GAM Order ID",
+                                    "name": "prebid_gam_order_id",
+                                    "options": {
+                                        "color": "secondary",
+                                        "fullWidth": true,
+                                        "variant": "standard"
+                                    },
+                                    "type": "text",
+                                    "value": "2697632378,2697632378"
+                                },
+                                {
+                                    "help": {
+                                        "content": "Required",
+                                        "icon": "asterisk",
+                                        "placement": "right",
+                                        "size": "sm"
+                                    },
+                                    "label": "LNGTD Advertiser ID",
+                                    "name": "lngtd_advertiser_id",
+                                    "options": {
+                                        "color": "secondary",
+                                        "fullWidth": true,
+                                        "variant": "standard"
+                                    },
+                                    "type": "text",
+                                    "value": "12345"
+                                }
+                            ]
+                        },
+                        "type": "grid"
+                    }
+                ],
+                "pb": 20
+            },
+            "type": "card"
+        },
+        {
+            "options": {
+                "fields": [
+                    {
+                        "label": "Sellers.json / Ads.txt",
+                        "options": {
+                            "variant": "h2"
+                        },
+                        "type": "header"
+                    },
+                    {
+                        "options": {
+                            "columns": 2,
+                            "fields": [
+                                {
+                                    "label": "Account Owner",
+                                    "name": "account_owner",
+                                    "options": {
+                                        "color": "secondary",
+                                        "fullWidth": true,
+                                        "variant": "standard"
+                                    },
+                                    "type": "text",
+                                    "value": ""
+                                },
+                                {
+                                    "label": "Seller ID",
+                                    "name": "_seller_id",
+                                    "options": {
+                                        "color": "secondary",
+                                        "fullWidth": true,
+                                        "variant": "standard"
+                                    },
+                                    "type": "text",
+                                    "value": "9412"
+                                }
+                            ]
+                        },
+                        "type": "grid"
+                    },
+                    {
+                        "options": {
+                            "columns": 2,
+                            "fields": [
+                                {
+                                    "label": "Additional Ads.txt Entries",
+                                    "name": "adstxt_entries",
+                                    "options": {
+                                        "color": "secondary",
+                                        "fullWidth": true,
+                                        "variant": "standard"
+                                    },
+                                    "type": "text",
+                                    "value": ""
+                                },
+                                {
+                                    "label": "Ads.txt Outside LNGTD",
+                                    "name": "adstxt_outside_lngtd",
+                                    "options": {
+                                        "color": "secondary",
+                                        "help": {
+                                            "content": "Required",
+                                            "icon": "asterisk",
+                                            "placement": "right",
+                                            "size": "sm"
+                                        }
+                                    },
+                                    "type": "switch",
+                                    "value": false
+                                }
+                            ]
+                        },
+                        "type": "grid"
+                    }
+                ],
+                "pb": 20
+            },
+            "type": "card"
+        },
+        {
+            "options": {
+                "fields": [
+                    {
+                        "label": "Refresh & Focus Options",
+                        "options": {
+                            "variant": "h2"
+                        },
+                        "type": "header"
+                    },
+                    {
+                        "label": "Refresh Interval (seconds)",
+                        "name": "refresh_interval",
+                        "options": {
+                            "color": "secondary",
+                            "fullWidth": true,
+                            "variant": "standard"
+                        },
+                        "type": "text",
+                        "value": 30.0
+                    },
+                    {
+                        "help": {
+                            "content": "Require the browser window to be in focus for inital ad auction to run",
+                            "icon": "question-circle",
+                            "size": "sm"
+                        },
+                        "label": "Init Requires Focus",
+                        "name": "init_requires_focus",
+                        "options": {
+                            "color": "secondary"
+                        },
+                        "type": "switch",
+                        "value": false
+                    },
+                    {
+                        "help": {
+                            "content": "Require the browser window to be in focus for refresh ad auctions to run",
+                            "icon": "question-circle",
+                            "size": "sm"
+                        },
+                        "label": "Refresh Requires Focus",
+                        "name": "refresh_requires_focus",
+                        "options": {
+                            "color": "secondary"
+                        },
+                        "type": "switch",
+                        "value": false
+                    },
+                    {
+                        "help": {
+                            "content": "Pauses refresh auctions if user has not interacted with browser for over 1 minute",
+                            "icon": "question-circle",
+                            "size": "sm"
+                        },
+                        "label": "Refresh Requires User Interaction",
+                        "name": "refresh_requires_user_interaction",
+                        "options": {
+                            "color": "secondary"
+                        },
+                        "type": "switch",
+                        "value": false
+                    },
+                    {
+                        "label": "Line Item Types to Exclude from Refresh",
+                        "name": "exclude_from_refresh_line_item_types",
+                        "options": {
+                            "options": [
+                                {
+                                    "label": "SPONSORSHIP",
+                                    "value": "1"
+                                },
+                                {
+                                    "label": "STANDARD",
+                                    "value": "2"
+                                },
+                                {
+                                    "label": "",
+                                    "value": "3"
+                                }
+                            ]
+                        },
+                        "type": "selectTag",
+                        "value": ""
+                    },
+                    {
+                        "label": "Manual Line Item IDs to Exclude from Refresh",
+                        "name": "manual_no_refresh_line_item_ids",
+                        "options": {
+                            "color": "secondary",
+                            "fullWidth": true,
+                            "variant": "standard"
+                        },
+                        "type": "text",
+                        "value": ""
+                    },
+                    {
+                        "help": {
+                            "content": "Allow refresh auctions to run after an impression goes unfilled",
+                            "icon": "question-circle",
+                            "size": "sm"
+                        },
+                        "label": "Refresh Unfilled Impressions",
+                        "name": "refresh_unfilled_impressions",
+                        "options": {
+                            "color": "secondary"
+                        },
+                        "type": "switch",
+                        "value": false
+                    },
+                    {
+                        "options": {
+                            "columns": 2,
+                            "fields": [
+                                {
+                                    "label": "Refresh Unfilled Impressions After (seconds)",
+                                    "name": "refresh_unfilled_impressions_after",
+                                    "options": {
+                                        "color": "secondary",
+                                        "fullWidth": true,
+                                        "variant": "standard"
+                                    },
+                                    "type": "text",
+                                    "value": 30.0
+                                },
+                                {
+                                    "label": "Allow Unfilled Retries",
+                                    "name": "allow_unfilled_retries",
+                                    "options": {
+                                        "color": "secondary",
+                                        "fullWidth": true,
+                                        "variant": "standard"
+                                    },
+                                    "type": "text",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        "type": "grid"
+                    }
+                ],
+                "pb": 20
+            },
+            "type": "card"
+        },
+        {
+            "options": {
+                "fields": [
+                    {
+                        "label": "Configuration Settings",
+                        "options": {
+                            "variant": "h2"
+                        },
+                        "type": "header"
+                    },
+                    {
+                        "options": {
+                            "columns": 2,
+                            "fields": [
+                                {
+                                    "label": "Desktop Timeout (seconds)",
+                                    "name": "desktop_timeout",
+                                    "options": {
+                                        "color": "secondary",
+                                        "fullWidth": true,
+                                        "variant": "standard"
+                                    },
+                                    "type": "text",
+                                    "value": 2.25
+                                },
+                                {
+                                    "label": "Mobile Timeout (seconds)",
+                                    "name": "mobile_timeout",
+                                    "options": {
+                                        "color": "secondary",
+                                        "fullWidth": true,
+                                        "variant": "standard"
+                                    },
+                                    "type": "text",
+                                    "value": 2.75
+                                }
+                            ]
+                        },
+                        "type": "grid"
+                    },
+                    {
+                        "help": {
+                            "content": "Pause bid requests to bidders who have not bid after a set amount of time or number of auctions",
+                            "icon": "question-circle",
+                            "placement": "right",
+                            "size": "sm"
+                        },
+                        "label": "Filter Non-Active Bidders (Smart Requests)",
+                        "name": "should_filter_non_active_bidders",
+                        "options": {
+                            "color": "secondary"
+                        },
+                        "type": "switch",
+                        "value": false
+                    },
+                    {
+                        "label": "Global Script Prefix",
+                        "name": "global_script_prefix",
+                        "options": {
+                            "color": "secondary",
+                            "fullWidth": true,
+                            "variant": "standard"
+                        },
+                        "type": "text",
+                        "value": ""
+                    }
+                ],
+                "pb": 20
+            },
+            "type": "card"
+        },
+        {
+            "options": {
+                "fields": [
+                    {
+                        "label": "Flooring Options",
+                        "options": {
+                            "variant": "h2"
+                        },
+                        "type": "header"
+                    },
+                    {
+                        "label": "Allow Dynamic Floors",
+                        "name": "allow_dynamic_floors",
+                        "options": {
+                            "color": "secondary"
+                        },
+                        "type": "switch",
+                        "value": true
+                    },
+                    {
+                        "options": {
+                            "columns": 2,
+                            "fields": [
+                                {
+                                    "label": "Floor Minimum (Cents)",
+                                    "name": "floor_minimum_cents",
+                                    "options": {
+                                        "color": "secondary",
+                                        "fullWidth": true,
+                                        "variant": "standard"
+                                    },
+                                    "type": "text",
+                                    "value": 5.0
+                                },
+                                {
+                                    "label": "AdX Multiplier",
+                                    "name": "adx_multiplier",
+                                    "options": {
+                                        "color": "secondary",
+                                        "fullWidth": true,
+                                        "variant": "standard"
+                                    },
+                                    "type": "text",
+                                    "value": 2.0
+                                }
+                            ]
+                        },
+                        "type": "grid"
+                    }
+                ],
+                "pb": 20
+            },
+            "type": "card"
+        },
+      {
+            "type": "serviceStatus",
+            "title": "Live Intent",
+            "name": "enable_liveintent",
+            "value": true,
+            "options": {
+                "fields": [
+                    {
+                        "type": "grid",
+                        "options": {
+                            "columns": 2,
+                            "fields": [
+                                {
+                                    "label": "Live Intent ID",
+                                    "name": "liveintent_id",
+                                    "type": "text",
+                                    "value": "did405",
+                                    "options": {
+                                        "fullWidth": true,
+                                        "variant": "standard"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "options": {
+                "fields": [
+                    {
+                        "label": "Prebid Options",
+                        "options": {
+                            "variant": "h2"
+                        },
+                        "type": "header"
+                    },
+                    {
+                        "label": "Prebid UserID Modules",
+                        "name": "prebid_userid_modules",
+                        "options": {
+                            "options": [
+                                {
+                                    "label": "hadronIdSystem",
+                                    "value": "hadronIdSystem"
+                                },
+                                {
+                                    "label": "ftrackIdSystem",
+                                    "value": "ftrackIdSystem"
+                                },
+                                {
+                                    "label": "imuIdSystem",
+                                    "value": "imuIdSystem"
+                                },
+                                {
+                                    "label": "flocIdSystem",
+                                    "value": "flocIdSystem"
+                                },
+                                {
+                                    "label": "amxIdSystem",
+                                    "value": "amxIdSystem"
+                                },
+                                {
+                                    "label": "teadsIdSystem",
+                                    "value": "teadsIdSystem"
+                                },
+                                {
+                                    "label": "liveIntentIdSystem",
+                                    "value": "liveIntentIdSystem"
+                                },
+                                {
+                                    "label": "unifiedIdSystem",
+                                    "value": "unifiedIdSystem"
+                                },
+                                {
+                                    "label": "mygaruIdSystem",
+                                    "value": "mygaruIdSystem"
+                                },
+                                {
+                                    "label": "admixerIdSystem",
+                                    "value": "admixerIdSystem"
+                                },
+                                {
+                                    "label": "33acrossIdSystem",
+                                    "value": "33acrossIdSystem"
+                                },
+                                {
+                                    "label": "adriverId",
+                                    "value": "adriverId"
+                                },
+                                {
+                                    "label": "growthCodeIdSystem",
+                                    "value": "growthCodeIdSystem"
+                                },
+                                {
+                                    "label": "gravitoIdSystem",
+                                    "value": "gravitoIdSystem"
+                                },
+                                {
+                                    "label": "utiqSystem",
+                                    "value": "utiqSystem"
+                                },
+                                {
+                                    "label": "deepintentDpesIdSystem",
+                                    "value": "deepintentDpesIdSystem"
+                                },
+                                {
+                                    "label": "dmdIdSystem",
+                                    "value": "dmdIdSystem"
+                                },
+                                {
+                                    "label": "pairIdSystem",
+                                    "value": "pairIdSystem"
+                                },
+                                {
+                                    "label": "euidIdSystem",
+                                    "value": "euidIdSystem"
+                                },
+                                {
+                                    "label": "criteoIdSystem",
+                                    "value": "criteoIdSystem"
+                                },
+                                {
+                                    "label": "id5IdSystem",
+                                    "value": "id5IdSystem"
+                                },
+                                {
+                                    "label": "publinkIdSystem",
+                                    "value": "publinkIdSystem"
+                                },
+                                {
+                                    "label": "adtelligentIdSystem",
+                                    "value": "adtelligentIdSystem"
+                                },
+                                {
+                                    "label": "naveggIdSystem",
+                                    "value": "naveggIdSystem"
+                                },
+                                {
+                                    "label": "uid2IdSystem",
+                                    "value": "uid2IdSystem"
+                                },
+                                {
+                                    "label": "zeotapIdPlusIdSystem",
+                                    "value": "zeotapIdPlusIdSystem"
+                                },
+                                {
+                                    "label": "lotamePanoramaIdSystem",
+                                    "value": "lotamePanoramaIdSystem"
+                                },
+                                {
+                                    "label": "tapadIdSystem",
+                                    "value": "tapadIdSystem"
+                                },
+                                {
+                                    "label": "justIdSystem",
+                                    "value": "justIdSystem"
+                                },
+                                {
+                                    "label": "intentIqIdSystem",
+                                    "value": "intentIqIdSystem"
+                                },
+                                {
+                                    "label": "fabrickIdSystem",
+                                    "value": "fabrickIdSystem"
+                                },
+                                {
+                                    "label": "idxIdSystem",
+                                    "value": "idxIdSystem"
+                                },
+                                {
+                                    "label": "netIdSystem",
+                                    "value": "netIdSystem"
+                                },
+                                {
+                                    "label": "kinessoIdSystem",
+                                    "value": "kinessoIdSystem"
+                                },
+                                {
+                                    "label": "trustpidSystem",
+                                    "value": "trustpidSystem"
+                                },
+                                {
+                                    "label": "quantcastIdSystem",
+                                    "value": "quantcastIdSystem"
+                                },
+                                {
+                                    "label": "adqueryIdSystem",
+                                    "value": "adqueryIdSystem"
+                                },
+                                {
+                                    "label": "mwOpenLinkIdSystem",
+                                    "value": "mwOpenLinkIdSystem"
+                                },
+                                {
+                                    "label": "oneKeyIdSystem",
+                                    "value": "oneKeyIdSystem"
+                                },
+                                {
+                                    "label": "parrableIdSystem",
+                                    "value": "parrableIdSystem"
+                                },
+                                {
+                                    "label": "identityLinkIdSystem",
+                                    "value": "identityLinkIdSystem"
+                                },
+                                {
+                                    "label": "merkleIdSystem",
+                                    "value": "merkleIdSystem"
+                                },
+                                {
+                                    "label": "pubProvidedIdSystem",
+                                    "value": "pubProvidedIdSystem"
+                                },
+                                {
+                                    "label": "connectIdSystem",
+                                    "value": "connectIdSystem"
+                                },
+                                {
+                                    "label": "dacIdSystem",
+                                    "value": "dacIdSystem"
+                                },
+                                {
+                                    "label": "freepassIdSystem",
+                                    "value": "freepassIdSystem"
+                                },
+                                {
+                                    "label": "czechAdIdSystem",
+                                    "value": "czechAdIdSystem"
+                                },
+                                {
+                                    "label": "britepoolIdSystem",
+                                    "value": "britepoolIdSystem"
+                                },
+                                {
+                                    "label": "sharedIdSystem",
+                                    "value": "sharedIdSystem"
+                                },
+                                {
+                                    "label": "deepintentIdSystem",
+                                    "value": "deepintentIdSystem"
+                                },
+                                {
+                                    "label": "novatiqIdSystem",
+                                    "value": "novatiqIdSystem"
+                                },
+                                {
+                                    "label": "topicsFpdModule",
+                                    "value": "topicsFpdModule"
+                                }
+                            ]
+                        },
+                        "type": "selectTag",
+                        "value": ""
+                    },
+                    {
+                        "label": "Prebid Analytics Modules",
+                        "name": "prebid_analytics_modules",
+                        "value": ""
+                    },
+                    {
+                        "label": "Prebid Base Modules",
+                        "name": "prebid_base_modules",
+                        "value": ""
+                    },
+                    {
+                        "label": "Prebid Version",
+                        "name": "prebid_version",
+                        "value": ""
+                    }
+                ],
+                "pb": 20
+            },
+            "type": "card"
+        }
+    ],
+    "header": {
+        "actions": [],
+        "title": "Account"
+    },
+    "hideSubmitButton": true,
+    "isNewForm": true,
+    "validation": {},
+    "validationConfig": {
+        "errMessages": {}
+    }
+}

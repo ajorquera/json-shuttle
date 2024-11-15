@@ -1,0 +1,5 @@
+{
+    "/api/:endpoint": "/:endpoint",
+    "/api/bookrags/:endpoint": "/:endpoint",
+    "/api/bookrags/scripts/:endpoint": "/:endpoint"
+}

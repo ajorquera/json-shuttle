@@ -1,0 +1,146 @@
+{
+    "items": [
+        {
+            "type": "grid",
+            "options": {
+                "fields": [
+                    {
+                        "label": "Account Name",
+                        "name": "account_name",
+                        "type": "text"
+                    },
+                    {
+                        "label": "Account Domain",
+                        "name": "account_domain",
+                        "type": "text"
+                    },
+                    {
+                        "label": "GAM Account",
+                        "value": 105,
+                        "name": "account_gam",
+                        "type": "select",
+                        "options": {
+                            "options": [
+                                {
+                                    "value": 105,
+                                    "label": "Practice Fusion (7165)"
+                                },
+                                {
+                                    "value": 103,
+                                    "label": "Learneo, Inc. (22962313868)"
+                                },
+                                {
+                                    "value": 99,
+                                    "label": "College Confidential (1006408)"
+                                },
+                                {
+                                    "value": 98,
+                                    "label": "Mongoose Net Ltd (17037559)"
+                                },
+                                {
+                                    "value": 97,
+                                    "label": "Big Edition (22893450455)"
+                                },
+                                {
+                                    "value": 92,
+                                    "label": "SocialBlade (1042301)"
+                                },
+                                {
+                                    "value": 91,
+                                    "label": "FootballCo (22272936144)"
+                                },
+                                {
+                                    "value": 89,
+                                    "label": "Tensa Ventures Ltd (22700735500)"
+                                },
+                                {
+                                    "value": 86,
+                                    "label": "Longitude Ads - SandBox (22691115009)"
+                                },
+                                {
+                                    "value": 80,
+                                    "label": "Unwind Media (22065394766)"
+                                },
+                                {
+                                    "value": 79,
+                                    "label": "Longitude Ads (22020501169)"
+                                },
+                                {
+                                    "value": 64,
+                                    "label": "Foreign Policy Magazine (7971222)"
+                                },
+                                {
+                                    "value": 58,
+                                    "label": "Sporting News (22299846845)"
+                                },
+                                {
+                                    "value": 56,
+                                    "label": "Zink Media, LLC (1002706)"
+                                },
+                                {
+                                    "value": null,
+                                    "label": "---"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "label": "Organization",
+                        "value": 1,
+                        "name": "account_organization",
+                        "type": "select",
+                        "options": {
+                            "options": [
+                                {
+                                    "value": 1,
+                                    "label": "Unwind Media"
+                                },
+                                {
+                                    "value": 2,
+                                    "label": "Learneo"
+                                },
+                                {
+                                    "value": 3,
+                                    "label": "FootballCo"
+                                },
+                                {
+                                    "value": 5,
+                                    "label": "Fabrik"
+                                },
+                                {
+                                    "value": 6,
+                                    "label": "Big Edition"
+                                },
+                                {
+                                    "value": 7,
+                                    "label": "Publisher Health"
+                                },
+                                {
+                                    "value": 8,
+                                    "label": "Longitude"
+                                },
+                                {
+                                    "value": 9,
+                                    "label": "Sporting News"
+                                },
+                                {
+                                    "value": null,
+                                    "label": "---"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "label": "Revenue Share",
+                        "name": "rev_share",
+                        "type": "text",
+                        "options": {
+                            "helperText": "Enter client's share of gross revenue between 0-1.",
+                            "placeholder": 1
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}
