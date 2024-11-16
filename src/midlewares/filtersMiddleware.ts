@@ -5,7 +5,8 @@ import { STATUS_CODES } from "http";
 
 const getParam = (req: any, param: string) => {
     const prefix = INNER_QUERY_PARAM_PREFIX ?? '@';
-    return req.query[prefix + param] ?? req.headers[prefix + param];
+    const property = req.query[prefix + param] ?? req.headers[prefix + param];
+    return property && property.toLowerCase();
 }
 
 const filterMiddleware: RequestHandler = async (req, res, next) => {
