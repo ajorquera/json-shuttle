@@ -6,7 +6,7 @@ import { STATUS_CODES } from "http";
 const getParam = (req: any, param: string) => {
     const prefix = INNER_QUERY_PARAM_PREFIX;
     const propertyName = (prefix + param);
-    return req.query[propertyName] ?? req.headers['x' + propertyName];
+    return req.query[propertyName] ?? req.headers['x-' + propertyName];
 }
 
 const filterMiddleware: RequestHandler = async (req, res, next) => {
