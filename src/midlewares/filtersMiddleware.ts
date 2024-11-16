@@ -4,7 +4,7 @@ import { RequestHandler } from "express";
 import { STATUS_CODES } from "http";
 
 const getParam = (req: any, param: string) => {
-    const prefix = INNER_QUERY_PARAM_PREFIX ?? '@';
+    const prefix = INNER_QUERY_PARAM_PREFIX ?? 'shuttle-json-';
     const property = req.query[prefix + param] ?? req.headers[prefix + param];
     return property && property.toLowerCase();
 }
