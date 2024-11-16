@@ -4,16 +4,15 @@ import { RequestHandler } from "express";
 import { STATUS_CODES } from "http";
 
 const getParam = (req: any, param: string) => {
-    const prefix = INNER_QUERY_PARAM_PREFIX ?? 'shuttle-json-';
-    const property = req.query[prefix + param] ?? req.headers[prefix + param];
-    return property && property.toLowerCase();
+    const prefix = INNER_QUERY_PARAM_PREFIX;
+    const propertyName = (prefix + param);
+    return req.query[propertyName] ?? req.headers['x' + propertyName];
 }
 
 const filterMiddleware: RequestHandler = async (req, res, next) => {
     const delay = getParam(req, 'delay');
     const status = getParam(req, 'status');
     const json = getParam(req, 'json');
-
     if (delay) {
 
         if (!delay) return next({ status: STATUS_CODES.BAD_REQUEST, message: 'Delay must be a number' });
