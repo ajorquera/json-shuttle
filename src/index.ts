@@ -1,8 +1,8 @@
+import "dotenv/config";
 import 'module-alias/register';
 
 const packageJS = require("../package.json");
 
-import "dotenv/config";
 
 
 import { PORT } from "./env";
