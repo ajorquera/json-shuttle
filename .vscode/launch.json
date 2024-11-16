@@ -2,26 +2,20 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Example",
             "type": "node",
             "request": "launch",
-            "runtimeExecutable": "node",
+            "name": "nodemon",
+            "runtimeExecutable": "nodemon",
             "runtimeArgs": [
-                "--nolazy",
-                "-r",
-                "ts-node/register/transpile-only"
+                "./src/index.ts"
             ],
-            "args": [
-                "src/index.ts",
-                "--example",
-                "hello"
-            ],
-            "cwd": "${workspaceRoot}",
-            "internalConsoleOptions": "openOnSessionStart",
-            "skipFiles": [
-                "<node_internals>/**",
-                "node_modules/**"
-            ]
+            "program": "${workspaceFolder}/bin/www",
+            "restart": true,
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
+            "env": {
+                "debug": "app:*",
+            }
         }
     ]
 }
