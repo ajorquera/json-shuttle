@@ -5,13 +5,13 @@ import { STATUS_CODES } from "http";
 
 const getParam = (req: any, param: string) => {
     const prefix = INNER_QUERY_PARAM_PREFIX ?? '@';
-    return req.query[prefix + param];
+    return req.query[prefix + param] ?? req.headers[prefix + param];
 }
 
 const filterMiddleware: RequestHandler = async (req, res, next) => {
-    const delay  = getParam(req, 'delay');
+    const delay = getParam(req, 'delay');
     const status = getParam(req, 'status');
-    const json   = getParam(req, 'json');
+    const json = getParam(req, 'json');
 
     if (delay) {
 
