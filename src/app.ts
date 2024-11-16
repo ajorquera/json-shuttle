@@ -3,7 +3,7 @@ import routes from './routes';
 import express from 'express';
 
 const morgan = require('morgan');
-const cors   = require('cors')
+const cors = require('cors');
 
 const app = express();
 
