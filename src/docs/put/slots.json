@@ -1,0 +1,40 @@
+{
+    "type": "success",
+    "message": "placement set to CC_T_D",
+    "data": {
+        "configFields": [
+            {
+                "name": "header_unit_id",
+                "type": "hidden",
+                "value": 535
+            },
+            {
+                "name": "header_partner_id",
+                "type": "hidden",
+                "value": 798
+            },
+            {
+                "label": "Enabled",
+                "name": "enabled",
+                "type": "switch",
+                "value": true
+            },
+            {
+                "name": "header_slot_id",
+                "type": "hidden",
+                "value": 22688
+            },
+            {
+                "label": "Placement",
+                "name": "placement",
+                "type": "text",
+                "value": "CC_T_D"
+            }
+        ],
+        "header_unit_id": 535,
+        "header_partner_id": 798,
+        "header_slot_id": 22688,
+        "placement": "CC_T_D",
+        "enabled": true
+    }
+}

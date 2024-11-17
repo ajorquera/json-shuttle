@@ -5,6 +5,6 @@ import DocsController from './controllers/docsController';
 const routes = Router();
 
 routes.get('/health', healthCheckController)
-routes.get('(*)/:fileName', DocsController);
+routes.route('(*)/:fileName').get(DocsController).put(DocsController);
 
 export default routes;
