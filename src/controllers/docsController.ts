@@ -1,9 +1,55 @@
 import { RequestHandler } from "express";
-import fs from 'fs';
+import rules from '@/rules';
 import path from "path";
+import fs from 'fs';
+
+const ConfigController: RequestHandler = (req, res, next) => {
+    for (let i = 0; i < rules.length; i++) {
+        const rule = rules[i];
+        const regex = new RegExp(rule.expresion);
+
+        if (regex.test(req.path) || rule.method !== req.method) continue;
+
+        for (let j = 0; j < rule.responses.length; j++) {
+            const response = rule.responses[j];
+
+            if (response.weight) {
+                const shouldRespond = Math.random() < response.weight;
+
+                if (shouldRespond) {
+                    res.status(response.status ?? 200);
+
+                    if (response.headers) {
+                        res.set(response.headers);
+                    }
+
+                    if (response.file) {
+                        fs.readFile(path.resolve(`${response.file}`), (err, jsonBuffer) => {
+                            if (err) {
+                                next({ status: 404, message: `${response.file} not found`, originalError: err });
+                                return;
+                            }
+                            const json = JSON.parse(jsonBuffer.toString());
+                            res.json(json);
+                            return;
+                        });
+                    } else if (response.body) {
+                        res.json(response.body);
+                        return;
+                    } else if (response.s3File) {
+                        // Implement S3 file retrieval with streams
+                    }
+                }
+            }
+        }
+    }
+
+    next();
+}
+
 
 const DocsController: RequestHandler = (req, res, next) => {
-    const fileName = req.params.fileName;
+    const fileName = req.path.split('/').pop();
 
     const method = req.method.toLowerCase();
 
@@ -14,4 +60,4 @@ const DocsController: RequestHandler = (req, res, next) => {
     });
 }
 
-export default DocsController;
+export default [ConfigController, DocsController];

@@ -1,64 +1,255 @@
 {
+    "header": {
+        "title": "Account",
+        "filters": [],
+        "type": "header",
+        "actions": [
+            {
+                "label": "+ Send New MCM Invite",
+                "type": "newItemButton",
+                "options": {
+                    "fields": [
+                        {
+                            "label": "Delegation Type",
+                            "name": "delegation_type",
+                            "type": "select",
+                            "value": "MANAGE_INVENTORY",
+                            "options": {
+                                "options": [
+                                    {
+                                        "label": "Manage Inventory",
+                                        "value": "MANAGE_INVENTORY"
+                                    },
+                                    {
+                                        "label": "Manage Account",
+                                        "value": "MANAGE_ACCOUNT"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "type": "condition",
+                            "options": {
+                                "property": "delegation_type",
+                                "conditions": {
+                                    "MANAGE_INVENTORY": [
+                                        {
+                                            "label": "Company Name",
+                                            "name": "mcm_company",
+                                            "type": "text",
+                                            "options": {
+                                                "placeholder": "College Confidential, LLC",
+                                                "fullWidth": true
+                                            }
+                                        },
+                                        {
+                                            "label": "Email Address",
+                                            "name": "mcm_email",
+                                            "type": "text",
+                                            "options": {
+                                                "fullWidth": true,
+                                                "variant": "standard"
+                                            }
+                                        },
+                                        {
+                                            "label": "Child Network ID",
+                                            "name": "child_network_id",
+                                            "type": "text",
+                                            "options": {
+                                                "fullWidth": true,
+                                                "variant": "standard"
+                                            }
+                                        }
+                                    ],
+                                    "MANAGE_ACCOUNT": [
+                                        {
+                                            "label": "Auto-Payment % to Parent",
+                                            "name": "mcm_rev_share",
+                                            "type": "text",
+                                            "options": {
+                                                "fullWidth": true,
+                                                "variant": "standard"
+                                            }
+                                        },
+                                        {
+                                            "label": "Company Name",
+                                            "name": "mcm_company",
+                                            "type": "text",
+                                            "options": {
+                                                "placeholder": "College Confidential, LLC",
+                                                "fullWidth": true
+                                            }
+                                        },
+                                        {
+                                            "label": "Email Address",
+                                            "name": "mcm_email",
+                                            "type": "text",
+                                            "options": {
+                                                "fullWidth": true,
+                                                "variant": "standard"
+                                            }
+                                        },
+                                        {
+                                            "label": "Child Network ID",
+                                            "name": "child_network_id",
+                                            "type": "text",
+                                            "options": {
+                                                "fullWidth": true,
+                                                "variant": "standard"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    ],
+                    "buttonProps": {
+                        "variant": "secondary"
+                    },
+                    "title": "MCM Child Information"
+                }
+            },
+            {
+                "label": "+ Render Ads.txt",
+                "type": "newItemButton",
+                "options": {
+                    "fields": [
+                        {
+                            "label": "Click \"Save\" to re-render the ads.txt file hosted at:",
+                            "type": "paragraph",
+                            "variant": "h1"
+                        },
+                        {
+                            "label": "https://adstxt.lngtd.com/collegeconfidential.txt",
+                            "name": "render_adstxt",
+                            "type": "link",
+                            "value": true,
+                            "options": {
+                                "href": "https://adstxt.lngtd.com/collegeconfidential.txt"
+                            }
+                        }
+                    ],
+                    "buttonProps": {
+                        "variant": "secondary"
+                    },
+                    "title": "Render Ads.txt file"
+                }
+            }
+        ]
+    },
+    "isNewForm": true,
     "fields": [
         {
             "options": {
                 "fields": [
                     {
+                        "type": "header",
                         "label": "Account Setup",
                         "options": {
-                            "variant": "h2"
-                        },
-                        "type": "header"
+                            "variant": "h1"
+                        }
                     },
                     {
+                        "type": "grid",
                         "options": {
                             "columns": 2,
                             "fields": [
                                 {
                                     "label": "Account Name",
                                     "name": "account_name",
+                                    "type": "text",
+                                    "value": "collegeconfidential",
                                     "options": {
-                                        "color": "secondary",
                                         "fullWidth": true,
+                                        "variant": "standard",
                                         "inputProps": {
                                             "readOnly": true
-                                        },
-                                        "variant": "standard",
-                                        "help": {
-                                            "content": "Required",
-                                            "icon": "asterisk"
                                         }
-                                    },
-                                    "type": "text",
-                                    "value": "gradesaver"
+                                    }
                                 },
                                 {
                                     "label": "Account Domain",
                                     "name": "account_domain",
+                                    "type": "text",
+                                    "value": "collegeconfidential.comm",
                                     "options": {
-                                        "color": "secondary",
                                         "fullWidth": true,
                                         "variant": "standard"
-                                    },
-                                    "type": "text",
-                                    "value": ""
+                                    }
                                 }
                             ]
-                        },
-                        "type": "grid"
+                        }
                     },
                     {
                         "label": "Account Websites",
                         "name": "account_websites",
+                        "type": "textarea",
                         "options": {
-                            "color": "secondary",
-                            "fullWidth": true,
-                            "helperText": "Sites here will be submitted for approval in GAM",
-                            "resize": true,
+                            "fullWidth": {
+                                "helper_text": "Sites here will be submitted for approval in GAM"
+                            },
                             "variant": "standard"
-                        },
-                        "type": "text",
-                        "value": ""
+                        }
+                    },
+                    {
+                        "type": "grid",
+                        "options": {
+                            "columns": 2,
+                            "fields": [
+                                {
+                                    "label": "Account Currency",
+                                    "name": "base_currency",
+                                    "type": "text",
+                                    "value": "USD",
+                                    "options": {
+                                        "fullWidth": true,
+                                        "variant": "standard",
+                                        "inputProps": {
+                                            "readOnly": true
+                                        },
+                                        "options": [
+                                            {
+                                                "label": "USD",
+                                                "value": "USD"
+                                            },
+                                            {
+                                                "label": "GBP",
+                                                "value": "GBP"
+                                            },
+                                            {
+                                                "label": "EUR",
+                                                "value": "EUR"
+                                            }
+                                        ],
+                                        "help": {
+                                            "icon": "eye",
+                                            "content": "Only superusers can see this field",
+                                            "size": "sm",
+                                            "placement": "left"
+                                        }
+                                    }
+                                },
+                                {
+                                    "label": "Account Revenue Share",
+                                    "name": "rev_share",
+                                    "type": "text",
+                                    "value": "80%",
+                                    "options": {
+                                        "fullWidth": true,
+                                        "variant": "standard",
+                                        "inputProps": {
+                                            "readOnly": true
+                                        },
+                                        "help": {
+                                            "icon": "eye",
+                                            "content": "Only superusers can see this field",
+                                            "size": "sm",
+                                            "placement": "left"
+                                        }
+                                    }
+                                }
+                            ]
+                        }
                     }
                 ],
                 "pb": 20
@@ -69,403 +260,161 @@
             "options": {
                 "fields": [
                     {
+                        "type": "header",
                         "label": "GAM Setup",
                         "options": {
-                            "variant": "h2"
-                        },
-                        "type": "header"
+                            "variant": "h1"
+                        }
                     },
                     {
-                        "label": "+ Send New MCM Invite",
-                        "options": {
-                            "buttonProps": {
-                                "variant": "secondary"
-                            },
-                            "fields": [
-                                {
-                                    "label": "Delegation Type",
-                                    "name": "delegation_type",
-                                    "options": {
-                                        "options": [
-                                            {
-                                                "label": "Manage Inventory",
-                                                "value": "MANAGE_INVENTORY"
-                                            },
-                                            {
-                                                "label": "Manage Account",
-                                                "value": "MANAGE_ACCOUNT"
-                                            }
-                                        ]
-                                    },
-                                    "type": "select",
-                                    "value": "MANAGE_INVENTORY"
-                                },
-                                {
-                                    "options": {
-                                        "conditions": {
-                                            "MANAGE_ACCOUNT": [
-                                                {
-                                                    "label": "Auto-Payment % to Parent",
-                                                    "name": "mcm_rev_share",
-                                                    "type": "text"
-                                                },
-                                                {
-                                                    "help": {
-                                                        "content": "Required",
-                                                        "icon": "asterisk",
-                                                        "placement": "right",
-                                                        "size": "sm"
-                                                    },
-                                                    "label": "Company Name",
-                                                    "name": "mcm_company",
-                                                    "options": {
-                                                        "placeholder": ""
-                                                    },
-                                                    "type": "text"
-                                                },
-                                                {
-                                                    "help": {
-                                                        "content": "Required",
-                                                        "icon": "asterisk",
-                                                        "placement": "right",
-                                                        "size": "sm"
-                                                    },
-                                                    "label": "Email Address",
-                                                    "name": "mcm_email",
-                                                    "options": {
-                                                        "helperText": "MCM invite will be sent to this address"
-                                                    },
-                                                    "type": "text"
-                                                },
-                                                {
-                                                    "help": {
-                                                        "content": "Required",
-                                                        "icon": "asterisk",
-                                                        "placement": "right",
-                                                        "size": "sm"
-                                                    },
-                                                    "label": "Child Network ID",
-                                                    "name": "child_network_id",
-                                                    "type": "text"
-                                                }
-                                            ],
-                                            "MANAGE_INVENTORY": [
-                                                {
-                                                    "help": {
-                                                        "content": "Required",
-                                                        "icon": "asterisk",
-                                                        "placement": "right",
-                                                        "size": "sm"
-                                                    },
-                                                    "label": "Company Name",
-                                                    "name": "mcm_company",
-                                                    "options": {
-                                                        "placeholder": ""
-                                                    },
-                                                    "type": "text"
-                                                },
-                                                {
-                                                    "help": {
-                                                        "content": "Required",
-                                                        "icon": "asterisk",
-                                                        "placement": "right",
-                                                        "size": "sm"
-                                                    },
-                                                    "label": "Email Address",
-                                                    "name": "mcm_email",
-                                                    "options": {
-                                                        "helperText": "MCM invite will be sent to this address"
-                                                    },
-                                                    "type": "text"
-                                                },
-                                                {
-                                                    "label": "Child Network ID",
-                                                    "name": "child_network_id",
-                                                    "type": "text"
-                                                }
-                                            ]
-                                        },
-                                        "property": "delegation_type"
-                                    },
-                                    "type": "condition"
-                                }
-                            ],
-                            "title": "MCM Child Information"
-                        },
-                        "type": "newItemButton"
-                    },
-                    {
+                        "type": "grid",
                         "options": {
                             "columns": 2,
                             "fields": [
                                 {
                                     "label": "GAM Network Name",
                                     "name": "gam_network_name",
-                                    "options": {
-                                        "color": "secondary",
-                                        "fullWidth": true,
-                                        "variant": "standard"
-                                    },
                                     "type": "text",
-                                    "value": null
+                                    "value": "College Confidential",
+                                    "options": {
+                                        "fullWidth": true,
+                                        "variant": "standard",
+                                        "inputProps": {
+                                            "readOnly": true
+                                        }
+                                    }
                                 },
                                 {
                                     "label": "GAM Network ID",
                                     "name": "ad_server_account_id",
-                                    "options": {
-                                        "color": "secondary",
-                                        "fullWidth": true,
-                                        "variant": "standard"
-                                    },
                                     "type": "text",
-                                    "value": "22020501169"
+                                    "value": "1006408",
+                                    "options": {
+                                        "fullWidth": true,
+                                        "variant": "standard",
+                                        "inputProps": {
+                                            "readOnly": true
+                                        }
+                                    }
                                 }
                             ]
-                        },
-                        "type": "grid"
+                        }
                     },
                     {
+                        "label": "GAM Parent Ad Unit IDs",
+                        "name": "site_ad_unit_id",
+                        "type": "text",
+                        "value": "23199345221",
                         "options": {
-                            "columns": 2,
-                            "fields": [
-                                {
-                                    "label": "GAM Parent Ad Unit ID",
-                                    "name": "site_ad_unit_id",
-                                    "options": {
-                                        "color": "secondary",
-                                        "fullWidth": true,
-                                        "variant": "standard"
-                                    },
-                                    "type": "text",
-                                    "value": "22096843690"
-                                },
-                                {
-                                    "label": "GAM MCM Status",
-                                    "name": "mcm_status",
-                                    "options": {
-                                        "color": "secondary",
-                                        "fullWidth": true,
-                                        "variant": "standard"
-                                    },
-                                    "type": "text",
-                                    "value": "not submitted"
-                                }
-                            ]
-                        },
-                        "type": "grid"
+                            "fullWidth": true,
+                            "variant": "standard"
+                        }
                     },
                     {
+                        "type": "grid",
                         "options": {
                             "columns": 2,
                             "fields": [
                                 {
                                     "label": "GAM Child Network ID (Optional)",
                                     "name": "gam_child_publisher_id",
+                                    "type": "text",
                                     "options": {
-                                        "color": "secondary",
                                         "fullWidth": true,
                                         "variant": "standard"
-                                    },
-                                    "type": "text",
-                                    "value": ""
+                                    }
+                                },
+                                {
+                                    "label": "GAM MCM Status",
+                                    "name": "mcm_status",
+                                    "type": "select",
+                                    "value": "o&o",
+                                    "options": {
+                                        "options": [
+                                            {
+                                                "label": "not submitted",
+                                                "value": "not submitted"
+                                            },
+                                            {
+                                                "label": "submitted",
+                                                "value": "submitted"
+                                            },
+                                            {
+                                                "label": "rejected",
+                                                "value": "rejected"
+                                            },
+                                            {
+                                                "label": "approved",
+                                                "value": "approved"
+                                            },
+                                            {
+                                                "label": "o&o",
+                                                "value": "o&o"
+                                            }
+                                        ],
+                                        "fullWidth": true,
+                                        "inputProps": {
+                                            "readOnly": true
+                                        },
+                                        "help": {
+                                            "icon": "eye",
+                                            "content": "Only superusers can see this field",
+                                            "size": "sm",
+                                            "placement": "left"
+                                        }
+                                    }
                                 }
                             ]
-                        },
-                        "type": "grid"
+                        }
                     },
                     {
+                        "type": "grid",
                         "options": {
                             "columns": 2,
                             "fields": [
                                 {
-                                    "help": {
-                                        "content": "Required",
-                                        "icon": "asterisk",
-                                        "placement": "right",
-                                        "size": "sm"
-                                    },
                                     "label": "Prebid GAM Order ID",
                                     "name": "prebid_gam_order_id",
+                                    "type": "text",
+                                    "value": "2683623509, 2878839240",
                                     "options": {
-                                        "color": "secondary",
+                                        "help": {
+                                            "icon": "asterisk",
+                                            "content": "Required if units are running through GAM",
+                                            "size": "sm",
+                                            "placement": "left"
+                                        },
                                         "fullWidth": true,
                                         "variant": "standard"
-                                    },
-                                    "type": "text",
-                                    "value": "2697632378,2697632378"
+                                    }
                                 },
                                 {
-                                    "help": {
-                                        "content": "Required",
-                                        "icon": "asterisk",
-                                        "placement": "right",
-                                        "size": "sm"
-                                    },
                                     "label": "LNGTD Advertiser ID",
                                     "name": "lngtd_advertiser_id",
+                                    "type": "text",
+                                    "value": "4862193073",
                                     "options": {
-                                        "color": "secondary",
                                         "fullWidth": true,
                                         "variant": "standard"
-                                    },
-                                    "type": "text",
-                                    "value": "12345"
+                                    }
                                 }
                             ]
-                        },
-                        "type": "grid"
-                    }
-                ],
-                "pb": 20
-            },
-            "type": "card"
-        },
-        {
-            "options": {
-                "fields": [
+                        }
+                    },
                     {
-                        "label": "Sellers.json / Ads.txt",
+                        "label": "Line Item Exclusions",
+                        "type": "header",
                         "options": {
                             "variant": "h2"
-                        },
-                        "type": "header"
-                    },
-                    {
-                        "options": {
-                            "columns": 2,
-                            "fields": [
-                                {
-                                    "label": "Account Owner",
-                                    "name": "account_owner",
-                                    "options": {
-                                        "color": "secondary",
-                                        "fullWidth": true,
-                                        "variant": "standard"
-                                    },
-                                    "type": "text",
-                                    "value": ""
-                                },
-                                {
-                                    "label": "Seller ID",
-                                    "name": "_seller_id",
-                                    "options": {
-                                        "color": "secondary",
-                                        "fullWidth": true,
-                                        "variant": "standard"
-                                    },
-                                    "type": "text",
-                                    "value": "9412"
-                                }
-                            ]
-                        },
-                        "type": "grid"
-                    },
-                    {
-                        "options": {
-                            "columns": 2,
-                            "fields": [
-                                {
-                                    "label": "Additional Ads.txt Entries",
-                                    "name": "adstxt_entries",
-                                    "options": {
-                                        "color": "secondary",
-                                        "fullWidth": true,
-                                        "variant": "standard"
-                                    },
-                                    "type": "text",
-                                    "value": ""
-                                },
-                                {
-                                    "label": "Ads.txt Outside LNGTD",
-                                    "name": "adstxt_outside_lngtd",
-                                    "options": {
-                                        "color": "secondary",
-                                        "help": {
-                                            "content": "Required",
-                                            "icon": "asterisk",
-                                            "placement": "right",
-                                            "size": "sm"
-                                        }
-                                    },
-                                    "type": "switch",
-                                    "value": false
-                                }
-                            ]
-                        },
-                        "type": "grid"
-                    }
-                ],
-                "pb": 20
-            },
-            "type": "card"
-        },
-        {
-            "options": {
-                "fields": [
-                    {
-                        "label": "Refresh & Focus Options",
-                        "options": {
-                            "variant": "h2"
-                        },
-                        "type": "header"
-                    },
-                    {
-                        "label": "Refresh Interval (seconds)",
-                        "name": "refresh_interval",
-                        "options": {
-                            "color": "secondary",
-                            "fullWidth": true,
-                            "variant": "standard"
-                        },
-                        "type": "text",
-                        "value": 30.0
-                    },
-                    {
-                        "help": {
-                            "content": "Require the browser window to be in focus for inital ad auction to run",
-                            "icon": "question-circle",
-                            "size": "sm"
-                        },
-                        "label": "Init Requires Focus",
-                        "name": "init_requires_focus",
-                        "options": {
-                            "color": "secondary"
-                        },
-                        "type": "switch",
-                        "value": false
-                    },
-                    {
-                        "help": {
-                            "content": "Require the browser window to be in focus for refresh ad auctions to run",
-                            "icon": "question-circle",
-                            "size": "sm"
-                        },
-                        "label": "Refresh Requires Focus",
-                        "name": "refresh_requires_focus",
-                        "options": {
-                            "color": "secondary"
-                        },
-                        "type": "switch",
-                        "value": false
-                    },
-                    {
-                        "help": {
-                            "content": "Pauses refresh auctions if user has not interacted with browser for over 1 minute",
-                            "icon": "question-circle",
-                            "size": "sm"
-                        },
-                        "label": "Refresh Requires User Interaction",
-                        "name": "refresh_requires_user_interaction",
-                        "options": {
-                            "color": "secondary"
-                        },
-                        "type": "switch",
-                        "value": false
+                        }
                     },
                     {
                         "label": "Line Item Types to Exclude from Refresh",
                         "name": "exclude_from_refresh_line_item_types",
+                        "type": "selectTag",
                         "options": {
+                            "fullWidth": true,
+                            "variant": "standard",
                             "options": [
                                 {
                                     "label": "SPONSORSHIP",
@@ -474,70 +423,19 @@
                                 {
                                     "label": "STANDARD",
                                     "value": "2"
-                                },
-                                {
-                                    "label": "",
-                                    "value": "3"
                                 }
-                            ]
-                        },
-                        "type": "selectTag",
-                        "value": ""
+                            ],
+                            "disableCloseOnSelect": true
+                        }
                     },
                     {
                         "label": "Manual Line Item IDs to Exclude from Refresh",
                         "name": "manual_no_refresh_line_item_ids",
+                        "type": "textarea",
                         "options": {
-                            "color": "secondary",
                             "fullWidth": true,
                             "variant": "standard"
-                        },
-                        "type": "text",
-                        "value": ""
-                    },
-                    {
-                        "help": {
-                            "content": "Allow refresh auctions to run after an impression goes unfilled",
-                            "icon": "question-circle",
-                            "size": "sm"
-                        },
-                        "label": "Refresh Unfilled Impressions",
-                        "name": "refresh_unfilled_impressions",
-                        "options": {
-                            "color": "secondary"
-                        },
-                        "type": "switch",
-                        "value": false
-                    },
-                    {
-                        "options": {
-                            "columns": 2,
-                            "fields": [
-                                {
-                                    "label": "Refresh Unfilled Impressions After (seconds)",
-                                    "name": "refresh_unfilled_impressions_after",
-                                    "options": {
-                                        "color": "secondary",
-                                        "fullWidth": true,
-                                        "variant": "standard"
-                                    },
-                                    "type": "text",
-                                    "value": 30.0
-                                },
-                                {
-                                    "label": "Allow Unfilled Retries",
-                                    "name": "allow_unfilled_retries",
-                                    "options": {
-                                        "color": "secondary",
-                                        "fullWidth": true,
-                                        "variant": "standard"
-                                    },
-                                    "type": "text",
-                                    "value": 1
-                                }
-                            ]
-                        },
-                        "type": "grid"
+                        }
                     }
                 ],
                 "pb": 20
@@ -548,144 +446,193 @@
             "options": {
                 "fields": [
                     {
-                        "label": "Configuration Settings",
+                        "type": "header",
+                        "label": "Sellers.json & Ads.txt",
                         "options": {
-                            "variant": "h2"
-                        },
-                        "type": "header"
+                            "variant": "h1"
+                        }
                     },
-                    {
-                        "options": {
-                            "columns": 2,
-                            "fields": [
-                                {
-                                    "label": "Desktop Timeout (seconds)",
-                                    "name": "desktop_timeout",
-                                    "options": {
-                                        "color": "secondary",
-                                        "fullWidth": true,
-                                        "variant": "standard"
-                                    },
-                                    "type": "text",
-                                    "value": 2.25
-                                },
-                                {
-                                    "label": "Mobile Timeout (seconds)",
-                                    "name": "mobile_timeout",
-                                    "options": {
-                                        "color": "secondary",
-                                        "fullWidth": true,
-                                        "variant": "standard"
-                                    },
-                                    "type": "text",
-                                    "value": 2.75
-                                }
-                            ]
-                        },
-                        "type": "grid"
-                    },
-                    {
-                        "help": {
-                            "content": "Pause bid requests to bidders who have not bid after a set amount of time or number of auctions",
-                            "icon": "question-circle",
-                            "placement": "right",
-                            "size": "sm"
-                        },
-                        "label": "Filter Non-Active Bidders (Smart Requests)",
-                        "name": "should_filter_non_active_bidders",
-                        "options": {
-                            "color": "secondary"
-                        },
-                        "type": "switch",
-                        "value": false
-                    },
-                    {
-                        "label": "Global Script Prefix",
-                        "name": "global_script_prefix",
-                        "options": {
-                            "color": "secondary",
-                            "fullWidth": true,
-                            "variant": "standard"
-                        },
-                        "type": "text",
-                        "value": ""
-                    }
-                ],
-                "pb": 20
-            },
-            "type": "card"
-        },
-        {
-            "options": {
-                "fields": [
-                    {
-                        "label": "Flooring Options",
-                        "options": {
-                            "variant": "h2"
-                        },
-                        "type": "header"
-                    },
-                    {
-                        "label": "Allow Dynamic Floors",
-                        "name": "allow_dynamic_floors",
-                        "options": {
-                            "color": "secondary"
-                        },
-                        "type": "switch",
-                        "value": true
-                    },
-                    {
-                        "options": {
-                            "columns": 2,
-                            "fields": [
-                                {
-                                    "label": "Floor Minimum (Cents)",
-                                    "name": "floor_minimum_cents",
-                                    "options": {
-                                        "color": "secondary",
-                                        "fullWidth": true,
-                                        "variant": "standard"
-                                    },
-                                    "type": "text",
-                                    "value": 5.0
-                                },
-                                {
-                                    "label": "AdX Multiplier",
-                                    "name": "adx_multiplier",
-                                    "options": {
-                                        "color": "secondary",
-                                        "fullWidth": true,
-                                        "variant": "standard"
-                                    },
-                                    "type": "text",
-                                    "value": 2.0
-                                }
-                            ]
-                        },
-                        "type": "grid"
-                    }
-                ],
-                "pb": 20
-            },
-            "type": "card"
-        },
-      {
-            "type": "serviceStatus",
-            "title": "Live Intent",
-            "name": "enable_liveintent",
-            "value": true,
-            "options": {
-                "fields": [
                     {
                         "type": "grid",
                         "options": {
                             "columns": 2,
                             "fields": [
                                 {
-                                    "label": "Live Intent ID",
-                                    "name": "liveintent_id",
+                                    "label": "Ads.txt for collegeconfidential",
+                                    "name": "collegeconfidential_adstxt_link",
+                                    "type": "link",
+                                    "options": {
+                                        "href": "https://adstxt.lngtd.com/collegeconfidential.txt"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "type": "grid",
+                        "options": {
+                            "columns": 2,
+                            "fields": [
+                                {
+                                    "label": "Account Owner",
+                                    "name": "account_owner",
                                     "type": "text",
-                                    "value": "did405",
+                                    "value": "College Confidential, LLC",
+                                    "options": {
+                                        "fullWidth": true,
+                                        "variant": "standard"
+                                    }
+                                },
+                                {
+                                    "label": "Seller ID",
+                                    "name": "_seller_id",
+                                    "type": "text",
+                                    "value": "9392",
+                                    "options": {
+                                        "fullWidth": true,
+                                        "variant": "standard",
+                                        "inputProps": {
+                                            "readOnly": true
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "type": "grid",
+                        "options": {
+                            "columns": 2,
+                            "fields": [
+                                {
+                                    "label": "Additional Ads.txt Entries",
+                                    "name": "adstxt_entries",
+                                    "type": "textarea",
+                                    "options": {
+                                        "fullWidth": true,
+                                        "variant": "standard"
+                                    }
+                                },
+                                {
+                                    "label": "Ads.txt Outside LNGTD",
+                                    "name": "adstxt_outside_lngtd",
+                                    "type": "switch",
+                                    "options": {
+                                        "fullWidth": true,
+                                        "variant": "standard",
+                                        "help": {
+                                            "icon": "eye",
+                                            "content": "Only superusers can see this field",
+                                            "size": "sm",
+                                            "placement": "left"
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "pb": 20
+            },
+            "type": "card"
+        },
+        {
+            "options": {
+                "fields": [
+                    {
+                        "type": "header",
+                        "label": "Configuration Settings",
+                        "options": {
+                            "variant": "h1"
+                        }
+                    },
+                    {
+                        "label": "Refresh & Focus",
+                        "type": "header",
+                        "options": {
+                            "variant": "h2"
+                        }
+                    },
+                    {
+                        "type": "grid",
+                        "options": {
+                            "columns": 2,
+                            "fields": [
+                                {
+                                    "label": "Refresh Interval (seconds)",
+                                    "name": "refresh_interval",
+                                    "type": "text",
+                                    "value": 30.0,
+                                    "options": {
+                                        "fullWidth": true,
+                                        "variant": "standard"
+                                    }
+                                },
+                                {
+                                    "label": "Refresh Requires User Interaction",
+                                    "name": "refresh_requires_user_interaction",
+                                    "type": "switch",
+                                    "options": {
+                                        "fullWidth": true,
+                                        "variant": "secondary"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "type": "grid",
+                        "options": {
+                            "columns": 2,
+                            "fields": [
+                                {
+                                    "label": "Init Requires Focus",
+                                    "name": "init_requires_focus",
+                                    "type": "switch",
+                                    "options": {
+                                        "fullWidth": true,
+                                        "variant": "secondary"
+                                    }
+                                },
+                                {
+                                    "label": "Refresh Requires Focus",
+                                    "name": "refresh_requires_focus",
+                                    "type": "switch",
+                                    "options": {
+                                        "fullWidth": true,
+                                        "variant": "secondary"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "label": "Timeout",
+                        "type": "header",
+                        "options": {
+                            "variant": "h2"
+                        }
+                    },
+                    {
+                        "type": "grid",
+                        "options": {
+                            "columns": 2,
+                            "fields": [
+                                {
+                                    "label": "Desktop Timeout (seconds)",
+                                    "name": "desktop_timeout",
+                                    "type": "text",
+                                    "value": 2.0,
+                                    "options": {
+                                        "fullWidth": true,
+                                        "variant": "standard"
+                                    }
+                                },
+                                {
+                                    "label": "Mobile Timeout (seconds)",
+                                    "name": "mobile_timeout",
+                                    "type": "text",
+                                    "value": 2.5,
                                     "options": {
                                         "fullWidth": true,
                                         "variant": "standard"
@@ -693,23 +640,1255 @@
                                 }
                             ]
                         }
+                    },
+                    {
+                        "label": "Revenue Optimization",
+                        "type": "header",
+                        "options": {
+                            "variant": "h2"
+                        }
+                    },
+                    {
+                        "type": "grid",
+                        "options": {
+                            "columns": 3,
+                            "fields": [
+                                {
+                                    "label": "Enable Smart Requests (Throttle Inactive Bidders)",
+                                    "name": "should_filter_non_active_bidders",
+                                    "type": "switch",
+                                    "value": true,
+                                    "options": {
+                                        "fullWidth": true,
+                                        "variant": "secondary"
+                                    }
+                                },
+                                {
+                                    "label": "Enable Dynamic Floors",
+                                    "name": "allow_dynamic_floors",
+                                    "type": "switch",
+                                    "value": true,
+                                    "options": {
+                                        "fullWidth": true,
+                                        "variant": "secondary"
+                                    }
+                                },
+                                {
+                                    "label": "AdX Multiplier",
+                                    "name": "adx_multiplier",
+                                    "type": "text",
+                                    "value": 2.0,
+                                    "options": {
+                                        "fullWidth": true,
+                                        "variant": "standard",
+                                        "help": {
+                                            "icon": "eye",
+                                            "content": "Only superusers can see this field",
+                                            "size": "sm",
+                                            "placement": "left"
+                                        }
+                                    }
+                                }
+                            ]
+                        }
                     }
-                ]
-            }
+                ],
+                "pb": 20
+            },
+            "type": "card"
         },
         {
             "options": {
                 "fields": [
                     {
-                        "label": "Prebid Options",
+                        "type": "header",
+                        "label": "Services",
+                        "options": {
+                            "variant": "h1"
+                        }
+                    },
+                    {
+                        "label": "Google Analytics (GA4)",
+                        "type": "header",
                         "options": {
                             "variant": "h2"
+                        }
+                    },
+                    {
+                        "type": "grid",
+                        "options": {
+                            "columns": 2,
+                            "fields": [
+                                {
+                                    "label": "GA4 Account ID",
+                                    "name": "analytics_account_id",
+                                    "type": "text",
+                                    "options": {
+                                        "fullWidth": true,
+                                        "variant": "standard"
+                                    }
+                                },
+                                {
+                                    "label": "GA4 Property ID",
+                                    "name": "analytics_access_code",
+                                    "type": "text",
+                                    "options": {
+                                        "fullWidth": true,
+                                        "variant": "standard"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "type": "serviceStatus",
+                        "title": "Confiant",
+                        "name": "enable_confiant",
+                        "value": true,
+                        "options": {
+                            "fields": [
+                                {
+                                    "type": "grid",
+                                    "options": {
+                                        "columns": 2,
+                                        "fields": [
+                                            {
+                                                "label": "Confiant ID",
+                                                "name": "confiant_id",
+                                                "type": "text",
+                                                "value": "0vuYYypr3Hr10FLx2-weS1MEgCg",
+                                                "options": {
+                                                    "fullWidth": true,
+                                                    "variant": "standard"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "label": "Confiant Geos",
+                                    "name": "confiant_geos",
+                                    "type": "selectTag",
+                                    "value": "US,CA",
+                                    "options": {
+                                        "options": [
+                                            {
+                                                "label": "Aruba (AW)",
+                                                "value": "AW"
+                                            },
+                                            {
+                                                "label": "Afghanistan (AF)",
+                                                "value": "AF"
+                                            },
+                                            {
+                                                "label": "Angola (AO)",
+                                                "value": "AO"
+                                            },
+                                            {
+                                                "label": "Anguilla (AI)",
+                                                "value": "AI"
+                                            },
+                                            {
+                                                "label": "Åland Islands (AX)",
+                                                "value": "AX"
+                                            },
+                                            {
+                                                "label": "Albania (AL)",
+                                                "value": "AL"
+                                            },
+                                            {
+                                                "label": "Andorra (AD)",
+                                                "value": "AD"
+                                            },
+                                            {
+                                                "label": "United Arab Emirates (AE)",
+                                                "value": "AE"
+                                            },
+                                            {
+                                                "label": "Argentina (AR)",
+                                                "value": "AR"
+                                            },
+                                            {
+                                                "label": "Armenia (AM)",
+                                                "value": "AM"
+                                            },
+                                            {
+                                                "label": "American Samoa (AS)",
+                                                "value": "AS"
+                                            },
+                                            {
+                                                "label": "Antarctica (AQ)",
+                                                "value": "AQ"
+                                            },
+                                            {
+                                                "label": "French Southern Territories (TF)",
+                                                "value": "TF"
+                                            },
+                                            {
+                                                "label": "Antigua and Barbuda (AG)",
+                                                "value": "AG"
+                                            },
+                                            {
+                                                "label": "Australia (AU)",
+                                                "value": "AU"
+                                            },
+                                            {
+                                                "label": "Austria (AT)",
+                                                "value": "AT"
+                                            },
+                                            {
+                                                "label": "Azerbaijan (AZ)",
+                                                "value": "AZ"
+                                            },
+                                            {
+                                                "label": "Burundi (BI)",
+                                                "value": "BI"
+                                            },
+                                            {
+                                                "label": "Belgium (BE)",
+                                                "value": "BE"
+                                            },
+                                            {
+                                                "label": "Benin (BJ)",
+                                                "value": "BJ"
+                                            },
+                                            {
+                                                "label": "Bonaire/ Sint Eustatius and Saba (BQ)",
+                                                "value": "BQ"
+                                            },
+                                            {
+                                                "label": "Burkina Faso (BF)",
+                                                "value": "BF"
+                                            },
+                                            {
+                                                "label": "Bangladesh (BD)",
+                                                "value": "BD"
+                                            },
+                                            {
+                                                "label": "Bulgaria (BG)",
+                                                "value": "BG"
+                                            },
+                                            {
+                                                "label": "Bahrain (BH)",
+                                                "value": "BH"
+                                            },
+                                            {
+                                                "label": "Bahamas (BS)",
+                                                "value": "BS"
+                                            },
+                                            {
+                                                "label": "Bosnia and Herzegovina (BA)",
+                                                "value": "BA"
+                                            },
+                                            {
+                                                "label": "Saint Barthélemy (BL)",
+                                                "value": "BL"
+                                            },
+                                            {
+                                                "label": "Belarus (BY)",
+                                                "value": "BY"
+                                            },
+                                            {
+                                                "label": "Belize (BZ)",
+                                                "value": "BZ"
+                                            },
+                                            {
+                                                "label": "Bermuda (BM)",
+                                                "value": "BM"
+                                            },
+                                            {
+                                                "label": "Bolivia/ Plurinational State of (BO)",
+                                                "value": "BO"
+                                            },
+                                            {
+                                                "label": "Brazil (BR)",
+                                                "value": "BR"
+                                            },
+                                            {
+                                                "label": "Barbados (BB)",
+                                                "value": "BB"
+                                            },
+                                            {
+                                                "label": "Brunei Darussalam (BN)",
+                                                "value": "BN"
+                                            },
+                                            {
+                                                "label": "Bhutan (BT)",
+                                                "value": "BT"
+                                            },
+                                            {
+                                                "label": "Bouvet Island (BV)",
+                                                "value": "BV"
+                                            },
+                                            {
+                                                "label": "Botswana (BW)",
+                                                "value": "BW"
+                                            },
+                                            {
+                                                "label": "Central African Republic (CF)",
+                                                "value": "CF"
+                                            },
+                                            {
+                                                "label": "Canada (CA)",
+                                                "value": "CA"
+                                            },
+                                            {
+                                                "label": "Cocos (Keeling) Islands (CC)",
+                                                "value": "CC"
+                                            },
+                                            {
+                                                "label": "Switzerland (CH)",
+                                                "value": "CH"
+                                            },
+                                            {
+                                                "label": "Chile (CL)",
+                                                "value": "CL"
+                                            },
+                                            {
+                                                "label": "China (CN)",
+                                                "value": "CN"
+                                            },
+                                            {
+                                                "label": "Côte d'Ivoire (CI)",
+                                                "value": "CI"
+                                            },
+                                            {
+                                                "label": "Cameroon (CM)",
+                                                "value": "CM"
+                                            },
+                                            {
+                                                "label": "Congo/ The Democratic Republic of the (CD)",
+                                                "value": "CD"
+                                            },
+                                            {
+                                                "label": "Congo (CG)",
+                                                "value": "CG"
+                                            },
+                                            {
+                                                "label": "Cook Islands (CK)",
+                                                "value": "CK"
+                                            },
+                                            {
+                                                "label": "Colombia (CO)",
+                                                "value": "CO"
+                                            },
+                                            {
+                                                "label": "Comoros (KM)",
+                                                "value": "KM"
+                                            },
+                                            {
+                                                "label": "Cabo Verde (CV)",
+                                                "value": "CV"
+                                            },
+                                            {
+                                                "label": "Costa Rica (CR)",
+                                                "value": "CR"
+                                            },
+                                            {
+                                                "label": "Cuba (CU)",
+                                                "value": "CU"
+                                            },
+                                            {
+                                                "label": "Curaçao (CW)",
+                                                "value": "CW"
+                                            },
+                                            {
+                                                "label": "Christmas Island (CX)",
+                                                "value": "CX"
+                                            },
+                                            {
+                                                "label": "Cayman Islands (KY)",
+                                                "value": "KY"
+                                            },
+                                            {
+                                                "label": "Cyprus (CY)",
+                                                "value": "CY"
+                                            },
+                                            {
+                                                "label": "Czechia (CZ)",
+                                                "value": "CZ"
+                                            },
+                                            {
+                                                "label": "Germany (DE)",
+                                                "value": "DE"
+                                            },
+                                            {
+                                                "label": "Djibouti (DJ)",
+                                                "value": "DJ"
+                                            },
+                                            {
+                                                "label": "Dominica (DM)",
+                                                "value": "DM"
+                                            },
+                                            {
+                                                "label": "Denmark (DK)",
+                                                "value": "DK"
+                                            },
+                                            {
+                                                "label": "Dominican Republic (DO)",
+                                                "value": "DO"
+                                            },
+                                            {
+                                                "label": "Algeria (DZ)",
+                                                "value": "DZ"
+                                            },
+                                            {
+                                                "label": "Ecuador (EC)",
+                                                "value": "EC"
+                                            },
+                                            {
+                                                "label": "Egypt (EG)",
+                                                "value": "EG"
+                                            },
+                                            {
+                                                "label": "Eritrea (ER)",
+                                                "value": "ER"
+                                            },
+                                            {
+                                                "label": "Western Sahara (EH)",
+                                                "value": "EH"
+                                            },
+                                            {
+                                                "label": "Spain (ES)",
+                                                "value": "ES"
+                                            },
+                                            {
+                                                "label": "Estonia (EE)",
+                                                "value": "EE"
+                                            },
+                                            {
+                                                "label": "Ethiopia (ET)",
+                                                "value": "ET"
+                                            },
+                                            {
+                                                "label": "Finland (FI)",
+                                                "value": "FI"
+                                            },
+                                            {
+                                                "label": "Fiji (FJ)",
+                                                "value": "FJ"
+                                            },
+                                            {
+                                                "label": "Falkland Islands (Malvinas) (FK)",
+                                                "value": "FK"
+                                            },
+                                            {
+                                                "label": "France (FR)",
+                                                "value": "FR"
+                                            },
+                                            {
+                                                "label": "Faroe Islands (FO)",
+                                                "value": "FO"
+                                            },
+                                            {
+                                                "label": "Micronesia/ Federated States of (FM)",
+                                                "value": "FM"
+                                            },
+                                            {
+                                                "label": "Gabon (GA)",
+                                                "value": "GA"
+                                            },
+                                            {
+                                                "label": "United Kingdom (GB)",
+                                                "value": "GB"
+                                            },
+                                            {
+                                                "label": "Georgia (GE)",
+                                                "value": "GE"
+                                            },
+                                            {
+                                                "label": "Guernsey (GG)",
+                                                "value": "GG"
+                                            },
+                                            {
+                                                "label": "Ghana (GH)",
+                                                "value": "GH"
+                                            },
+                                            {
+                                                "label": "Gibraltar (GI)",
+                                                "value": "GI"
+                                            },
+                                            {
+                                                "label": "Guinea (GN)",
+                                                "value": "GN"
+                                            },
+                                            {
+                                                "label": "Guadeloupe (GP)",
+                                                "value": "GP"
+                                            },
+                                            {
+                                                "label": "Gambia (GM)",
+                                                "value": "GM"
+                                            },
+                                            {
+                                                "label": "Guinea-Bissau (GW)",
+                                                "value": "GW"
+                                            },
+                                            {
+                                                "label": "Equatorial Guinea (GQ)",
+                                                "value": "GQ"
+                                            },
+                                            {
+                                                "label": "Greece (GR)",
+                                                "value": "GR"
+                                            },
+                                            {
+                                                "label": "Grenada (GD)",
+                                                "value": "GD"
+                                            },
+                                            {
+                                                "label": "Greenland (GL)",
+                                                "value": "GL"
+                                            },
+                                            {
+                                                "label": "Guatemala (GT)",
+                                                "value": "GT"
+                                            },
+                                            {
+                                                "label": "French Guiana (GF)",
+                                                "value": "GF"
+                                            },
+                                            {
+                                                "label": "Guam (GU)",
+                                                "value": "GU"
+                                            },
+                                            {
+                                                "label": "Guyana (GY)",
+                                                "value": "GY"
+                                            },
+                                            {
+                                                "label": "Hong Kong (HK)",
+                                                "value": "HK"
+                                            },
+                                            {
+                                                "label": "Heard Island and McDonald Islands (HM)",
+                                                "value": "HM"
+                                            },
+                                            {
+                                                "label": "Honduras (HN)",
+                                                "value": "HN"
+                                            },
+                                            {
+                                                "label": "Croatia (HR)",
+                                                "value": "HR"
+                                            },
+                                            {
+                                                "label": "Haiti (HT)",
+                                                "value": "HT"
+                                            },
+                                            {
+                                                "label": "Hungary (HU)",
+                                                "value": "HU"
+                                            },
+                                            {
+                                                "label": "Indonesia (ID)",
+                                                "value": "ID"
+                                            },
+                                            {
+                                                "label": "Isle of Man (IM)",
+                                                "value": "IM"
+                                            },
+                                            {
+                                                "label": "India (IN)",
+                                                "value": "IN"
+                                            },
+                                            {
+                                                "label": "British Indian Ocean Territory (IO)",
+                                                "value": "IO"
+                                            },
+                                            {
+                                                "label": "Ireland (IE)",
+                                                "value": "IE"
+                                            },
+                                            {
+                                                "label": "Iran/ Islamic Republic of (IR)",
+                                                "value": "IR"
+                                            },
+                                            {
+                                                "label": "Iraq (IQ)",
+                                                "value": "IQ"
+                                            },
+                                            {
+                                                "label": "Iceland (IS)",
+                                                "value": "IS"
+                                            },
+                                            {
+                                                "label": "Israel (IL)",
+                                                "value": "IL"
+                                            },
+                                            {
+                                                "label": "Italy (IT)",
+                                                "value": "IT"
+                                            },
+                                            {
+                                                "label": "Jamaica (JM)",
+                                                "value": "JM"
+                                            },
+                                            {
+                                                "label": "Jersey (JE)",
+                                                "value": "JE"
+                                            },
+                                            {
+                                                "label": "Jordan (JO)",
+                                                "value": "JO"
+                                            },
+                                            {
+                                                "label": "Japan (JP)",
+                                                "value": "JP"
+                                            },
+                                            {
+                                                "label": "Kazakhstan (KZ)",
+                                                "value": "KZ"
+                                            },
+                                            {
+                                                "label": "Kenya (KE)",
+                                                "value": "KE"
+                                            },
+                                            {
+                                                "label": "Kyrgyzstan (KG)",
+                                                "value": "KG"
+                                            },
+                                            {
+                                                "label": "Cambodia (KH)",
+                                                "value": "KH"
+                                            },
+                                            {
+                                                "label": "Kiribati (KI)",
+                                                "value": "KI"
+                                            },
+                                            {
+                                                "label": "Saint Kitts and Nevis (KN)",
+                                                "value": "KN"
+                                            },
+                                            {
+                                                "label": "Korea/ Republic of (KR)",
+                                                "value": "KR"
+                                            },
+                                            {
+                                                "label": "Kuwait (KW)",
+                                                "value": "KW"
+                                            },
+                                            {
+                                                "label": "Lao People's Democratic Republic (LA)",
+                                                "value": "LA"
+                                            },
+                                            {
+                                                "label": "Lebanon (LB)",
+                                                "value": "LB"
+                                            },
+                                            {
+                                                "label": "Liberia (LR)",
+                                                "value": "LR"
+                                            },
+                                            {
+                                                "label": "Libya (LY)",
+                                                "value": "LY"
+                                            },
+                                            {
+                                                "label": "Saint Lucia (LC)",
+                                                "value": "LC"
+                                            },
+                                            {
+                                                "label": "Liechtenstein (LI)",
+                                                "value": "LI"
+                                            },
+                                            {
+                                                "label": "Sri Lanka (LK)",
+                                                "value": "LK"
+                                            },
+                                            {
+                                                "label": "Lesotho (LS)",
+                                                "value": "LS"
+                                            },
+                                            {
+                                                "label": "Lithuania (LT)",
+                                                "value": "LT"
+                                            },
+                                            {
+                                                "label": "Luxembourg (LU)",
+                                                "value": "LU"
+                                            },
+                                            {
+                                                "label": "Latvia (LV)",
+                                                "value": "LV"
+                                            },
+                                            {
+                                                "label": "Macao (MO)",
+                                                "value": "MO"
+                                            },
+                                            {
+                                                "label": "Saint Martin (French part) (MF)",
+                                                "value": "MF"
+                                            },
+                                            {
+                                                "label": "Morocco (MA)",
+                                                "value": "MA"
+                                            },
+                                            {
+                                                "label": "Monaco (MC)",
+                                                "value": "MC"
+                                            },
+                                            {
+                                                "label": "Moldova/ Republic of (MD)",
+                                                "value": "MD"
+                                            },
+                                            {
+                                                "label": "Madagascar (MG)",
+                                                "value": "MG"
+                                            },
+                                            {
+                                                "label": "Maldives (MV)",
+                                                "value": "MV"
+                                            },
+                                            {
+                                                "label": "Mexico (MX)",
+                                                "value": "MX"
+                                            },
+                                            {
+                                                "label": "Marshall Islands (MH)",
+                                                "value": "MH"
+                                            },
+                                            {
+                                                "label": "North Macedonia (MK)",
+                                                "value": "MK"
+                                            },
+                                            {
+                                                "label": "Mali (ML)",
+                                                "value": "ML"
+                                            },
+                                            {
+                                                "label": "Malta (MT)",
+                                                "value": "MT"
+                                            },
+                                            {
+                                                "label": "Myanmar (MM)",
+                                                "value": "MM"
+                                            },
+                                            {
+                                                "label": "Montenegro (ME)",
+                                                "value": "ME"
+                                            },
+                                            {
+                                                "label": "Mongolia (MN)",
+                                                "value": "MN"
+                                            },
+                                            {
+                                                "label": "Northern Mariana Islands (MP)",
+                                                "value": "MP"
+                                            },
+                                            {
+                                                "label": "Mozambique (MZ)",
+                                                "value": "MZ"
+                                            },
+                                            {
+                                                "label": "Mauritania (MR)",
+                                                "value": "MR"
+                                            },
+                                            {
+                                                "label": "Montserrat (MS)",
+                                                "value": "MS"
+                                            },
+                                            {
+                                                "label": "Martinique (MQ)",
+                                                "value": "MQ"
+                                            },
+                                            {
+                                                "label": "Mauritius (MU)",
+                                                "value": "MU"
+                                            },
+                                            {
+                                                "label": "Malawi (MW)",
+                                                "value": "MW"
+                                            },
+                                            {
+                                                "label": "Malaysia (MY)",
+                                                "value": "MY"
+                                            },
+                                            {
+                                                "label": "Mayotte (YT)",
+                                                "value": "YT"
+                                            },
+                                            {
+                                                "label": "Namibia (NA)",
+                                                "value": "NA"
+                                            },
+                                            {
+                                                "label": "New Caledonia (NC)",
+                                                "value": "NC"
+                                            },
+                                            {
+                                                "label": "Niger (NE)",
+                                                "value": "NE"
+                                            },
+                                            {
+                                                "label": "Norfolk Island (NF)",
+                                                "value": "NF"
+                                            },
+                                            {
+                                                "label": "Nigeria (NG)",
+                                                "value": "NG"
+                                            },
+                                            {
+                                                "label": "Nicaragua (NI)",
+                                                "value": "NI"
+                                            },
+                                            {
+                                                "label": "Niue (NU)",
+                                                "value": "NU"
+                                            },
+                                            {
+                                                "label": "Netherlands (NL)",
+                                                "value": "NL"
+                                            },
+                                            {
+                                                "label": "Norway (NO)",
+                                                "value": "NO"
+                                            },
+                                            {
+                                                "label": "Nepal (NP)",
+                                                "value": "NP"
+                                            },
+                                            {
+                                                "label": "Nauru (NR)",
+                                                "value": "NR"
+                                            },
+                                            {
+                                                "label": "New Zealand (NZ)",
+                                                "value": "NZ"
+                                            },
+                                            {
+                                                "label": "Oman (OM)",
+                                                "value": "OM"
+                                            },
+                                            {
+                                                "label": "Pakistan (PK)",
+                                                "value": "PK"
+                                            },
+                                            {
+                                                "label": "Panama (PA)",
+                                                "value": "PA"
+                                            },
+                                            {
+                                                "label": "Pitcairn (PN)",
+                                                "value": "PN"
+                                            },
+                                            {
+                                                "label": "Peru (PE)",
+                                                "value": "PE"
+                                            },
+                                            {
+                                                "label": "Philippines (PH)",
+                                                "value": "PH"
+                                            },
+                                            {
+                                                "label": "Palau (PW)",
+                                                "value": "PW"
+                                            },
+                                            {
+                                                "label": "Papua New Guinea (PG)",
+                                                "value": "PG"
+                                            },
+                                            {
+                                                "label": "Poland (PL)",
+                                                "value": "PL"
+                                            },
+                                            {
+                                                "label": "Puerto Rico (PR)",
+                                                "value": "PR"
+                                            },
+                                            {
+                                                "label": "Korea/ Democratic People's Republic of (KP)",
+                                                "value": "KP"
+                                            },
+                                            {
+                                                "label": "Portugal (PT)",
+                                                "value": "PT"
+                                            },
+                                            {
+                                                "label": "Paraguay (PY)",
+                                                "value": "PY"
+                                            },
+                                            {
+                                                "label": "Palestine/ State of (PS)",
+                                                "value": "PS"
+                                            },
+                                            {
+                                                "label": "French Polynesia (PF)",
+                                                "value": "PF"
+                                            },
+                                            {
+                                                "label": "Qatar (QA)",
+                                                "value": "QA"
+                                            },
+                                            {
+                                                "label": "Réunion (RE)",
+                                                "value": "RE"
+                                            },
+                                            {
+                                                "label": "Romania (RO)",
+                                                "value": "RO"
+                                            },
+                                            {
+                                                "label": "Russian Federation (RU)",
+                                                "value": "RU"
+                                            },
+                                            {
+                                                "label": "Rwanda (RW)",
+                                                "value": "RW"
+                                            },
+                                            {
+                                                "label": "Saudi Arabia (SA)",
+                                                "value": "SA"
+                                            },
+                                            {
+                                                "label": "Sudan (SD)",
+                                                "value": "SD"
+                                            },
+                                            {
+                                                "label": "Senegal (SN)",
+                                                "value": "SN"
+                                            },
+                                            {
+                                                "label": "Singapore (SG)",
+                                                "value": "SG"
+                                            },
+                                            {
+                                                "label": "South Georgia and the South Sandwich Islands (GS)",
+                                                "value": "GS"
+                                            },
+                                            {
+                                                "label": "Saint Helena/ Ascension and Tristan da Cunha (SH)",
+                                                "value": "SH"
+                                            },
+                                            {
+                                                "label": "Svalbard and Jan Mayen (SJ)",
+                                                "value": "SJ"
+                                            },
+                                            {
+                                                "label": "Solomon Islands (SB)",
+                                                "value": "SB"
+                                            },
+                                            {
+                                                "label": "Sierra Leone (SL)",
+                                                "value": "SL"
+                                            },
+                                            {
+                                                "label": "El Salvador (SV)",
+                                                "value": "SV"
+                                            },
+                                            {
+                                                "label": "San Marino (SM)",
+                                                "value": "SM"
+                                            },
+                                            {
+                                                "label": "Somalia (SO)",
+                                                "value": "SO"
+                                            },
+                                            {
+                                                "label": "Saint Pierre and Miquelon (PM)",
+                                                "value": "PM"
+                                            },
+                                            {
+                                                "label": "Serbia (RS)",
+                                                "value": "RS"
+                                            },
+                                            {
+                                                "label": "South Sudan (SS)",
+                                                "value": "SS"
+                                            },
+                                            {
+                                                "label": "Sao Tome and Principe (ST)",
+                                                "value": "ST"
+                                            },
+                                            {
+                                                "label": "Suriname (SR)",
+                                                "value": "SR"
+                                            },
+                                            {
+                                                "label": "Slovakia (SK)",
+                                                "value": "SK"
+                                            },
+                                            {
+                                                "label": "Slovenia (SI)",
+                                                "value": "SI"
+                                            },
+                                            {
+                                                "label": "Sweden (SE)",
+                                                "value": "SE"
+                                            },
+                                            {
+                                                "label": "Eswatini (SZ)",
+                                                "value": "SZ"
+                                            },
+                                            {
+                                                "label": "Sint Maarten (Dutch part) (SX)",
+                                                "value": "SX"
+                                            },
+                                            {
+                                                "label": "Seychelles (SC)",
+                                                "value": "SC"
+                                            },
+                                            {
+                                                "label": "Syrian Arab Republic (SY)",
+                                                "value": "SY"
+                                            },
+                                            {
+                                                "label": "Turks and Caicos Islands (TC)",
+                                                "value": "TC"
+                                            },
+                                            {
+                                                "label": "Chad (TD)",
+                                                "value": "TD"
+                                            },
+                                            {
+                                                "label": "Togo (TG)",
+                                                "value": "TG"
+                                            },
+                                            {
+                                                "label": "Thailand (TH)",
+                                                "value": "TH"
+                                            },
+                                            {
+                                                "label": "Tajikistan (TJ)",
+                                                "value": "TJ"
+                                            },
+                                            {
+                                                "label": "Tokelau (TK)",
+                                                "value": "TK"
+                                            },
+                                            {
+                                                "label": "Turkmenistan (TM)",
+                                                "value": "TM"
+                                            },
+                                            {
+                                                "label": "Timor-Leste (TL)",
+                                                "value": "TL"
+                                            },
+                                            {
+                                                "label": "Tonga (TO)",
+                                                "value": "TO"
+                                            },
+                                            {
+                                                "label": "Trinidad and Tobago (TT)",
+                                                "value": "TT"
+                                            },
+                                            {
+                                                "label": "Tunisia (TN)",
+                                                "value": "TN"
+                                            },
+                                            {
+                                                "label": "Turkey (TR)",
+                                                "value": "TR"
+                                            },
+                                            {
+                                                "label": "Tuvalu (TV)",
+                                                "value": "TV"
+                                            },
+                                            {
+                                                "label": "Taiwan/ Province of China (TW)",
+                                                "value": "TW"
+                                            },
+                                            {
+                                                "label": "Tanzania/ United Republic of (TZ)",
+                                                "value": "TZ"
+                                            },
+                                            {
+                                                "label": "Uganda (UG)",
+                                                "value": "UG"
+                                            },
+                                            {
+                                                "label": "Ukraine (UA)",
+                                                "value": "UA"
+                                            },
+                                            {
+                                                "label": "United States Minor Outlying Islands (UM)",
+                                                "value": "UM"
+                                            },
+                                            {
+                                                "label": "Uruguay (UY)",
+                                                "value": "UY"
+                                            },
+                                            {
+                                                "label": "United States (US)",
+                                                "value": "US"
+                                            },
+                                            {
+                                                "label": "Uzbekistan (UZ)",
+                                                "value": "UZ"
+                                            },
+                                            {
+                                                "label": "Holy See (Vatican City State) (VA)",
+                                                "value": "VA"
+                                            },
+                                            {
+                                                "label": "Saint Vincent and the Grenadines (VC)",
+                                                "value": "VC"
+                                            },
+                                            {
+                                                "label": "Venezuela/ Bolivarian Republic of (VE)",
+                                                "value": "VE"
+                                            },
+                                            {
+                                                "label": "Virgin Islands/ British (VG)",
+                                                "value": "VG"
+                                            },
+                                            {
+                                                "label": "Virgin Islands/ U.S. (VI)",
+                                                "value": "VI"
+                                            },
+                                            {
+                                                "label": "Viet Nam (VN)",
+                                                "value": "VN"
+                                            },
+                                            {
+                                                "label": "Vanuatu (VU)",
+                                                "value": "VU"
+                                            },
+                                            {
+                                                "label": "Wallis and Futuna (WF)",
+                                                "value": "WF"
+                                            },
+                                            {
+                                                "label": "Samoa (WS)",
+                                                "value": "WS"
+                                            },
+                                            {
+                                                "label": "Yemen (YE)",
+                                                "value": "YE"
+                                            },
+                                            {
+                                                "label": "South Africa (ZA)",
+                                                "value": "ZA"
+                                            },
+                                            {
+                                                "label": "Zambia (ZM)",
+                                                "value": "ZM"
+                                            },
+                                            {
+                                                "label": "Zimbabwe (ZW)",
+                                                "value": "ZW"
+                                            }
+                                        ],
+                                        "fullWidth": true,
+                                        "disableCloseOnSelect": true
+                                    }
+                                }
+                            ]
                         },
-                        "type": "header"
+                        "pl": 10,
+                        "pr": 10
+                    },
+                    {
+                        "type": "serviceStatus",
+                        "title": "Blockthrough",
+                        "name": "enable_blockthrough",
+                        "value": true,
+                        "options": {
+                            "fields": [
+                                {
+                                    "type": "grid",
+                                    "options": {
+                                        "columns": 2,
+                                        "fields": [
+                                            {
+                                                "label": "Blockthrough Script Path",
+                                                "name": "blockthrough_script_path",
+                                                "type": "text",
+                                                "value": "//longitudeads-com.videoplayerhub.com/galleryplayer.js",
+                                                "options": {
+                                                    "fullWidth": true,
+                                                    "variant": "standard",
+                                                    "placeholder": "//longitudeads-com.videoplayerhub.com/galleryplayer.js"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "pl": 10,
+                        "pr": 10
+                    },
+                    {
+                        "type": "serviceStatus",
+                        "title": "Sourcepoint",
+                        "name": "enable_sourcepoint",
+                        "value": true,
+                        "options": {
+                            "fields": [
+                                {
+                                    "type": "grid",
+                                    "options": {
+                                        "columns": 2,
+                                        "fields": [
+                                            {
+                                                "label": "Sourcepoint ID Override",
+                                                "name": "sourcepoint_id_override",
+                                                "type": "text",
+                                                "options": {
+                                                    "fullWidth": true,
+                                                    "variant": "standard",
+                                                    "placeholder": 1368
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "pl": 10,
+                        "pr": 10
+                    },
+                    {
+                        "type": "serviceStatus",
+                        "title": "Live Intent",
+                        "name": "enable_liveintent",
+                        "value": true,
+                        "options": {
+                            "fields": [
+                                {
+                                    "type": "grid",
+                                    "options": {
+                                        "columns": 2,
+                                        "fields": [
+                                            {
+                                                "label": "Live Intent ID",
+                                                "name": "liveintent_id",
+                                                "type": "text",
+                                                "value": "did-0041",
+                                                "options": {
+                                                    "fullWidth": true,
+                                                    "variant": "standard"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "pl": 10,
+                        "pr": 10
+                    }
+                ],
+                "pb": 20
+            },
+            "type": "card"
+        },
+        {
+            "options": {
+                "fields": [
+                    {
+                        "type": "header",
+                        "label": "Prebid Options",
+                        "options": {
+                            "variant": "h1"
+                        }
                     },
                     {
                         "label": "Prebid UserID Modules",
                         "name": "prebid_userid_modules",
+                        "type": "selectTag",
+                        "value": "33acrossIdSystem,criteoIdSystem,deepintentDpesIdSystem,dmdIdSystem,id5IdSystem,identityLinkIdSystem,lotamePanoramaIdSystem,pairIdSystem,pubProvidedIdSystem,quantcastIdSystem,sharedIdSystem,topicsFpdModule,uid2IdSystem,unifiedIdSystem,userId,liveIntentIdSystem",
                         "options": {
                             "options": [
                                 {
@@ -829,10 +2008,6 @@
                                     "value": "justIdSystem"
                                 },
                                 {
-                                    "label": "intentIqIdSystem",
-                                    "value": "intentIqIdSystem"
-                                },
-                                {
                                     "label": "fabrickIdSystem",
                                     "value": "fabrickIdSystem"
                                 },
@@ -920,25 +2095,42 @@
                                     "label": "topicsFpdModule",
                                     "value": "topicsFpdModule"
                                 }
-                            ]
-                        },
-                        "type": "selectTag",
-                        "value": ""
-                    },
-                    {
-                        "label": "Prebid Analytics Modules",
-                        "name": "prebid_analytics_modules",
-                        "value": ""
-                    },
-                    {
-                        "label": "Prebid Base Modules",
-                        "name": "prebid_base_modules",
-                        "value": ""
+                            ],
+                            "fullWidth": true,
+                            "disableCloseOnSelect": true
+                        }
                     },
                     {
                         "label": "Prebid Version",
                         "name": "prebid_version",
-                        "value": ""
+                        "type": "text",
+                        "value": "9.16.0",
+                        "options": {
+                            "fullWidth": true,
+                            "variant": "standard",
+                            "inputProps": {
+                                "readOnly": true
+                            }
+                        }
+                    },
+                    {
+                        "label": "schain Override",
+                        "name": "schain_override",
+                        "type": "textarea",
+                        "value": "{}",
+                        "options": {
+                            "fullWidth": true,
+                            "variant": "standard",
+                            "inputProps": {
+                                "readOnly": true
+                            },
+                            "help": {
+                                "icon": "eye",
+                                "content": "Only superusers can see this field",
+                                "size": "sm",
+                                "placement": "left"
+                            }
+                        }
                     }
                 ],
                 "pb": 20
@@ -946,12 +2138,6 @@
             "type": "card"
         }
     ],
-    "header": {
-        "actions": [],
-        "title": "Account"
-    },
-    "hideSubmitButton": true,
-    "isNewForm": true,
     "validation": {},
     "validationConfig": {
         "errMessages": {}
