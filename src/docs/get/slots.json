@@ -512,13 +512,9 @@
             "slot_sizes": "",
             "header_partner_id": 891,
             "header_unit_id": 1939,
-            "api": "/forms/mcm-invite",
-            "configFields": [
+            "formButton": [
               {
-                "type": "text",
-                "label": "Placement",
-                "value": "solitaired_stats_D_1",
-                "name": "placement"
+                "api": "/forms/mcm-invite"
               }
             ]
           },
@@ -540,7 +536,10 @@
             "geos_exclude": "",
             "slot_sizes": "",
             "header_partner_id": 619,
-            "header_unit_id": 1939
+            "header_unit_id": 1939,
+            "formButton": {
+              "api": "/forms/mcm-invite"
+            }
           },
           "Undertone": {
             "placementId": "4212003",
