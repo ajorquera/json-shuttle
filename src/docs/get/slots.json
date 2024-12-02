@@ -121,37 +121,37 @@
         "partners": {
           "Amazon A9": {
             "formButton": {
-              "api": "/api/ui-schemas/unit/29/partner/34/slot/174",
+              "api": "http://localhost:8000/api/ui-schemas/unit/29/partner/34/slot/174",
               "requestMethod": "PUT"
             }
           },
           "AppNexus": {
             "formButton": {
-              "api": "/api/ui-schemas/unit/29/partner/35/slot/placeholder",
+              "api": "http://localhost:8000/api/ui-schemas/unit/29/partner/35/slot/placeholder",
               "requestMethod": "PUT"
             }
           },
           "Index Exchange": {
             "formButton": {
-              "api": "/api/ui-schemas/unit/29/partner/36/slot/placeholder",
+              "api": "http://localhost:8000/api/ui-schemas/unit/29/partner/36/slot/placeholder",
               "requestMethod": "PUT"
             }
           },
           "OpenX": {
             "formButton": {
-              "api": "/api/ui-schemas/unit/29/partner/38/slot/placeholder",
+              "api": "http://localhost:8000/api/ui-schemas/unit/29/partner/38/slot/placeholder",
               "requestMethod": "PUT"
             }
           },
           "Rubicon": {
             "formButton": {
-              "api": "/api/ui-schemas/unit/29/partner/40/slot/placeholder",
+              "api": "http://localhost:8000/api/ui-schemas/unit/29/partner/40/slot/placeholder",
               "requestMethod": "PUT"
             }
           },
           "Undertone": {
             "formButton": {
-              "api": "/api/ui-schemas/unit/29/partner/44/slot/placeholder",
+              "api": "http://localhost:8000/api/ui-schemas/unit/29/partner/44/slot/placeholder",
               "requestMethod": "PUT"
             }
           }
@@ -173,37 +173,37 @@
         "partners": {
           "Amazon A9": {
             "formButton": {
-              "api": "/api/ui-schemas/unit/37/partner/34/slot/placeholder",
+              "api": "http://localhost:8000/api/ui-schemas/unit/37/partner/34/slot/placeholder",
               "requestMethod": "PUT"
             }
           },
           "AppNexus": {
             "formButton": {
-              "api": "/api/ui-schemas/unit/37/partner/35/slot/placeholder",
+              "api": "http://localhost:8000/api/ui-schemas/unit/37/partner/35/slot/placeholder",
               "requestMethod": "PUT"
             }
           },
           "Index Exchange": {
             "formButton": {
-              "api": "/api/ui-schemas/unit/37/partner/36/slot/placeholder",
+              "api": "http://localhost:8000/api/ui-schemas/unit/37/partner/36/slot/placeholder",
               "requestMethod": "PUT"
             }
           },
           "OpenX": {
             "formButton": {
-              "api": "/api/ui-schemas/unit/37/partner/38/slot/placeholder",
+              "api": "http://localhost:8000/api/ui-schemas/unit/37/partner/38/slot/placeholder",
               "requestMethod": "PUT"
             }
           },
           "Rubicon": {
             "formButton": {
-              "api": "/api/ui-schemas/unit/37/partner/40/slot/placeholder",
+              "api": "http://localhost:8000/api/ui-schemas/unit/37/partner/40/slot/placeholder",
               "requestMethod": "PUT"
             }
           },
           "Undertone": {
             "formButton": {
-              "api": "/api/ui-schemas/unit/37/partner/44/slot/placeholder",
+              "api": "http://localhost:8000/api/ui-schemas/unit/37/partner/44/slot/placeholder",
               "requestMethod": "PUT"
             }
           }
@@ -225,37 +225,37 @@
         "partners": {
           "Amazon A9": {
             "formButton": {
-              "api": "/api/ui-schemas/unit/38/partner/34/slot/placeholder",
+              "api": "http://localhost:8000/api/ui-schemas/unit/38/partner/34/slot/placeholder",
               "requestMethod": "PUT"
             }
           },
           "AppNexus": {
             "formButton": {
-              "api": "/api/ui-schemas/unit/38/partner/35/slot/placeholder",
+              "api": "http://localhost:8000/api/ui-schemas/unit/38/partner/35/slot/placeholder",
               "requestMethod": "PUT"
             }
           },
           "Index Exchange": {
             "formButton": {
-              "api": "/api/ui-schemas/unit/38/partner/36/slot/placeholder",
+              "api": "http://localhost:8000/api/ui-schemas/unit/38/partner/36/slot/placeholder",
               "requestMethod": "PUT"
             }
           },
           "OpenX": {
             "formButton": {
-              "api": "/api/ui-schemas/unit/38/partner/38/slot/placeholder",
+              "api": "http://localhost:8000/api/ui-schemas/unit/38/partner/38/slot/placeholder",
               "requestMethod": "PUT"
             }
           },
           "Rubicon": {
             "formButton": {
-              "api": "/api/ui-schemas/unit/38/partner/40/slot/placeholder",
+              "api": "http://localhost:8000/api/ui-schemas/unit/38/partner/40/slot/placeholder",
               "requestMethod": "PUT"
             }
           },
           "Undertone": {
             "formButton": {
-              "api": "/api/ui-schemas/unit/38/partner/44/slot/placeholder",
+              "api": "http://localhost:8000/api/ui-schemas/unit/38/partner/44/slot/placeholder",
               "requestMethod": "PUT"
             }
           }
@@ -277,37 +277,37 @@
         "partners": {
           "Amazon A9": {
             "formButton": {
-              "api": "/api/ui-schemas/unit/36/partner/34/slot/placeholder",
+              "api": "http://localhost:8000/api/ui-schemas/unit/36/partner/34/slot/placeholder",
               "requestMethod": "PUT"
             }
           },
           "AppNexus": {
             "formButton": {
-              "api": "/api/ui-schemas/unit/36/partner/35/slot/placeholder",
+              "api": "http://localhost:8000/api/ui-schemas/unit/36/partner/35/slot/placeholder",
               "requestMethod": "PUT"
             }
           },
           "Index Exchange": {
             "formButton": {
-              "api": "/api/ui-schemas/unit/36/partner/36/slot/placeholder",
+              "api": "http://localhost:8000/api/ui-schemas/unit/36/partner/36/slot/placeholder",
               "requestMethod": "PUT"
             }
           },
           "OpenX": {
             "formButton": {
-              "api": "/api/ui-schemas/unit/36/partner/38/slot/placeholder",
+              "api": "http://localhost:8000/api/ui-schemas/unit/36/partner/38/slot/placeholder",
               "requestMethod": "PUT"
             }
           },
           "Rubicon": {
             "formButton": {
-              "api": "/api/ui-schemas/unit/36/partner/40/slot/placeholder",
+              "api": "http://localhost:8000/api/ui-schemas/unit/36/partner/40/slot/placeholder",
               "requestMethod": "PUT"
             }
           },
           "Undertone": {
             "formButton": {
-              "api": "/api/ui-schemas/unit/36/partner/44/slot/placeholder",
+              "api": "http://localhost:8000/api/ui-schemas/unit/36/partner/44/slot/placeholder",
               "requestMethod": "PUT"
             }
           }
@@ -329,37 +329,37 @@
         "partners": {
           "Amazon A9": {
             "formButton": {
-              "api": "/api/ui-schemas/unit/35/partner/34/slot/placeholder",
+              "api": "http://localhost:8000/api/ui-schemas/unit/35/partner/34/slot/placeholder",
               "requestMethod": "PUT"
             }
           },
           "AppNexus": {
             "formButton": {
-              "api": "/api/ui-schemas/unit/35/partner/35/slot/placeholder",
+              "api": "http://localhost:8000/api/ui-schemas/unit/35/partner/35/slot/placeholder",
               "requestMethod": "PUT"
             }
           },
           "Index Exchange": {
             "formButton": {
-              "api": "/api/ui-schemas/unit/35/partner/36/slot/placeholder",
+              "api": "http://localhost:8000/api/ui-schemas/unit/35/partner/36/slot/placeholder",
               "requestMethod": "PUT"
             }
           },
           "OpenX": {
             "formButton": {
-              "api": "/api/ui-schemas/unit/35/partner/38/slot/placeholder",
+              "api": "http://localhost:8000/api/ui-schemas/unit/35/partner/38/slot/placeholder",
               "requestMethod": "PUT"
             }
           },
           "Rubicon": {
             "formButton": {
-              "api": "/api/ui-schemas/unit/35/partner/40/slot/placeholder",
+              "api": "http://localhost:8000/api/ui-schemas/unit/35/partner/40/slot/placeholder",
               "requestMethod": "PUT"
             }
           },
           "Undertone": {
             "formButton": {
-              "api": "/api/ui-schemas/unit/35/partner/44/slot/placeholder",
+              "api": "http://localhost:8000/api/ui-schemas/unit/35/partner/44/slot/placeholder",
               "requestMethod": "PUT"
             }
           }
@@ -381,37 +381,37 @@
         "partners": {
           "Amazon A9": {
             "formButton": {
-              "api": "/api/ui-schemas/unit/39/partner/34/slot/placeholder",
+              "api": "http://localhost:8000/api/ui-schemas/unit/39/partner/34/slot/placeholder",
               "requestMethod": "PUT"
             }
           },
           "AppNexus": {
             "formButton": {
-              "api": "/api/ui-schemas/unit/39/partner/35/slot/placeholder",
+              "api": "http://localhost:8000/api/ui-schemas/unit/39/partner/35/slot/placeholder",
               "requestMethod": "PUT"
             }
           },
           "Index Exchange": {
             "formButton": {
-              "api": "/api/ui-schemas/unit/39/partner/36/slot/placeholder",
+              "api": "http://localhost:8000/api/ui-schemas/unit/39/partner/36/slot/placeholder",
               "requestMethod": "PUT"
             }
           },
           "OpenX": {
             "formButton": {
-              "api": "/api/ui-schemas/unit/39/partner/38/slot/placeholder",
+              "api": "http://localhost:8000/api/ui-schemas/unit/39/partner/38/slot/placeholder",
               "requestMethod": "PUT"
             }
           },
           "Rubicon": {
             "formButton": {
-              "api": "/api/ui-schemas/unit/39/partner/40/slot/placeholder",
+              "api": "http://localhost:8000/api/ui-schemas/unit/39/partner/40/slot/placeholder",
               "requestMethod": "PUT"
             }
           },
           "Undertone": {
             "formButton": {
-              "api": "/api/ui-schemas/unit/39/partner/44/slot/placeholder",
+              "api": "http://localhost:8000/api/ui-schemas/unit/39/partner/44/slot/placeholder",
               "requestMethod": "PUT"
             }
           }
@@ -433,37 +433,37 @@
         "partners": {
           "Amazon A9": {
             "formButton": {
-              "api": "/api/ui-schemas/unit/73/partner/34/slot/placeholder",
+              "api": "http://localhost:8000/api/ui-schemas/unit/73/partner/34/slot/placeholder",
               "requestMethod": "PUT"
             }
           },
           "AppNexus": {
             "formButton": {
-              "api": "/api/ui-schemas/unit/73/partner/35/slot/placeholder",
+              "api": "http://localhost:8000/api/ui-schemas/unit/73/partner/35/slot/placeholder",
               "requestMethod": "PUT"
             }
           },
           "Index Exchange": {
             "formButton": {
-              "api": "/api/ui-schemas/unit/73/partner/36/slot/placeholder",
+              "api": "http://localhost:8000/api/ui-schemas/unit/73/partner/36/slot/placeholder",
               "requestMethod": "PUT"
             }
           },
           "OpenX": {
             "formButton": {
-              "api": "/api/ui-schemas/unit/73/partner/38/slot/placeholder",
+              "api": "http://localhost:8000/api/ui-schemas/unit/73/partner/38/slot/placeholder",
               "requestMethod": "PUT"
             }
           },
           "Rubicon": {
             "formButton": {
-              "api": "/api/ui-schemas/unit/73/partner/40/slot/placeholder",
+              "api": "http://localhost:8000/api/ui-schemas/unit/73/partner/40/slot/placeholder",
               "requestMethod": "PUT"
             }
           },
           "Undertone": {
             "formButton": {
-              "api": "/api/ui-schemas/unit/73/partner/44/slot/placeholder",
+              "api": "http://localhost:8000/api/ui-schemas/unit/73/partner/44/slot/placeholder",
               "requestMethod": "PUT"
             }
           }
@@ -485,37 +485,37 @@
         "partners": {
           "Amazon A9": {
             "formButton": {
-              "api": "/api/ui-schemas/unit/40/partner/34/slot/placeholder",
+              "api": "http://localhost:8000/api/ui-schemas/unit/40/partner/34/slot/placeholder",
               "requestMethod": "PUT"
             }
           },
           "AppNexus": {
             "formButton": {
-              "api": "/api/ui-schemas/unit/40/partner/35/slot/placeholder",
+              "api": "http://localhost:8000/api/ui-schemas/unit/40/partner/35/slot/placeholder",
               "requestMethod": "PUT"
             }
           },
           "Index Exchange": {
             "formButton": {
-              "api": "/api/ui-schemas/unit/40/partner/36/slot/placeholder",
+              "api": "http://localhost:8000/api/ui-schemas/unit/40/partner/36/slot/placeholder",
               "requestMethod": "PUT"
             }
           },
           "OpenX": {
             "formButton": {
-              "api": "/api/ui-schemas/unit/40/partner/38/slot/placeholder",
+              "api": "http://localhost:8000/api/ui-schemas/unit/40/partner/38/slot/placeholder",
               "requestMethod": "PUT"
             }
           },
           "Rubicon": {
             "formButton": {
-              "api": "/api/ui-schemas/unit/40/partner/40/slot/placeholder",
+              "api": "http://localhost:8000/api/ui-schemas/unit/40/partner/40/slot/placeholder",
               "requestMethod": "PUT"
             }
           },
           "Undertone": {
             "formButton": {
-              "api": "/api/ui-schemas/unit/40/partner/44/slot/placeholder",
+              "api": "http://localhost:8000/api/ui-schemas/unit/40/partner/44/slot/placeholder",
               "requestMethod": "PUT"
             }
           }
@@ -537,37 +537,37 @@
         "partners": {
           "Amazon A9": {
             "formButton": {
-              "api": "/api/ui-schemas/unit/34/partner/34/slot/placeholder",
+              "api": "http://localhost:8000/api/ui-schemas/unit/34/partner/34/slot/placeholder",
               "requestMethod": "PUT"
             }
           },
           "AppNexus": {
             "formButton": {
-              "api": "/api/ui-schemas/unit/34/partner/35/slot/placeholder",
+              "api": "http://localhost:8000/api/ui-schemas/unit/34/partner/35/slot/placeholder",
               "requestMethod": "PUT"
             }
           },
           "Index Exchange": {
             "formButton": {
-              "api": "/api/ui-schemas/unit/34/partner/36/slot/placeholder",
+              "api": "http://localhost:8000/api/ui-schemas/unit/34/partner/36/slot/placeholder",
               "requestMethod": "PUT"
             }
           },
           "OpenX": {
             "formButton": {
-              "api": "/api/ui-schemas/unit/34/partner/38/slot/placeholder",
+              "api": "http://localhost:8000/api/ui-schemas/unit/34/partner/38/slot/placeholder",
               "requestMethod": "PUT"
             }
           },
           "Rubicon": {
             "formButton": {
-              "api": "/api/ui-schemas/unit/34/partner/40/slot/placeholder",
+              "api": "http://localhost:8000/api/ui-schemas/unit/34/partner/40/slot/placeholder",
               "requestMethod": "PUT"
             }
           },
           "Undertone": {
             "formButton": {
-              "api": "/api/ui-schemas/unit/34/partner/44/slot/placeholder",
+              "api": "http://localhost:8000/api/ui-schemas/unit/34/partner/44/slot/placeholder",
               "requestMethod": "PUT"
             }
           }
@@ -589,37 +589,37 @@
         "partners": {
           "Amazon A9": {
             "formButton": {
-              "api": "/api/ui-schemas/unit/74/partner/34/slot/placeholder",
+              "api": "http://localhost:8000/api/ui-schemas/unit/74/partner/34/slot/placeholder",
               "requestMethod": "PUT"
             }
           },
           "AppNexus": {
             "formButton": {
-              "api": "/api/ui-schemas/unit/74/partner/35/slot/placeholder",
+              "api": "http://localhost:8000/api/ui-schemas/unit/74/partner/35/slot/placeholder",
               "requestMethod": "PUT"
             }
           },
           "Index Exchange": {
             "formButton": {
-              "api": "/api/ui-schemas/unit/74/partner/36/slot/placeholder",
+              "api": "http://localhost:8000/api/ui-schemas/unit/74/partner/36/slot/placeholder",
               "requestMethod": "PUT"
             }
           },
           "OpenX": {
             "formButton": {
-              "api": "/api/ui-schemas/unit/74/partner/38/slot/placeholder",
+              "api": "http://localhost:8000/api/ui-schemas/unit/74/partner/38/slot/placeholder",
               "requestMethod": "PUT"
             }
           },
           "Rubicon": {
             "formButton": {
-              "api": "/api/ui-schemas/unit/74/partner/40/slot/placeholder",
+              "api": "http://localhost:8000/api/ui-schemas/unit/74/partner/40/slot/placeholder",
               "requestMethod": "PUT"
             }
           },
           "Undertone": {
             "formButton": {
-              "api": "/api/ui-schemas/unit/74/partner/44/slot/placeholder",
+              "api": "http://localhost:8000/api/ui-schemas/unit/74/partner/44/slot/placeholder",
               "requestMethod": "PUT"
             }
           }
@@ -641,37 +641,37 @@
         "partners": {
           "Amazon A9": {
             "formButton": {
-              "api": "/api/ui-schemas/unit/28/partner/34/slot/173",
+              "api": "http://localhost:8000/api/ui-schemas/unit/28/partner/34/slot/173",
               "requestMethod": "PUT"
             }
           },
           "AppNexus": {
             "formButton": {
-              "api": "/api/ui-schemas/unit/28/partner/35/slot/placeholder",
+              "api": "http://localhost:8000/api/ui-schemas/unit/28/partner/35/slot/placeholder",
               "requestMethod": "PUT"
             }
           },
           "Index Exchange": {
             "formButton": {
-              "api": "/api/ui-schemas/unit/28/partner/36/slot/placeholder",
+              "api": "http://localhost:8000/api/ui-schemas/unit/28/partner/36/slot/placeholder",
               "requestMethod": "PUT"
             }
           },
           "OpenX": {
             "formButton": {
-              "api": "/api/ui-schemas/unit/28/partner/38/slot/placeholder",
+              "api": "http://localhost:8000/api/ui-schemas/unit/28/partner/38/slot/placeholder",
               "requestMethod": "PUT"
             }
           },
           "Rubicon": {
             "formButton": {
-              "api": "/api/ui-schemas/unit/28/partner/40/slot/placeholder",
+              "api": "http://localhost:8000/api/ui-schemas/unit/28/partner/40/slot/placeholder",
               "requestMethod": "PUT"
             }
           },
           "Undertone": {
             "formButton": {
-              "api": "/api/ui-schemas/unit/28/partner/44/slot/placeholder",
+              "api": "http://localhost:8000/api/ui-schemas/unit/28/partner/44/slot/placeholder",
               "requestMethod": "PUT"
             }
           }
@@ -693,37 +693,37 @@
         "partners": {
           "Amazon A9": {
             "formButton": {
-              "api": "/api/ui-schemas/unit/27/partner/34/slot/placeholder",
+              "api": "http://localhost:8000/api/ui-schemas/unit/27/partner/34/slot/placeholder",
               "requestMethod": "PUT"
             }
           },
           "AppNexus": {
             "formButton": {
-              "api": "/api/ui-schemas/unit/27/partner/35/slot/placeholder",
+              "api": "http://localhost:8000/api/ui-schemas/unit/27/partner/35/slot/placeholder",
               "requestMethod": "PUT"
             }
           },
           "Index Exchange": {
             "formButton": {
-              "api": "/api/ui-schemas/unit/27/partner/36/slot/placeholder",
+              "api": "http://localhost:8000/api/ui-schemas/unit/27/partner/36/slot/placeholder",
               "requestMethod": "PUT"
             }
           },
           "OpenX": {
             "formButton": {
-              "api": "/api/ui-schemas/unit/27/partner/38/slot/placeholder",
+              "api": "http://localhost:8000/api/ui-schemas/unit/27/partner/38/slot/placeholder",
               "requestMethod": "PUT"
             }
           },
           "Rubicon": {
             "formButton": {
-              "api": "/api/ui-schemas/unit/27/partner/40/slot/placeholder",
+              "api": "http://localhost:8000/api/ui-schemas/unit/27/partner/40/slot/placeholder",
               "requestMethod": "PUT"
             }
           },
           "Undertone": {
             "formButton": {
-              "api": "/api/ui-schemas/unit/27/partner/44/slot/placeholder",
+              "api": "http://localhost:8000/api/ui-schemas/unit/27/partner/44/slot/placeholder",
               "requestMethod": "PUT"
             }
           }

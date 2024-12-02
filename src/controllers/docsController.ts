@@ -3,12 +3,33 @@ import rules from '@/rules';
 import path from "path";
 import fs from 'fs';
 
-const ConfigController: RequestHandler = (req, res, next) => {
+const readJson = (filePath: string): Promise<Buffer> => {
+    const file = path.resolve(`./src/docs/${filePath}`);
+
+    return new Promise((resolve, reject
+    ) => {
+        fs.readFile(path.resolve(file), (
+            err, data
+        ) => {
+            if (err) {
+                reject(err);
+            } else {
+                const json = JSON.parse(data.toString());
+                resolve(json);
+            }
+        }
+        );
+    }
+    );
+}
+
+
+const ConfigController: RequestHandler = async (req, res, next) => {
     for (let i = 0; i < rules.length; i++) {
         const rule = rules[i];
         const regex = new RegExp(rule.expresion);
 
-        if (regex.test(req.path) || rule.method !== req.method) continue;
+        if (!regex.test(req.path) || rule.method !== req.method) continue;
 
         for (let j = 0; j < rule.responses.length; j++) {
             const response = rule.responses[j];
@@ -24,15 +45,9 @@ const ConfigController: RequestHandler = (req, res, next) => {
                     }
 
                     if (response.file) {
-                        fs.readFile(path.resolve(`${response.file}`), (err, jsonBuffer) => {
-                            if (err) {
-                                next({ status: 404, message: `${response.file} not found`, originalError: err });
-                                return;
-                            }
-                            const json = JSON.parse(jsonBuffer.toString());
-                            res.json(json);
-                            return;
-                        });
+                        const json = await readJson(response.file);
+                        res.json(json);
+                        return;
                     } else if (response.body) {
                         res.json(response.body);
                         return;

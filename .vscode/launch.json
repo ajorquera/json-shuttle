@@ -5,9 +5,9 @@
             "type": "node",
             "request": "launch",
             "name": "nodemon",
-            "runtimeExecutable": "nodemon",
+            "runtimeExecutable": "yarn",
             "runtimeArgs": [
-                "./src/index.ts"
+                "start"
             ],
             "program": "${workspaceFolder}/bin/www",
             "restart": true,

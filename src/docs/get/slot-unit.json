@@ -1,0 +1,54 @@
+{
+    "title": "ca-pub-4859096859619249(29) / Amazon A9 slot details",
+    "schema": [
+        {
+            "type": "hidden",
+            "value": 29,
+            "options": {},
+            "name": "header_unit_id"
+        },
+        {
+            "type": "hidden",
+            "value": 34,
+            "options": {},
+            "name": "header_partner_id"
+        },
+        {
+            "type": "switch",
+            "value": true,
+            "options": {},
+            "label": "Enabled",
+            "name": "enabled"
+        },
+        {
+            "type": "hidden",
+            "value": 174,
+            "options": {},
+            "name": "header_slot_id"
+        },
+        {
+            "type": "grid",
+            "value": "",
+            "options": {
+                "fields": [
+                    {
+                        "type": "string",
+                        "value": "",
+                        "options": {},
+                        "label": "Slot ID"
+                    },
+                    {
+                        "type": "text",
+                        "value": "sadf",
+                        "options": {
+                            "fullWidth": true
+                        },
+                        "name": "slot_id"
+                    }
+                ],
+                "gridTemplateColumns": "1fr 2fr",
+                "gap": "10px"
+            }
+        }
+    ]
+}

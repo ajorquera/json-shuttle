@@ -18,7 +18,7 @@ interface Rule {
 
 const rules: Rule[] = [
     {
-        "expresion": "fdasgafgdf",
+        "expresion": ".*/unit/[0-9]+/partner/[0-9]+/slot/[0-9]+",
         "name": "partners",
         "description": "Get all partners",
         "method": "GET",
@@ -27,7 +27,7 @@ const rules: Rule[] = [
                 "weight": 1,
                 "status": 200,
                 "delay": 1000,
-                "file": "./docs/get/partners.json",
+                "file": "./get/slot-unit.json",
                 "s3File": "s3://my-bucket/partners.json",
                 "headers": {
                     "Content-Type": "application/json"
