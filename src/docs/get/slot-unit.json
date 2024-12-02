@@ -1,5 +1,6 @@
 {
     "title": "ca-pub-4859096859619249(29) / Amazon A9 slot details",
+    "requestMethod": "PUT",
     "schema": [
         {
             "type": "hidden",
