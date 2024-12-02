@@ -34,7 +34,7 @@
         "header_unit_id": 535,
         "header_partner_id": 798,
         "header_slot_id": 22688,
-        "placement": "CC_T_D",
+        "placementId": "CC_T_D",
         "enabled": true
     }
 }
