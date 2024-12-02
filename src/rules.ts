@@ -18,7 +18,7 @@ interface Rule {
 
 const rules: Rule[] = [
     {
-        "exxpresion": "fdasgafgdf",
+        "expresion": "fdasgafgdf",
         "name": "partners",
         "description": "Get all partners",
         "method": "GET",
