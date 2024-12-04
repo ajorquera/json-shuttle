@@ -19,8 +19,7 @@ interface Rule {
 const rules: Rule[] = [
     {
         "expresion": ".*/unit/[0-9]+/partner/[0-9]+/slot/[0-9]+",
-        "name": "partners",
-        "description": "Get all partners",
+        "name": "get-unit-partner-slot",
         "method": "GET",
         "responses": [
             {
@@ -35,6 +34,19 @@ const rules: Rule[] = [
                 "body": {
                     "message": "Hello, world!"
                 }
+            }
+        ]
+    },
+    {
+        "expresion": ".*/unit/[0-9]+/partner/[0-9]+/slot/[0-9]+",
+        "name": "put-unit-partner-slot",
+        "method": "PUT",
+        "responses": [
+            {
+                "weight": 1,
+                "status": 200,
+                "delay": 1000,
+                "body": {}
             }
         ]
     }

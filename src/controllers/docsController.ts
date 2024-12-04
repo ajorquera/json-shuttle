@@ -29,7 +29,7 @@ const ConfigController: RequestHandler = async (req, res, next) => {
         const rule = rules[i];
         const regex = new RegExp(rule.expresion);
 
-        if (!regex.test(req.path) || rule.method !== req.method) continue;
+        if (!(regex.test(req.path) && rule.method === req.method)) continue;
 
         for (let j = 0; j < rule.responses.length; j++) {
             const response = rule.responses[j];
