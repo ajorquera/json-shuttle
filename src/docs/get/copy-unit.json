@@ -1,0 +1,435 @@
+{
+    "title": "Copy Unit",
+    "schema": [
+        {
+            "type": "paragraph",
+            "value": "",
+            "options": {
+                "mb": 10
+            },
+            "label": "Create a new unit in the Longitude system tied to an existing GAM path"
+        },
+        {
+            "type": "grid",
+            "options": {
+                "fields": [
+                    {
+                        "type": "string",
+                        "value": "",
+                        "options": {
+                            "fullWidth": true
+                        },
+                        "label": "Select Unit to Copy"
+                    },
+                    {
+                        "type": "select",
+                        "value": "",
+                        "options": {
+                            "options": [
+                                {
+                                    "label": "CC_D_AAAAAAAAAAAAAAA",
+                                    "value": 246,
+                                    "gam_path": "/1006408/CC_D_A"
+                                },
+                                {
+                                    "label": "CC_S_D_1",
+                                    "value": 459,
+                                    "gam_path": "/1006408/CC_S_D_1"
+                                },
+                                {
+                                    "label": "CC_S_D_2",
+                                    "value": 460,
+                                    "gam_path": "/1006408/CC_S_D_2"
+                                },
+                                {
+                                    "label": "CC_S_D_3",
+                                    "value": 461,
+                                    "gam_path": "/1006408/CC_S_D_3"
+                                },
+                                {
+                                    "label": "CC_S_D_4",
+                                    "value": 462,
+                                    "gam_path": "/1006408/CC_S_D_4"
+                                },
+                                {
+                                    "label": "CC_S_D_A",
+                                    "value": 463,
+                                    "gam_path": "/1006408/CC_S_D_A"
+                                },
+                                {
+                                    "label": "CC_S_M_1",
+                                    "value": 464,
+                                    "gam_path": "/1006408/CC_S_M_1"
+                                },
+                                {
+                                    "label": "CC_S_M_2",
+                                    "value": 465,
+                                    "gam_path": "/1006408/CC_S_M_2"
+                                },
+                                {
+                                    "label": "CC_S_M_3",
+                                    "value": 466,
+                                    "gam_path": "/1006408/CC_S_M_3"
+                                },
+                                {
+                                    "label": "CC_S_M_A",
+                                    "value": 467,
+                                    "gam_path": "/1006408/CC_S_M_A"
+                                },
+                                {
+                                    "label": "CC_T_D_1",
+                                    "value": 535,
+                                    "gam_path": "/1006408/CC_T_D_1"
+                                },
+                                {
+                                    "label": "CC_T_D_2",
+                                    "value": 530,
+                                    "gam_path": "/1006408/CC_T_D_2"
+                                },
+                                {
+                                    "label": "CC_T_D_3",
+                                    "value": 531,
+                                    "gam_path": "/1006408/CC_T_D_3"
+                                },
+                                {
+                                    "label": "CC_T_D_4",
+                                    "value": 532,
+                                    "gam_path": "/1006408/CC_T_D_4"
+                                },
+                                {
+                                    "label": "CC_T_D_A",
+                                    "value": 533,
+                                    "gam_path": "/1006408/CC_T_D_A"
+                                },
+                                {
+                                    "label": "CC_T_D_INT",
+                                    "value": 3124,
+                                    "gam_path": "/1006408/CC_T_D_INT"
+                                },
+                                {
+                                    "label": "CC_T_D_INT_NLU",
+                                    "value": 3383,
+                                    "gam_path": "/1006408/collegeconfidential/CC_T_D_INT_NLU"
+                                },
+                                {
+                                    "label": "CC_T_D_L",
+                                    "value": 651,
+                                    "gam_path": "/1006408/CC_T_D_L"
+                                },
+                                {
+                                    "label": "CC_T_D_outstream",
+                                    "value": 2319,
+                                    "gam_path": "/1006408/CC_T_D_outstream"
+                                },
+                                {
+                                    "label": "CC_T_D_VL",
+                                    "value": 652,
+                                    "gam_path": "/1006408/CC_T_D_VL"
+                                },
+                                {
+                                    "label": "CC_T_M_1",
+                                    "value": 529,
+                                    "gam_path": "/1006408/CC_T_M_1"
+                                },
+                                {
+                                    "label": "CC_T_M_2",
+                                    "value": 536,
+                                    "gam_path": "/1006408/CC_T_M_2"
+                                },
+                                {
+                                    "label": "CC_T_M_3",
+                                    "value": 567,
+                                    "gam_path": "/1006408/CC_T_M_3"
+                                },
+                                {
+                                    "label": "CC_T_M_A",
+                                    "value": 534,
+                                    "gam_path": "/1006408/CC_T_M_A"
+                                },
+                                {
+                                    "label": "CC_T_M_INT",
+                                    "value": 3123,
+                                    "gam_path": "/1006408/CC_T_M_INT"
+                                },
+                                {
+                                    "label": "CC_T_M_INT_NLU",
+                                    "value": 3384,
+                                    "gam_path": "/1006408/collegeconfidential/CC_T_M_INT_NLU"
+                                },
+                                {
+                                    "label": "CC_T_M_outstream",
+                                    "value": 2320,
+                                    "gam_path": "/1006408/CC_T_M_outstream"
+                                },
+                                {
+                                    "label": "CC_T_M_VL",
+                                    "value": 653,
+                                    "gam_path": "/1006408/CC_T_M_VL"
+                                },
+                                {
+                                    "label": "CSearch_ATF_300x250",
+                                    "value": 87,
+                                    "gam_path": "/1006408/CSearch_ATF_300x250"
+                                },
+                                {
+                                    "label": "CSearch_ATF_300x250_Mobile",
+                                    "value": 88,
+                                    "gam_path": "/1006408/CSearch_ATF_300x250_Mobile"
+                                },
+                                {
+                                    "label": "CSearch_ATF_Banner",
+                                    "value": 89,
+                                    "gam_path": "/1006408/CSearch_ATF_Banner"
+                                },
+                                {
+                                    "label": "CSearch_ATF_Banner_Mobile",
+                                    "value": 228,
+                                    "gam_path": "/1006408/CSearch_ATF_Banner_Mobile"
+                                },
+                                {
+                                    "label": "CSearch_ATF_HouseAd",
+                                    "value": 90,
+                                    "gam_path": "/1006408/CSearch_ATF_HouseAd"
+                                },
+                                {
+                                    "label": "CSearch_ATF_HouseAd_Mobile",
+                                    "value": 96,
+                                    "gam_path": "/1006408/CSearch_ATF_HouseAd_Mobile"
+                                },
+                                {
+                                    "label": "CSearch_ATF_Skyscraper",
+                                    "value": 91,
+                                    "gam_path": "/1006408/CSearch_ATF_Skyscraper"
+                                },
+                                {
+                                    "label": "CSearch_BTF_300x250_Mobile",
+                                    "value": 229,
+                                    "gam_path": "/1006408/CSearch_BTF_300x250_Mobile"
+                                },
+                                {
+                                    "label": "CSearch_Mid_Banner",
+                                    "value": 92,
+                                    "gam_path": "/1006408/CSearch_Mid_Banner"
+                                },
+                                {
+                                    "label": "CSearch_Mid_Banner_Mobile",
+                                    "value": 93,
+                                    "gam_path": "/1006408/CSearch_Mid_Banner_Mobile"
+                                },
+                                {
+                                    "label": "Home_D_300x250_1",
+                                    "value": 192,
+                                    "gam_path": "/1006408/Home_D_300x250_1"
+                                },
+                                {
+                                    "label": "Home_D_300x250_2",
+                                    "value": 193,
+                                    "gam_path": "/1006408/Home_D_300x250_2"
+                                },
+                                {
+                                    "label": "Home_M_320x50",
+                                    "value": 194,
+                                    "gam_path": "/1006408/Home_M_320x50"
+                                },
+                                {
+                                    "label": "Home_M_Flex",
+                                    "value": 195,
+                                    "gam_path": "/1006408/Home_M_Flex"
+                                },
+                                {
+                                    "label": "skins",
+                                    "value": 2634,
+                                    "gam_path": "/1006408/skins"
+                                },
+                                {
+                                    "label": "Talk_Anchor_728x90",
+                                    "value": 207,
+                                    "gam_path": "/1006408/Talk_Anchor_728x90"
+                                },
+                                {
+                                    "label": "Talk_Bottom_Leaderboard",
+                                    "value": 51,
+                                    "gam_path": "/1006408/Talk_Bottom_Leaderboard"
+                                },
+                                {
+                                    "label": "Talk_D_1x1",
+                                    "value": 224,
+                                    "gam_path": "/1006408/Talk_D_1x1"
+                                },
+                                {
+                                    "label": "Talk_D_300x250",
+                                    "value": 239,
+                                    "gam_path": "/1006408/Talk_D_300x250"
+                                },
+                                {
+                                    "label": "Talk_D_300x250_2",
+                                    "value": 238,
+                                    "gam_path": "/1006408/Talk_D_300x250_2"
+                                },
+                                {
+                                    "label": "Talk_D_728x90_ATF",
+                                    "value": 237,
+                                    "gam_path": "/1006408/Talk_D_728x90_ATF"
+                                },
+                                {
+                                    "label": "Talk_D_Skyscraper",
+                                    "value": 236,
+                                    "gam_path": "/1006408/Talk_D_Skyscraper"
+                                },
+                                {
+                                    "label": "Talk_M_300x250",
+                                    "value": 235,
+                                    "gam_path": "/1006408/Talk_M_300x250"
+                                },
+                                {
+                                    "label": "Talk_M_320x50_ATF",
+                                    "value": 234,
+                                    "gam_path": "/1006408/Talk_M_320x50_ATF"
+                                },
+                                {
+                                    "label": "Talk_Mobile_Anchor",
+                                    "value": 206,
+                                    "gam_path": "/1006408/Talk_Mobile_Anchor"
+                                },
+                                {
+                                    "label": "Talk_Mobile_ATF",
+                                    "value": 40,
+                                    "gam_path": "/1006408/Talk_Mobile_ATF"
+                                },
+                                {
+                                    "label": "Talk_Mobile_BTF",
+                                    "value": 42,
+                                    "gam_path": "/1006408/Talk_Mobile_BTF"
+                                },
+                                {
+                                    "label": "Talk_Mobile_Highlights",
+                                    "value": 240,
+                                    "gam_path": "/1006408/Talk_Mobile_Highlights"
+                                },
+                                {
+                                    "label": "Talk_Mobile_Mid",
+                                    "value": 41,
+                                    "gam_path": "/1006408/Talk_Mobile_Mid"
+                                },
+                                {
+                                    "label": "Talk_Skyscraper_160x600",
+                                    "value": 37,
+                                    "gam_path": "/1006408/Talk_Skyscraper_160x600"
+                                },
+                                {
+                                    "label": "Talk_Top_Leaderboard",
+                                    "value": 38,
+                                    "gam_path": "/1006408/Talk_Top_Leaderboard"
+                                },
+                                {
+                                    "label": "Talk_Welcome_300x250",
+                                    "value": 39,
+                                    "gam_path": "/1006408/Talk_Welcome_300x250"
+                                },
+                                {
+                                    "label": "Topics_ATF_728x90_Flex",
+                                    "value": 190,
+                                    "gam_path": "/1006408/Topics_ATF_728x90_Flex"
+                                },
+                                {
+                                    "label": "Topics_Banner_728x90",
+                                    "value": 189,
+                                    "gam_path": "/1006408/Topics_Banner_728x90"
+                                },
+                                {
+                                    "label": "Topics_Mid_Banner_Mobile",
+                                    "value": 188,
+                                    "gam_path": "/1006408/Topics_Mid_Banner_Mobile"
+                                },
+                                {
+                                    "label": "Topics_Rail_300x250",
+                                    "value": 187,
+                                    "gam_path": "/1006408/Topics_Rail_300x250"
+                                },
+                                {
+                                    "label": "Topics_Rail_300x250_2",
+                                    "value": 196,
+                                    "gam_path": "/1006408/Topics_Rail_300x250_2"
+                                },
+                                {
+                                    "label": "Topics_Rail_300x250_Flex",
+                                    "value": 186,
+                                    "gam_path": "/1006408/Topics_Rail_300x250_Flex"
+                                },
+                                {
+                                    "label": "WWW_Anchor_728x90",
+                                    "value": 205,
+                                    "gam_path": "/1006408/WWW_Anchor_728x90"
+                                },
+                                {
+                                    "label": "WWW_Bottom_728x90",
+                                    "value": 52,
+                                    "gam_path": "/1006408/WWW_Bottom_728x90"
+                                },
+                                {
+                                    "label": "WWW_Mid_300x250",
+                                    "value": 43,
+                                    "gam_path": "/1006408/WWW_Mid_300x250"
+                                },
+                                {
+                                    "label": "WWW_Mid_300x250_2",
+                                    "value": 46,
+                                    "gam_path": "/1006408/WWW_Mid_300x250_2"
+                                },
+                                {
+                                    "label": "WWW_Mobile_Anchor",
+                                    "value": 50,
+                                    "gam_path": "/1006408/WWW_Mobile_Anchor"
+                                },
+                                {
+                                    "label": "WWW_Mobile_ATF",
+                                    "value": 47,
+                                    "gam_path": "/1006408/WWW_Mobile_ATF"
+                                },
+                                {
+                                    "label": "WWW_Mobile_BTF",
+                                    "value": 49,
+                                    "gam_path": "/1006408/WWW_Mobile_BTF"
+                                },
+                                {
+                                    "label": "WWW_Mobile_Mid",
+                                    "value": 48,
+                                    "gam_path": "/1006408/WWW_Mobile_Mid"
+                                },
+                                {
+                                    "label": "WWW_Skyscraper_160x600",
+                                    "value": 44,
+                                    "gam_path": "/1006408/WWW_Skyscraper_160x600"
+                                },
+                                {
+                                    "label": "WWW_Top_728x90",
+                                    "value": 45,
+                                    "gam_path": "/1006408/WWW_Top_728x90"
+                                }
+                            ]
+                        },
+                        "name": "unit_to_copy"
+                    },
+                    {
+                        "type": "string",
+                        "value": "",
+                        "options": {
+                            "fullWidth": true
+                        },
+                        "label": "Unit Name"
+                    },
+                    {
+                        "type": "text",
+                        "value": "",
+                        "options": {
+                            "fullWidth": true
+                        },
+                        "name": "unit_name"
+                    }
+                ],
+                "gridTemplateColumns": "1fr 2fr",
+                "gap": 5
+            }
+        }
+    ]
+}

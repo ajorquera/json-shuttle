@@ -1130,7 +1130,7 @@
         "label": "+ Create New Unit",
         "type": "formButton",
         "options": {
-          "api": "/api/ui-schemas/123helpme/unit/new"
+          "api": "http://localhost:8000/api/ui-schemas/123helpme/unit/new"
         }
       },
       {
@@ -1183,14 +1183,14 @@
         "label": "+ Copy Unit",
         "type": "formButton",
         "options": {
-          "api": "/api/ui-schemas/123helpme/unit/copy"
+          "api": "http://localhost:8000/api/ui-schemas/123helpme/unit/copy"
         }
       },
       {
         "label": "- Archive Unit",
         "type": "formButton",
         "options": {
-          "api": "/api/ui-schemas/123helpme/unit/archive"
+          "api": "http://localhost:8000/api/ui-schemas/123helpme/unit/archive"
         }
       }
     ]
@@ -89943,7 +89943,7 @@
           }
         },
         "formModal": {
-          "api": "/api/ui-schemas/123helpme/unit/:unit_id/edit",
+          "api": "http://localhost:8000/api/ui-schemas/123helpme/unit/:unit_id/edit",
           "requestMethod": "PUT"
         }
       },

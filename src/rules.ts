@@ -18,6 +18,76 @@ interface Rule {
 
 const rules: Rule[] = [
     {
+        expresion: ".*/unit/archive",
+        name: "get-unit-archive",
+        method: "GET",
+        responses: [
+            {
+                "weight": 1,
+                "status": 200,
+                delay: 1000,
+                file: "./get/archive-unit.json",
+            }
+        ]
+    },
+
+    {
+        expresion: ".*/unit/[0-9]+/edit",
+        name: "get-unit-archive",
+        method: "GET",
+        responses: [
+            {
+                "weight": 1,
+                "status": 200,
+                delay: 1000,
+                file: "./get/edit-unit.json",
+            }
+        ]
+    },
+
+    {
+        expresion: ".*/unit/[0-9]+/edit",
+        name: "get-unit-archive",
+        method: "PUT",
+        responses: [
+            {
+                "weight": 1,
+                "status": 204,
+                delay: 1000,
+                body: {},
+            }
+        ]
+    },
+
+    {
+        expresion: ".*/unit/copy",
+        name: "get-unit-copy",
+        method: "GET",
+        responses: [
+            {
+                "weight": 1,
+                "status": 200,
+                delay: 1000,
+                file: "./get/copy-unit.json",
+            }
+        ]
+    },
+
+    {
+        expresion: ".*/unit/new",
+        name: "get-unit-new",
+        method: "GET",
+        responses: [
+            {
+                "weight": 1,
+                "status": 200,
+                delay: 1000,
+                file: "./get/new-unit.json",
+            }
+        ]
+    },
+
+    {
         "expresion": ".*/unit/[0-9]+/partner/[0-9]+/slot/.+",
         "name": "get-unit-partner-slot",
         "method": "GET",

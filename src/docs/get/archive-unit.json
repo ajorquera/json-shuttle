@@ -1,0 +1,110 @@
+{
+    "title": "Create New Unit",
+    "schema": [
+        {
+            "type": "grid",
+            "options": {
+                "fields": [
+                    {
+                        "type": "string",
+                        "value": "",
+                        "options": {
+                            "fullWidth": true
+                        },
+                        "label": "Sync Unit to GAM"
+                    },
+                    {
+                        "type": "switch",
+                        "value": false,
+                        "options": {
+                            "fullWidth": true
+                        },
+                        "name": "add_to_gam"
+                    }
+                ],
+                "gridTemplateColumns": "1fr 2fr",
+                "gap": 5
+            }
+        },
+        {
+            "type": "condition",
+            "options": {
+                "property": "add_to_gam",
+                "conditions": {
+                    "true": [
+                        {
+                            "type": "string",
+                            "value": "1006408",
+                            "options": {
+                                "fullWidth": true
+                            },
+                            "label": "GAM Network ID",
+                            "name": "gam_network_id"
+                        },
+                        {
+                            "type": "select",
+                            "value": "23199345221",
+                            "options": {
+                                "options": [
+                                    {
+                                        "label": "/1006408/collegeconfidential (23199345221)",
+                                        "value": "23199345221"
+                                    }
+                                ]
+                            },
+                            "label": "GAM Parent Unit ID",
+                            "name": "gam_parent_ad_unit_id"
+                        },
+                        {
+                            "type": "text",
+                            "value": "",
+                            "options": {
+                                "fullWidth": true
+                            },
+                            "label": "Override GAM Parent Unit ID",
+                            "name": "override_gam_parent_ad_unit_id"
+                        },
+                        {
+                            "type": "text",
+                            "value": "",
+                            "options": {
+                                "fullWidth": true
+                            },
+                            "label": "GAM Unit Name *",
+                            "name": "gam_unit_name"
+                        },
+                        {
+                            "type": "text",
+                            "value": "",
+                            "options": {
+                                "fullWidth": true
+                            },
+                            "label": "Longitude Unit Name *",
+                            "name": "lngtd_unit_name"
+                        }
+                    ],
+                    "false": [
+                        {
+                            "type": "string",
+                            "value": "1006408",
+                            "options": {
+                                "fullWidth": true
+                            },
+                            "label": "GAM Network ID",
+                            "name": "gam_network_id"
+                        },
+                        {
+                            "type": "text",
+                            "value": "",
+                            "options": {
+                                "fullWidth": true
+                            },
+                            "label": "Longitude Unit Name *",
+                            "name": "lngtd_unit_name"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}
