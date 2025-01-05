@@ -1,5 +1,5 @@
-import { INNER_QUERY_PARAM_PREFIX } from "@/env";
-import { delayPromise } from "@/utils";
+import { INNER_QUERY_PARAM_PREFIX } from "../env";
+import { delayPromise } from "../utils";
 import { RequestHandler } from "express";
 import { STATUS_CODES } from "http";
 

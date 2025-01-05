@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import { healthCheckController } from '@/controllers';
+import { healthCheckController } from './controllers';
 import DocsController from './controllers/docsController';
 
 const routes = Router();

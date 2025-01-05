@@ -1,5 +1,5 @@
 import { RequestHandler } from "express";
-import rules from '@/rules';
+import rules from '../rules';
 import path from "path";
 import fs from 'fs';
 
