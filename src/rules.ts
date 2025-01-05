@@ -18,7 +18,7 @@ interface Rule {
 
 const rules: Rule[] = [
     {
-        "expresion": ".*/unit/[0-9]+/partner/[0-9]+/slot/[0-9]+",
+        "expresion": ".*/unit/[0-9]+/partner/[0-9]+/slot/.+",
         "name": "get-unit-partner-slot",
         "method": "GET",
         "responses": [
@@ -27,18 +27,11 @@ const rules: Rule[] = [
                 "status": 200,
                 "delay": 1000,
                 "file": "./get/slot-unit.json",
-                "s3File": "s3://my-bucket/partners.json",
-                "headers": {
-                    "Content-Type": "application/json"
-                },
-                "body": {
-                    "message": "Hello, world!"
-                }
             }
         ]
     },
     {
-        "expresion": ".*/unit/[0-9]+/partner/[0-9]+/slot/[0-9]+",
+        "expresion": ".*/unit/[0-9]+/partner/[0-9]+/slot/.+",
         "name": "put-unit-partner-slot",
         "method": "PUT",
         "responses": [
@@ -46,7 +39,20 @@ const rules: Rule[] = [
                 "weight": 1,
                 "status": 200,
                 "delay": 1000,
-                "body": {}
+                "body": {
+                    "type": "info",
+                    "message": "",
+                    "data": {
+                        "header_unit_id": 535,
+                        "header_partner_id": 798,
+                        "formButton": {
+                            "requestMethod": "PUT",
+                            "api": "/api/ui-schemas/collegeconfidential/slot/22688/unit/535/partner/798"
+                        },
+                        "slot_id": "abc",
+                        "enabled": true
+                    }
+                }
             }
         ]
     }

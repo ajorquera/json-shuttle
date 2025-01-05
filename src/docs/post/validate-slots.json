@@ -1,1 +1,9 @@
-{}
+[
+  {
+    "type": "warning",
+    "message": "Warning for row (1): Ad unit could not be found. Row will be skipped",
+    "data": [
+      0
+    ]
+  }
+]
