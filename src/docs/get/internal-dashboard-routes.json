@@ -4,7 +4,8 @@
       "path": "/account-management/",
       "apiUrl": "/api/manage-account",
       "icon": "gear",
-      "label": "Manage Accounts"
+      "label": "Manage Accounts",
+      "exact": true
     },
     {
       "path": "/account-management/:accountSlug/account",
