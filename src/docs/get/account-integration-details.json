@@ -1,0 +1,515 @@
+{
+    "header": {
+        "title": "Integrations",
+        "filters": [],
+        "type": "header",
+        "actions": []
+    },
+    "isNewForm": true,
+    "fields": [
+        {
+            "type": "grid",
+            "options": {
+                "columns": 3,
+                "fields": [
+                    {
+                        "type": "serviceStatus",
+                        "title": "33Across ID",
+                        "name": "1334__enabled",
+                        "value": true,
+                        "options": {
+                            "fields": []
+                        },
+                        "pl": 10,
+                        "pr": 10
+                    },
+                    {
+                        "type": "serviceStatus",
+                        "title": "Adagio Real-time Data",
+                        "name": "5048__enabled",
+                        "value": true,
+                        "options": {
+                            "fields": []
+                        },
+                        "pl": 10,
+                        "pr": 10
+                    },
+                    {
+                        "type": "serviceStatus",
+                        "title": "ATS Analytics",
+                        "name": "5047__enabled",
+                        "value": false,
+                        "options": {
+                            "fields": []
+                        },
+                        "pl": 10,
+                        "pr": 10
+                    }
+                ]
+            }
+        },
+        {
+            "type": "grid",
+            "options": {
+                "columns": 3,
+                "fields": [
+                    {
+                        "type": "serviceStatus",
+                        "title": "Blockthrough",
+                        "name": "107__enabled",
+                        "value": true,
+                        "options": {
+                            "fields": [
+                                {
+                                    "label": "Script Path",
+                                    "name": "107__blockthrough_script_path",
+                                    "type": "text",
+                                    "value": "//longitudeads-com.videoplayerhub.com/galleryplayer.js",
+                                    "options": {
+                                        "fullWidth": true,
+                                        "variant": "standard"
+                                    }
+                                }
+                            ]
+                        },
+                        "pl": 10,
+                        "pr": 10
+                    },
+                    {
+                        "type": "serviceStatus",
+                        "title": "BritePool",
+                        "name": "1351__enabled",
+                        "value": false,
+                        "options": {
+                            "fields": []
+                        },
+                        "pl": 10,
+                        "pr": 10
+                    },
+                    {
+                        "type": "serviceStatus",
+                        "title": "Confiant",
+                        "name": "108__enabled",
+                        "value": true,
+                        "options": {
+                            "fields": []
+                        },
+                        "pl": 10,
+                        "pr": 10
+                    }
+                ]
+            }
+        },
+        {
+            "type": "grid",
+            "options": {
+                "columns": 3,
+                "fields": [
+                    {
+                        "type": "serviceStatus",
+                        "title": "Yahoo Connect ID",
+                        "name": "1350__enabled",
+                        "value": false,
+                        "options": {
+                            "fields": []
+                        },
+                        "pl": 10,
+                        "pr": 10
+                    },
+                    {
+                        "type": "serviceStatus",
+                        "title": "Criteo ID",
+                        "name": "1339__enabled",
+                        "value": true,
+                        "options": {
+                            "fields": []
+                        },
+                        "pl": 10,
+                        "pr": 10
+                    },
+                    {
+                        "type": "serviceStatus",
+                        "title": "Deep Intent ID (deepintentDpesId)",
+                        "name": "1335__enabled",
+                        "value": true,
+                        "options": {
+                            "fields": []
+                        },
+                        "pl": 10,
+                        "pr": 10
+                    }
+                ]
+            }
+        },
+        {
+            "type": "grid",
+            "options": {
+                "columns": 3,
+                "fields": [
+                    {
+                        "type": "serviceStatus",
+                        "title": "DMD ID",
+                        "name": "1336__enabled",
+                        "value": true,
+                        "options": {
+                            "fields": []
+                        },
+                        "pl": 10,
+                        "pr": 10
+                    },
+                    {
+                        "type": "serviceStatus",
+                        "title": "European Unified ID (euidId)",
+                        "name": "1338__enabled",
+                        "value": false,
+                        "options": {
+                            "fields": []
+                        },
+                        "pl": 10,
+                        "pr": 10
+                    },
+                    {
+                        "type": "serviceStatus",
+                        "title": "Fabrick ID by Neustar",
+                        "name": "1344__enabled",
+                        "value": false,
+                        "options": {
+                            "fields": []
+                        },
+                        "pl": 10,
+                        "pr": 10
+                    }
+                ]
+            }
+        },
+        {
+            "type": "grid",
+            "options": {
+                "columns": 3,
+                "fields": [
+                    {
+                        "type": "serviceStatus",
+                        "title": "Google Analytics 4",
+                        "name": "109__enabled",
+                        "value": true,
+                        "options": {
+                            "fields": [
+                                {
+                                    "label": "GA4 Account ID",
+                                    "name": "109__account_id",
+                                    "type": "text",
+                                    "options": {
+                                        "fullWidth": true,
+                                        "variant": "standard"
+                                    }
+                                },
+                                {
+                                    "label": "GA4 Property ID",
+                                    "name": "109__property_id",
+                                    "type": "text",
+                                    "options": {
+                                        "fullWidth": true,
+                                        "variant": "standard"
+                                    }
+                                }
+                            ]
+                        },
+                        "pl": 10,
+                        "pr": 10
+                    },
+                    {
+                        "type": "serviceStatus",
+                        "title": "Hadron ID from Audigent",
+                        "name": "1332__enabled",
+                        "value": false,
+                        "options": {
+                            "fields": []
+                        },
+                        "pl": 10,
+                        "pr": 10
+                    },
+                    {
+                        "type": "serviceStatus",
+                        "title": "HUMAN Security Real-time Data",
+                        "name": "5049__enabled",
+                        "value": false,
+                        "options": {
+                            "fields": []
+                        },
+                        "pl": 10,
+                        "pr": 10
+                    }
+                ]
+            }
+        },
+        {
+            "type": "grid",
+            "options": {
+                "columns": 3,
+                "fields": [
+                    {
+                        "type": "serviceStatus",
+                        "title": "ID5 ID",
+                        "name": "1340__enabled",
+                        "value": true,
+                        "options": {
+                            "fields": []
+                        },
+                        "pl": 10,
+                        "pr": 10
+                    },
+                    {
+                        "type": "serviceStatus",
+                        "title": "LiveRamp RampID (identityLinkId)",
+                        "name": "1347__enabled",
+                        "value": true,
+                        "options": {
+                            "fields": []
+                        },
+                        "pl": 10,
+                        "pr": 10
+                    },
+                    {
+                        "type": "serviceStatus",
+                        "title": "LiveIntent",
+                        "name": "1331__enabled",
+                        "value": true,
+                        "options": {
+                            "fields": []
+                        },
+                        "pl": 10,
+                        "pr": 10
+                    }
+                ]
+            }
+        },
+        {
+            "type": "grid",
+            "options": {
+                "columns": 3,
+                "fields": [
+                    {
+                        "type": "serviceStatus",
+                        "title": "Lotame Panorama ID",
+                        "name": "1343__enabled",
+                        "value": true,
+                        "options": {
+                            "fields": []
+                        },
+                        "pl": 10,
+                        "pr": 10
+                    },
+                    {
+                        "type": "serviceStatus",
+                        "title": "Merkle ID",
+                        "name": "1348__enabled",
+                        "value": false,
+                        "options": {
+                            "fields": []
+                        },
+                        "pl": 10,
+                        "pr": 10
+                    },
+                    {
+                        "type": "serviceStatus",
+                        "title": "Optable",
+                        "name": "5888__enabled",
+                        "value": false,
+                        "options": {
+                            "fields": [
+                                {
+                                    "label": "Script Path",
+                                    "name": "5888__script_path",
+                                    "type": "text",
+                                    "options": {
+                                        "fullWidth": true,
+                                        "variant": "standard"
+                                    }
+                                },
+                                {
+                                    "label": "Site Slug",
+                                    "name": "5888__site_slug",
+                                    "type": "text",
+                                    "value": "collegeconfidential",
+                                    "options": {
+                                        "fullWidth": true,
+                                        "variant": "standard"
+                                    }
+                                }
+                            ]
+                        },
+                        "pl": 10,
+                        "pr": 10
+                    }
+                ]
+            }
+        },
+        {
+            "type": "grid",
+            "options": {
+                "columns": 3,
+                "fields": [
+                    {
+                        "type": "serviceStatus",
+                        "title": "Pair ID",
+                        "name": "1337__enabled",
+                        "value": true,
+                        "options": {
+                            "fields": []
+                        },
+                        "pl": 10,
+                        "pr": 10
+                    },
+                    {
+                        "type": "serviceStatus",
+                        "title": "Parrable ID",
+                        "name": "1346__enabled",
+                        "value": false,
+                        "options": {
+                            "fields": []
+                        },
+                        "pl": 10,
+                        "pr": 10
+                    },
+                    {
+                        "type": "serviceStatus",
+                        "title": "Permutive Real-time Data",
+                        "name": "5050__enabled",
+                        "value": false,
+                        "options": {
+                            "fields": []
+                        },
+                        "pl": 10,
+                        "pr": 10
+                    }
+                ]
+            }
+        },
+        {
+            "type": "grid",
+            "options": {
+                "columns": 3,
+                "fields": [
+                    {
+                        "type": "serviceStatus",
+                        "title": "Publisher Link (publinkId)",
+                        "name": "1341__enabled",
+                        "value": false,
+                        "options": {
+                            "fields": []
+                        },
+                        "pl": 10,
+                        "pr": 10
+                    },
+                    {
+                        "type": "serviceStatus",
+                        "title": "PubProvided ID",
+                        "name": "1349__enabled",
+                        "value": true,
+                        "options": {
+                            "fields": []
+                        },
+                        "pl": 10,
+                        "pr": 10
+                    },
+                    {
+                        "type": "serviceStatus",
+                        "title": "Quantcast ID",
+                        "name": "1345__enabled",
+                        "value": true,
+                        "options": {
+                            "fields": []
+                        },
+                        "pl": 10,
+                        "pr": 10
+                    }
+                ]
+            }
+        },
+        {
+            "type": "grid",
+            "options": {
+                "columns": 3,
+                "fields": [
+                    {
+                        "type": "serviceStatus",
+                        "title": "Shared ID",
+                        "name": "1352__enabled",
+                        "value": true,
+                        "options": {
+                            "fields": []
+                        },
+                        "pl": 10,
+                        "pr": 10
+                    },
+                    {
+                        "type": "serviceStatus",
+                        "title": "Sourcepoint",
+                        "name": "110__enabled",
+                        "value": true,
+                        "options": {
+                            "fields": [
+                                {
+                                    "label": "Sourcepoint ID Override",
+                                    "name": "110__sourcepoint_id_override",
+                                    "type": "text",
+                                    "options": {
+                                        "fullWidth": true,
+                                        "variant": "standard"
+                                    }
+                                }
+                            ]
+                        },
+                        "pl": 10,
+                        "pr": 10
+                    },
+                    {
+                        "type": "serviceStatus",
+                        "title": "Topics First Party Data (FPD) Module (topicsFpdModule)",
+                        "name": "5051__enabled",
+                        "value": false,
+                        "options": {
+                            "fields": []
+                        },
+                        "pl": 10,
+                        "pr": 10
+                    }
+                ]
+            }
+        },
+        {
+            "type": "grid",
+            "options": {
+                "columns": 3,
+                "fields": [
+                    {
+                        "type": "serviceStatus",
+                        "title": "Unified ID 2.0 (uid2Id)",
+                        "name": "1342__enabled",
+                        "value": true,
+                        "options": {
+                            "fields": []
+                        },
+                        "pl": 10,
+                        "pr": 10
+                    },
+                    {
+                        "type": "serviceStatus",
+                        "title": "Unified ID",
+                        "name": "1333__enabled",
+                        "value": true,
+                        "options": {
+                            "fields": []
+                        },
+                        "pl": 10,
+                        "pr": 10
+                    }
+                ]
+            }
+        }
+    ],
+    "validation": {},
+    "validationConfig": {
+        "errMessages": {}
+    }
+}

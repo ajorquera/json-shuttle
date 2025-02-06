@@ -2,6 +2,7 @@ import { RequestHandler } from "express";
 import rules from '../rules';
 import path from "path";
 import fs from 'fs';
+import { delayPromise } from "../utils";
 
 const readJson = (filePath: string): Promise<Buffer> => {
     const file = path.resolve(`./src/docs/${filePath}`);
@@ -33,6 +34,9 @@ const ConfigController: RequestHandler = async (req, res, next) => {
 
         for (let j = 0; j < rule.responses.length; j++) {
             const response = rule.responses[j];
+            if (response.delay) {
+                await delayPromise(response.delay);
+            }
 
             if (response.weight) {
                 const shouldRespond = Math.random() < response.weight;

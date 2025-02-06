@@ -1,0 +1,328 @@
+{
+    "header": {
+        "title": "Ads.txt",
+        "filters": [],
+        "type": "header",
+        "actions": []
+    },
+    "isNewForm": true,
+    "fields": [
+        {
+            "label": "collegeconfidential.com",
+            "options": {
+                "fields": [
+                    {
+                        "type": "configTable",
+                        "label": "",
+                        "configFields": [],
+                        "options": {
+                            "columns": [
+                                {
+                                    "label": "Entry",
+                                    "type": "text",
+                                    "name": "entry"
+                                },
+                                {
+                                    "label": "Present",
+                                    "type": "text",
+                                    "name": "present_status"
+                                }
+                            ],
+                            "value": [
+                                {
+                                    "entry": "ManagerDomain=longitudeads.com",
+                                    "present_status": "present"
+                                },
+                                {
+                                    "entry": "longitudeads.com, 9392, DIRECT",
+                                    "present_status": "present"
+                                },
+                                {
+                                    "entry": "adagio.io, 1240, DIRECT",
+                                    "present_status": "present"
+                                },
+                                {
+                                    "entry": "rubiconproject.com, 19116, RESELLER, 0bfd66d529a55807",
+                                    "present_status": "present"
+                                },
+                                {
+                                    "entry": "pubmatic.com, 159110, RESELLER, 5d62403b186f2ace",
+                                    "present_status": "present"
+                                },
+                                {
+                                    "entry": "indexexchange.com, 194558, RESELLER",
+                                    "present_status": "present"
+                                },
+                                {
+                                    "entry": "onetag.com, 6b859b96c564fbe, RESELLER",
+                                    "present_status": "present"
+                                },
+                                {
+                                    "entry": "pubmatic.com, 161593, RESELLER, 5d62403b186f2ace",
+                                    "present_status": "present"
+                                },
+                                {
+                                    "entry": "rubiconproject.com, 11006, RESELLER, 0bfd66d529a558",
+                                    "present_status": "present"
+                                },
+                                {
+                                    "entry": "appnexus.com, 13099, RESELLER",
+                                    "present_status": "present"
+                                },
+                                {
+                                    "entry": "freewheel.tv, 1568036, RESELLER",
+                                    "present_status": "present"
+                                },
+                                {
+                                    "entry": "freewheel.tv, 1568041, RESELLER",
+                                    "present_status": "present"
+                                },
+                                {
+                                    "entry": "triplelift.com, 13482, RESELLER, 6c33edb13117fd86",
+                                    "present_status": "missing"
+                                },
+                                {
+                                    "entry": "google.com, pub-5286346120013326, RESELLER, f08c47fec0942fa0",
+                                    "present_status": "present"
+                                },
+                                {
+                                    "entry": "google.com, pub-4473126033345500, DIRECT, f08c47fec0942fa0",
+                                    "present_status": "present"
+                                },
+                                {
+                                    "entry": "aps.amazon.com, c8b7d244-cdfc-48df-8b4a-98e8c4fadc6a, DIRECT",
+                                    "present_status": "present"
+                                },
+                                {
+                                    "entry": "appnexus.com, 3781, DIRECT, f5ab79cb980f11d1",
+                                    "present_status": "present"
+                                },
+                                {
+                                    "entry": "conversantmedia.com, 41132, DIRECT",
+                                    "present_status": "present"
+                                },
+                                {
+                                    "entry": "criteo.com, B-063675, RESELLER, 9fac4a4a87c2a44f",
+                                    "present_status": "present"
+                                },
+                                {
+                                    "entry": "themediagrid.com, V13DP2, RESELLER, 35d5010d7789b49d",
+                                    "present_status": "present"
+                                },
+                                {
+                                    "entry": "deepintent.com, 1225, DIRECT",
+                                    "present_status": "present"
+                                },
+                                {
+                                    "entry": "gumgum.com, 13886, DIRECT, ffdef49475d318a9",
+                                    "present_status": "present"
+                                },
+                                {
+                                    "entry": "rubiconproject.com, 23434, RESELLER, 0bfd66d529a55807",
+                                    "present_status": "present"
+                                },
+                                {
+                                    "entry": "pubmatic.com, 157897, RESELLER, 5d62403b186f2ace",
+                                    "present_status": "present"
+                                },
+                                {
+                                    "entry": "appnexus.com, 2758, RESELLER, f5ab79cb980f11d1",
+                                    "present_status": "present"
+                                },
+                                {
+                                    "entry": "contextweb.com, 558355, RESELLER, 89ff185a4c4e857c",
+                                    "present_status": "present"
+                                },
+                                {
+                                    "entry": "openx.com, 537149485, RESELLER, 6a698e2ec38604c6",
+                                    "present_status": "present"
+                                },
+                                {
+                                    "entry": "improvedigital.com, 1884, RESELLER",
+                                    "present_status": "present"
+                                },
+                                {
+                                    "entry": "smartadserver.com, 4005, RESELLER, 060d053dcf45cbf3",
+                                    "present_status": "present"
+                                },
+                                {
+                                    "entry": "indexexchange.com, 192251, DIRECT, 50b1c356f2c5c8fc",
+                                    "present_status": "present"
+                                },
+                                {
+                                    "entry": "indexexchange.com, 192387, DIRECT, 50b1c356f2c5c8fc",
+                                    "present_status": "present"
+                                },
+                                {
+                                    "entry": "indexexchange.com, 193401, DIRECT, 50b1c356f2c5c8fc",
+                                    "present_status": "present"
+                                },
+                                {
+                                    "entry": "gumgum.com, 15351, RESELLER, ffdef49475d318a9",
+                                    "present_status": "present"
+                                },
+                                {
+                                    "entry": "justpremium.com, 2726, RESELLER",
+                                    "present_status": "present"
+                                },
+                                {
+                                    "entry": "appnexus.com, 2758, RESELLER, f5ab79cb980f11d1",
+                                    "present_status": "present"
+                                },
+                                {
+                                    "entry": "rubiconproject.com, 23434, RESELLER, 0bfd66d529a55807",
+                                    "present_status": "present"
+                                },
+                                {
+                                    "entry": "openx.com, 537149485, RESELLER, 6a698e2ec38604c6",
+                                    "present_status": "present"
+                                },
+                                {
+                                    "entry": "pubmatic.com, 157897, RESELLER, 5d62403b186f2ace",
+                                    "present_status": "present"
+                                },
+                                {
+                                    "entry": "admanmedia.com, 799, RESELLER",
+                                    "present_status": "present"
+                                },
+                                {
+                                    "entry": "smartadserver.com, 4005, RESELLER",
+                                    "present_status": "present"
+                                },
+                                {
+                                    "entry": "bidtellect.com, 1407, RESELLER, 1c34aa2d85d45e93",
+                                    "present_status": "present"
+                                },
+                                {
+                                    "entry": "contextweb.com, 558355, RESELLER",
+                                    "present_status": "present"
+                                },
+                                {
+                                    "entry": "EMXDGT.com, 1284, RESELLER, 1e1d41537f7cad7f",
+                                    "present_status": "present"
+                                },
+                                {
+                                    "entry": "33across.com, 0013300001r0t9mAAA, RESELLER, bbea06d9c4d2853c",
+                                    "present_status": "present"
+                                },
+                                {
+                                    "entry": "synacor.com, 82151, RESELLER, e108f11b2cdf7d5b",
+                                    "present_status": "present"
+                                },
+                                {
+                                    "entry": "rhythmone.com, 78519861, RESELLER, a670c89d4a324e47",
+                                    "present_status": "present"
+                                },
+                                {
+                                    "entry": "kargo.com, 8678, DIRECT",
+                                    "present_status": "present"
+                                },
+                                {
+                                    "entry": "themediagrid.com, KWDN13, DIRECT, 35d5010d7789b49d",
+                                    "present_status": "present"
+                                },
+                                {
+                                    "entry": "media.net, 8CUA0SYJJ, DIRECT",
+                                    "present_status": "present"
+                                },
+                                {
+                                    "entry": "media.net, 8CUC2676T, DIRECT",
+                                    "present_status": "present"
+                                },
+                                {
+                                    "entry": "media.net, 8CU45YNUH, DIRECT",
+                                    "present_status": "present"
+                                },
+                                {
+                                    "entry": "ogury.com, fd1f5fd7-b4a5-4e79-b1e4-c805c0d604f7, RESELLER",
+                                    "present_status": "present"
+                                },
+                                {
+                                    "entry": "appnexus.com, 11470, RESELLER",
+                                    "present_status": "present"
+                                },
+                                {
+                                    "entry": "pubmatic.com, 163238, RESELLER, 5d62403b186f2ace",
+                                    "present_status": "present"
+                                },
+                                {
+                                    "entry": "smartadserver.com, 4537, RESELLER, 060d053dcf45cbf3",
+                                    "present_status": "present"
+                                },
+                                {
+                                    "entry": "rubiconproject.com, 25198, RESELLER, 0bfd66d529a55807",
+                                    "present_status": "present"
+                                },
+                                {
+                                    "entry": "openx.com, 537119862, DIRECT, 6a698e2ec38604c6",
+                                    "present_status": "present"
+                                },
+                                {
+                                    "entry": "openx.com, 540158405, DIRECT, 6a698e2ec38604c6",
+                                    "present_status": "present"
+                                },
+                                {
+                                    "entry": "openx.com, 556665488, DIRECT, 6a698e2ec38604c6",
+                                    "present_status": "present"
+                                },
+                                {
+                                    "entry": "pubmatic.com, 160037, DIRECT, 5d62403b186f2ace",
+                                    "present_status": "present"
+                                },
+                                {
+                                    "entry": "pubmatic.com, 160049, DIRECT, 5d62403b186f2ace",
+                                    "present_status": "present"
+                                },
+                                {
+                                    "entry": "pubmatic.com, 160620, DIRECT, 5d62403b186f2ace",
+                                    "present_status": "present"
+                                },
+                                {
+                                    "entry": "rubiconproject.com, 13708, DIRECT, 0bfd66d529a55807",
+                                    "present_status": "present"
+                                },
+                                {
+                                    "entry": "rubiconproject.com, 19556, DIRECT, 0bfd66d529a55807",
+                                    "present_status": "present"
+                                },
+                                {
+                                    "entry": "sovrn.com, 237742, DIRECT, fafdf38b16bf6b2b",
+                                    "present_status": "present"
+                                },
+                                {
+                                    "entry": "lijit.com, 237742, DIRECT, fafdf38b16bf6b2b",
+                                    "present_status": "present"
+                                },
+                                {
+                                    "entry": "lijit.com, 237742-eb, DIRECT, fafdf38b16bf6b2b",
+                                    "present_status": "present"
+                                },
+                                {
+                                    "entry": "triplelift.com, 9091, DIRECT, 6c33edb13117fd86",
+                                    "present_status": "present"
+                                },
+                                {
+                                    "entry": "triplelift.com, 14128, DIRECT, 6c33edb13117fd86",
+                                    "present_status": "missing"
+                                },
+                                {
+                                    "entry": "triplelift.com, 6238, DIRECT, 6c33edb13117fd86",
+                                    "present_status": "present"
+                                }
+                            ],
+                            "validation": {},
+                            "validationConfig": {}
+                        },
+                        "stickyHeader": true
+                    }
+                ],
+                "open": true
+            },
+            "type": "cardAccordion"
+        }
+    ],
+    "validation": {},
+    "validationConfig": {
+        "errMessages": {}
+    }
+}

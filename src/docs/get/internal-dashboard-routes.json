@@ -2,16 +2,22 @@
   "items": [
     {
       "path": "/account-management/",
+      "exact": true,
       "apiUrl": "/api/manage-account",
       "icon": "gear",
-      "label": "Manage Accounts",
-      "exact": true
+      "label": "Manage Accounts"
     },
     {
       "path": "/account-management/:accountSlug/account",
       "apiUrl": "/api/:accountSlug/account-details",
       "icon": "circle-user",
       "label": "Account"
+    },
+    {
+      "path": "/account-management/:accountSlug/adstxt",
+      "apiUrl": "/api/:accountSlug/account-adstxt-details",
+      "icon": "list",
+      "label": "Ads.txt"
     },
     {
       "path": "/account-management/:accountSlug/sections",
@@ -30,6 +36,12 @@
       "apiUrl": "/api/:accountSlug/account-partner-details",
       "icon": "users",
       "label": "Partners"
+    },
+    {
+      "path": "/account-management/:accountSlug/integrations",
+      "apiUrl": "/api/:accountSlug/account-integration-details",
+      "icon": "puzzle-piece",
+      "label": "Integrations"
     }
   ]
 }
