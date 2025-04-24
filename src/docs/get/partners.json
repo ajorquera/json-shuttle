@@ -1,18 +1,48 @@
 {
   "items": [
     {
+      "name": "1000mines",
+      "slug": "1000mines",
+      "base_currency": "USD"
+    },
+    {
       "name": "123helpme",
       "slug": "123helpme",
       "base_currency": "USD"
     },
     {
-      "name": "2kmtcentral",
-      "slug": "2kmtcentral",
+      "name": "accuweather",
+      "slug": "accuweather",
       "base_currency": "USD"
     },
     {
-      "name": "ballislife",
-      "slug": "ballislife",
+      "name": "allnurses",
+      "slug": "allnurses",
+      "base_currency": "USD"
+    },
+    {
+      "name": "allnurses-widget",
+      "slug": "allnurses-widget",
+      "base_currency": "USD"
+    },
+    {
+      "name": "arkadium",
+      "slug": "arkadium",
+      "base_currency": "USD"
+    },
+    {
+      "name": "articlerewritertool",
+      "slug": "articlerewritertool",
+      "base_currency": "USD"
+    },
+    {
+      "name": "ascendeum",
+      "slug": "ascendeum",
+      "base_currency": "USD"
+    },
+    {
+      "name": "babysparks",
+      "slug": "babysparks",
       "base_currency": "USD"
     },
     {
@@ -21,8 +51,1128 @@
       "base_currency": "USD"
     },
     {
+      "name": "bathurst12hour",
+      "slug": "bathurst12hour",
+      "base_currency": "USD"
+    },
+    {
+      "name": "beebet",
+      "slug": "beebet",
+      "base_currency": "USD"
+    },
+    {
+      "name": "bigedition_ap",
+      "slug": "bigedition_ap",
+      "base_currency": "USD"
+    },
+    {
+      "name": "bigedition_fm",
+      "slug": "bigedition_fm",
+      "base_currency": "USD"
+    },
+    {
+      "name": "bigedition_fw",
+      "slug": "bigedition_fw",
+      "base_currency": "USD"
+    },
+    {
+      "name": "bigedition_st",
+      "slug": "bigedition_st",
+      "base_currency": "USD"
+    },
+    {
+      "name": "bigedition_wm",
+      "slug": "bigedition_wm",
+      "base_currency": "USD"
+    },
+    {
+      "name": "blacksouthernbelle",
+      "slug": "blacksouthernbelle",
+      "base_currency": "USD"
+    },
+    {
+      "name": "bleumag",
+      "slug": "bleumag",
+      "base_currency": "USD"
+    },
+    {
+      "name": "bombshellbybleu",
+      "slug": "bombshellbybleu",
+      "base_currency": "USD"
+    },
+    {
+      "name": "bonk",
+      "slug": "bonk",
+      "base_currency": "USD"
+    },
+    {
+      "name": "bookrags",
+      "slug": "bookrags",
+      "base_currency": "USD"
+    },
+    {
+      "name": "brainly",
+      "slug": "brainly",
+      "base_currency": "USD"
+    },
+    {
+      "name": "buenastareas",
+      "slug": "buenastareas",
+      "base_currency": "USD"
+    },
+    {
+      "name": "calciomercato",
+      "slug": "calciomercato",
+      "base_currency": "GBP"
+    },
+    {
+      "name": "chegg",
+      "slug": "chegg",
+      "base_currency": "USD"
+    },
+    {
+      "name": "chopped",
+      "slug": "chopped",
+      "base_currency": "USD"
+    },
+    {
+      "name": "civfanatics",
+      "slug": "civfanatics",
+      "base_currency": "USD"
+    },
+    {
+      "name": "classtag",
+      "slug": "classtag",
+      "base_currency": "USD"
+    },
+    {
+      "name": "cliffsnotes",
+      "slug": "cliffsnotes",
+      "base_currency": "USD"
+    },
+    {
       "name": "collegeconfidential",
       "slug": "collegeconfidential",
+      "base_currency": "USD"
+    },
+    {
+      "name": "collegesidekick",
+      "slug": "collegesidekick",
+      "base_currency": "USD"
+    },
+    {
+      "name": "comicbook",
+      "slug": "comicbook",
+      "base_currency": "USD"
+    },
+    {
+      "name": "coursehero",
+      "slug": "coursehero",
+      "base_currency": "USD"
+    },
+    {
+      "name": "coursesidekick",
+      "slug": "coursesidekick",
+      "base_currency": "USD"
+    },
+    {
+      "name": "cram",
+      "slug": "cram",
+      "base_currency": "USD"
+    },
+    {
+      "name": "cribbage-online",
+      "slug": "cribbage-online",
+      "base_currency": "USD"
+    },
+    {
+      "name": "critrolestats",
+      "slug": "critrolestats",
+      "base_currency": "USD"
+    },
+    {
+      "name": "crosswordle",
+      "slug": "crosswordle",
+      "base_currency": "USD"
+    },
+    {
+      "name": "culturebanx",
+      "slug": "culturebanx",
+      "base_currency": "USD"
+    },
+    {
+      "name": "cureus",
+      "slug": "cureus",
+      "base_currency": "USD"
+    },
+    {
+      "name": "cureus-widget",
+      "slug": "cureus-widget",
+      "base_currency": "USD"
+    },
+    {
+      "name": "curseforge",
+      "slug": "curseforge",
+      "base_currency": "USD"
+    },
+    {
+      "name": "dailymail",
+      "slug": "dailymail",
+      "base_currency": "USD"
+    },
+    {
+      "name": "demo-account",
+      "slug": "demo-account",
+      "base_currency": "USD"
+    },
+    {
+      "name": "dermnetnz-widget",
+      "slug": "dermnetnz-widget",
+      "base_currency": "USD"
+    },
+    {
+      "name": "diabetesincontrol-widget",
+      "slug": "diabetesincontrol-widget",
+      "base_currency": "USD"
+    },
+    {
+      "name": "digitalhealthbuzz-widget",
+      "slug": "digitalhealthbuzz-widget",
+      "base_currency": "USD"
+    },
+    {
+      "name": "discogs",
+      "slug": "discogs",
+      "base_currency": "USD"
+    },
+    {
+      "name": "distractify",
+      "slug": "distractify",
+      "base_currency": "USD"
+    },
+    {
+      "name": "dorkaholics",
+      "slug": "dorkaholics",
+      "base_currency": "USD"
+    },
+    {
+      "name": "dplayer",
+      "slug": "dplayer",
+      "base_currency": "GBP"
+    },
+    {
+      "name": "druggenius",
+      "slug": "druggenius",
+      "base_currency": "USD"
+    },
+    {
+      "name": "drummerworld",
+      "slug": "drummerworld",
+      "base_currency": "USD"
+    },
+    {
+      "name": "easybib",
+      "slug": "easybib",
+      "base_currency": "USD"
+    },
+    {
+      "name": "ehftv",
+      "slug": "ehftv",
+      "base_currency": "USD"
+    },
+    {
+      "name": "elo",
+      "slug": "elo",
+      "base_currency": "USD"
+    },
+    {
+      "name": "enotes",
+      "slug": "enotes",
+      "base_currency": "USD"
+    },
+    {
+      "name": "envimedia",
+      "slug": "envimedia",
+      "base_currency": "USD"
+    },
+    {
+      "name": "epainassist",
+      "slug": "epainassist",
+      "base_currency": "USD"
+    },
+    {
+      "name": "epainassist-widget",
+      "slug": "epainassist-widget",
+      "base_currency": "USD"
+    },
+    {
+      "name": "equalizersoccer",
+      "slug": "equalizersoccer",
+      "base_currency": "USD"
+    },
+    {
+      "name": "etudier",
+      "slug": "etudier",
+      "base_currency": "USD"
+    },
+    {
+      "name": "fabrik",
+      "slug": "fabrik",
+      "base_currency": "USD"
+    },
+    {
+      "name": "falloutwiki",
+      "slug": "falloutwiki",
+      "base_currency": "USD"
+    },
+    {
+      "name": "familyeducation",
+      "slug": "familyeducation",
+      "base_currency": "USD"
+    },
+    {
+      "name": "fawslfulltime",
+      "slug": "fawslfulltime",
+      "base_currency": "USD"
+    },
+    {
+      "name": "fco-widget-test",
+      "slug": "fco-widget-test",
+      "base_currency": "USD"
+    },
+    {
+      "name": "fcplayer_pixels",
+      "slug": "fcplayer_pixels",
+      "base_currency": "USD"
+    },
+    {
+      "name": "foreignpolicy",
+      "slug": "foreignpolicy",
+      "base_currency": "USD"
+    },
+    {
+      "name": "fpnotebook-widget",
+      "slug": "fpnotebook-widget",
+      "base_currency": "USD"
+    },
+    {
+      "name": "free-article-spinner",
+      "slug": "free-article-spinner",
+      "base_currency": "USD"
+    },
+    {
+      "name": "frontpagedetectives",
+      "slug": "frontpagedetectives",
+      "base_currency": "USD"
+    },
+    {
+      "name": "gamelab",
+      "slug": "gamelab",
+      "base_currency": "USD"
+    },
+    {
+      "name": "gamepix",
+      "slug": "gamepix",
+      "base_currency": "USD"
+    },
+    {
+      "name": "getontherecord",
+      "slug": "getontherecord",
+      "base_currency": "USD"
+    },
+    {
+      "name": "girlssoccernetwork",
+      "slug": "girlssoccernetwork",
+      "base_currency": "USD"
+    },
+    {
+      "name": "globalrph",
+      "slug": "globalrph",
+      "base_currency": "USD"
+    },
+    {
+      "name": "globalrph-quiz",
+      "slug": "globalrph-quiz",
+      "base_currency": "USD"
+    },
+    {
+      "name": "goal",
+      "slug": "goal",
+      "base_currency": "GBP"
+    },
+    {
+      "name": "gotsoccer",
+      "slug": "gotsoccer",
+      "base_currency": "USD"
+    },
+    {
+      "name": "gpfans",
+      "slug": "gpfans",
+      "base_currency": "GBP"
+    },
+    {
+      "name": "gradesaver",
+      "slug": "gradesaver",
+      "base_currency": "USD"
+    },
+    {
+      "name": "greenmatters",
+      "slug": "greenmatters",
+      "base_currency": "USD"
+    },
+    {
+      "name": "healthday-ads",
+      "slug": "healthday-ads",
+      "base_currency": "USD"
+    },
+    {
+      "name": "healthday-widget",
+      "slug": "healthday-widget",
+      "base_currency": "USD"
+    },
+    {
+      "name": "heragenda",
+      "slug": "heragenda",
+      "base_currency": "USD"
+    },
+    {
+      "name": "hersport",
+      "slug": "hersport",
+      "base_currency": "USD"
+    },
+    {
+      "name": "hitbox",
+      "slug": "hitbox",
+      "base_currency": "USD"
+    },
+    {
+      "name": "hitoriconquest",
+      "slug": "hitoriconquest",
+      "base_currency": "USD"
+    },
+    {
+      "name": "ilbianconero",
+      "slug": "ilbianconero",
+      "base_currency": "GBP"
+    },
+    {
+      "name": "imapuzzle",
+      "slug": "imapuzzle",
+      "base_currency": "USD"
+    },
+    {
+      "name": "imsqueezy",
+      "slug": "imsqueezy",
+      "base_currency": "USD"
+    },
+    {
+      "name": "infoplease",
+      "slug": "infoplease",
+      "base_currency": "USD"
+    },
+    {
+      "name": "inhaltsangabe",
+      "slug": "inhaltsangabe",
+      "base_currency": "USD"
+    },
+    {
+      "name": "inquisitr",
+      "slug": "inquisitr",
+      "base_currency": "USD"
+    },
+    {
+      "name": "iphonelife",
+      "slug": "iphonelife",
+      "base_currency": "USD"
+    },
+    {
+      "name": "ipl",
+      "slug": "ipl",
+      "base_currency": "USD"
+    },
+    {
+      "name": "jeusol",
+      "slug": "jeusol",
+      "base_currency": "USD"
+    },
+    {
+      "name": "jobrx-widget",
+      "slug": "jobrx-widget",
+      "base_currency": "USD"
+    },
+    {
+      "name": "kakuroconquest",
+      "slug": "kakuroconquest",
+      "base_currency": "USD"
+    },
+    {
+      "name": "knewz",
+      "slug": "knewz",
+      "base_currency": "USD"
+    },
+    {
+      "name": "kooora",
+      "slug": "kooora",
+      "base_currency": "GBP"
+    },
+    {
+      "name": "liber8",
+      "slug": "liber8",
+      "base_currency": "USD"
+    },
+    {
+      "name": "liber8_hfh",
+      "slug": "liber8_hfh",
+      "base_currency": "USD"
+    },
+    {
+      "name": "lolskill",
+      "slug": "lolskill",
+      "base_currency": "USD"
+    },
+    {
+      "name": "lovebscott",
+      "slug": "lovebscott",
+      "base_currency": "USD"
+    },
+    {
+      "name": "luzmedia",
+      "slug": "luzmedia",
+      "base_currency": "USD"
+    },
+    {
+      "name": "madeforthew",
+      "slug": "madeforthew",
+      "base_currency": "USD"
+    },
+    {
+      "name": "marketrealist",
+      "slug": "marketrealist",
+      "base_currency": "USD"
+    },
+    {
+      "name": "mathler",
+      "slug": "mathler",
+      "base_currency": "USD"
+    },
+    {
+      "name": "medicalnewsweek",
+      "slug": "medicalnewsweek",
+      "base_currency": "USD"
+    },
+    {
+      "name": "medicalnewsweek-widget",
+      "slug": "medicalnewsweek-widget",
+      "base_currency": "USD"
+    },
+    {
+      "name": "mefeater",
+      "slug": "mefeater",
+      "base_currency": "USD"
+    },
+    {
+      "name": "megaphone-upworthy",
+      "slug": "megaphone-upworthy",
+      "base_currency": "USD"
+    },
+    {
+      "name": "minecraftforge",
+      "slug": "minecraftforge",
+      "base_currency": "USD"
+    },
+    {
+      "name": "missing11",
+      "slug": "missing11",
+      "base_currency": "GBP"
+    },
+    {
+      "name": "mmo-fashion",
+      "slug": "mmo-fashion",
+      "base_currency": "USD"
+    },
+    {
+      "name": "mochimag",
+      "slug": "mochimag",
+      "base_currency": "USD"
+    },
+    {
+      "name": "monografias",
+      "slug": "monografias",
+      "base_currency": "USD"
+    },
+    {
+      "name": "morninghoney",
+      "slug": "morninghoney",
+      "base_currency": "USD"
+    },
+    {
+      "name": "mythicspoiler",
+      "slug": "mythicspoiler",
+      "base_currency": "USD"
+    },
+    {
+      "name": "narwhale",
+      "slug": "narwhale",
+      "base_currency": "USD"
+    },
+    {
+      "name": "nerdlegame",
+      "slug": "nerdlegame",
+      "base_currency": "USD"
+    },
+    {
+      "name": "nfl",
+      "slug": "nfl",
+      "base_currency": "USD"
+    },
+    {
+      "name": "nursinghero",
+      "slug": "nursinghero",
+      "base_currency": "USD"
+    },
+    {
+      "name": "officeally",
+      "slug": "officeally",
+      "base_currency": "USD"
+    },
+    {
+      "name": "okmagazine",
+      "slug": "okmagazine",
+      "base_currency": "USD"
+    },
+    {
+      "name": "onecutreviews",
+      "slug": "onecutreviews",
+      "base_currency": "USD"
+    },
+    {
+      "name": "paciencia",
+      "slug": "paciencia",
+      "base_currency": "USD"
+    },
+    {
+      "name": "paperrater",
+      "slug": "paperrater",
+      "base_currency": "USD"
+    },
+    {
+      "name": "paraphrasing-tool",
+      "slug": "paraphrasing-tool",
+      "base_currency": "USD"
+    },
+    {
+      "name": "parlemag",
+      "slug": "parlemag",
+      "base_currency": "USD"
+    },
+    {
+      "name": "phonearena",
+      "slug": "phonearena",
+      "base_currency": "USD"
+    },
+    {
+      "name": "pickguru",
+      "slug": "pickguru",
+      "base_currency": "USD"
+    },
+    {
+      "name": "pixelpapercraft",
+      "slug": "pixelpapercraft",
+      "base_currency": "USD"
+    },
+    {
+      "name": "playfootballgames",
+      "slug": "playfootballgames",
+      "base_currency": "GBP"
+    },
+    {
+      "name": "pokebattler",
+      "slug": "pokebattler",
+      "base_currency": "USD"
+    },
+    {
+      "name": "publisherhealth",
+      "slug": "publisherhealth",
+      "base_currency": "USD"
+    },
+    {
+      "name": "purdue_owl",
+      "slug": "purdue_owl",
+      "base_currency": "USD"
+    },
+    {
+      "name": "quillbot",
+      "slug": "quillbot",
+      "base_currency": "USD"
+    },
+    {
+      "name": "quizdoc",
+      "slug": "quizdoc",
+      "base_currency": "USD"
+    },
+    {
+      "name": "radaronline",
+      "slug": "radaronline",
+      "base_currency": "USD"
+    },
+    {
+      "name": "rocketsportsnetwork",
+      "slug": "rocketsportsnetwork",
+      "base_currency": "USD"
+    },
+    {
+      "name": "sage",
+      "slug": "sage",
+      "base_currency": "USD"
+    },
+    {
+      "name": "sage-ads",
+      "slug": "sage-ads",
+      "base_currency": "USD"
+    },
+    {
+      "name": "sage-quiz",
+      "slug": "sage-quiz",
+      "base_currency": "USD"
+    },
+    {
+      "name": "scribbr",
+      "slug": "scribbr",
+      "base_currency": "USD"
+    },
+    {
+      "name": "scribbr-es",
+      "slug": "scribbr-es",
+      "base_currency": "USD"
+    },
+    {
+      "name": "serenesforest",
+      "slug": "serenesforest",
+      "base_currency": "USD"
+    },
+    {
+      "name": "shuffle",
+      "slug": "shuffle",
+      "base_currency": "USD"
+    },
+    {
+      "name": "snackmedia",
+      "slug": "snackmedia",
+      "base_currency": "USD"
+    },
+    {
+      "name": "snopes",
+      "slug": "snopes",
+      "base_currency": "USD"
+    },
+    {
+      "name": "soccerway",
+      "slug": "soccerway",
+      "base_currency": "GBP"
+    },
+    {
+      "name": "soccerway_TSN",
+      "slug": "soccerway_tsn",
+      "base_currency": "USD"
+    },
+    {
+      "name": "socialblade",
+      "slug": "socialblade",
+      "base_currency": "USD"
+    },
+    {
+      "name": "solitairebliss",
+      "slug": "solitairebliss",
+      "base_currency": "USD"
+    },
+    {
+      "name": "solitaired",
+      "slug": "solitaired",
+      "base_currency": "USD"
+    },
+    {
+      "name": "solitalian",
+      "slug": "solitalian",
+      "base_currency": "USD"
+    },
+    {
+      "name": "solitar",
+      "slug": "solitar",
+      "base_currency": "USD"
+    },
+    {
+      "name": "soritia",
+      "slug": "soritia",
+      "base_currency": "USD"
+    },
+    {
+      "name": "spades",
+      "slug": "spades",
+      "base_currency": "USD"
+    },
+    {
+      "name": "Sparknotes",
+      "slug": "sparknotes",
+      "base_currency": "USD"
+    },
+    {
+      "name": "spinbot",
+      "slug": "spinbot",
+      "base_currency": "USD"
+    },
+    {
+      "name": "spine",
+      "slug": "spine",
+      "base_currency": "USD"
+    },
+    {
+      "name": "spinz",
+      "slug": "spinz",
+      "base_currency": "USD"
+    },
+    {
+      "name": "sportingnews",
+      "slug": "sportingnews",
+      "base_currency": "USD"
+    },
+    {
+      "name": "sportingnews-goal",
+      "slug": "sportingnews-goal",
+      "base_currency": "USD"
+    },
+    {
+      "name": "spox",
+      "slug": "spox",
+      "base_currency": "GBP"
+    },
+    {
+      "name": "starfield-guides",
+      "slug": "starfield-guides",
+      "base_currency": "USD"
+    },
+    {
+      "name": "starfield-wiki",
+      "slug": "starfield-wiki",
+      "base_currency": "USD"
+    },
+    {
+      "name": "statsperform_law",
+      "slug": "statsperform_law",
+      "base_currency": "GBP"
+    },
+    {
+      "name": "strats.gg",
+      "slug": "stratsgg",
+      "base_currency": "USD"
+    },
+    {
+      "name": "studymode",
+      "slug": "studymode",
+      "base_currency": "USD"
+    },
+    {
+      "name": "sudoku_au",
+      "slug": "sudoku_au",
+      "base_currency": "USD"
+    },
+    {
+      "name": "sudokuconquest",
+      "slug": "sudokuconquest",
+      "base_currency": "USD"
+    },
+    {
+      "name": "suggest",
+      "slug": "suggest",
+      "base_currency": "USD"
+    },
+    {
+      "name": "sumplete",
+      "slug": "sumplete",
+      "base_currency": "USD"
+    },
+    {
+      "name": "sundaymarket",
+      "slug": "sundaymarket",
+      "base_currency": "USD"
+    },
+    {
+      "name": "supercars",
+      "slug": "supercars",
+      "base_currency": "USD"
+    },
+    {
+      "name": "swgoh",
+      "slug": "swgoh",
+      "base_currency": "USD"
+    },
+    {
+      "name": "swimmingworld",
+      "slug": "swimmingworld",
+      "base_currency": "USD"
+    },
+    {
+      "name": "symbolab",
+      "slug": "symbolab",
+      "base_currency": "USD"
+    },
+    {
+      "name": "tantvstudios",
+      "slug": "tantvstudios",
+      "base_currency": "USD"
+    },
+    {
+      "name": "teachervision",
+      "slug": "teachervision",
+      "base_currency": "USD"
+    },
+    {
+      "name": "teachit",
+      "slug": "teachit",
+      "base_currency": "USD"
+    },
+    {
+      "name": "techaeris",
+      "slug": "techaeris",
+      "base_currency": "USD"
+    },
+    {
+      "name": "testaccount",
+      "slug": "testaccount",
+      "base_currency": "USD"
+    },
+    {
+      "name": "theblackwallsttimes",
+      "slug": "theblackwallsttimes",
+      "base_currency": "USD"
+    },
+    {
+      "name": "theblast",
+      "slug": "theblast",
+      "base_currency": "USD"
+    },
+    {
+      "name": "thecurvyfashionista",
+      "slug": "thecurvyfashionista",
+      "base_currency": "USD"
+    },
+    {
+      "name": "thedoctorschannel",
+      "slug": "thedoctorschannel",
+      "base_currency": "USD"
+    },
+    {
+      "name": "thegistsports",
+      "slug": "thegistsports",
+      "base_currency": "USD"
+    },
+    {
+      "name": "thehalfwayline",
+      "slug": "thehalfwayline",
+      "base_currency": "USD"
+    },
+    {
+      "name": "themanual",
+      "slug": "themanual",
+      "base_currency": "USD"
+    },
+    {
+      "name": "theroyalobserver",
+      "slug": "theroyalobserver",
+      "base_currency": "USD"
+    },
+    {
+      "name": "thewikigamedaily",
+      "slug": "thewikigamedaily",
+      "base_currency": "USD"
+    },
+    {
+      "name": "trabalhosfeitos",
+      "slug": "trabalhosfeitos",
+      "base_currency": "USD"
+    },
+    {
+      "name": "transfermarkt",
+      "slug": "transfermarkt",
+      "base_currency": "GBP"
+    },
+    {
+      "name": "tri247",
+      "slug": "tri247",
+      "base_currency": "USD"
+    },
+    {
+      "name": "uesp",
+      "slug": "uesp",
+      "base_currency": "USD"
+    },
+    {
+      "name": "u.gg",
+      "slug": "ugg",
+      "base_currency": "USD"
+    },
+    {
+      "name": "unwind_int_row",
+      "slug": "unwind_int_row",
+      "base_currency": "USD"
+    },
+    {
+      "name": "upscalemagazine",
+      "slug": "upscalemagazine",
+      "base_currency": "USD"
+    },
+    {
+      "name": "urbangeekz",
+      "slug": "urbangeekz",
+      "base_currency": "USD"
+    },
+    {
+      "name": "vegasnews",
+      "slug": "vegasnews",
+      "base_currency": "USD"
+    },
+    {
+      "name": "veradigm",
+      "slug": "veradigm",
+      "base_currency": "USD"
+    },
+    {
+      "name": "versus",
+      "slug": "versus",
+      "base_currency": "USD"
+    },
+    {
+      "name": "vice",
+      "slug": "vice",
+      "base_currency": "USD"
+    },
+    {
+      "name": "voetbalzone",
+      "slug": "voetbalzone",
+      "base_currency": "GBP"
+    },
+    {
+      "name": "vs_digitaltrends",
+      "slug": "vs_digitaltrends",
+      "base_currency": "USD"
+    },
+    {
+      "name": "vs_fandom",
+      "slug": "vs_fandom",
+      "base_currency": "USD"
+    },
+    {
+      "name": "vs_hollywoodreporter",
+      "slug": "vs_hollywoodreporter",
+      "base_currency": "USD"
+    },
+    {
+      "name": "vs_livenation",
+      "slug": "vs_livenation",
+      "base_currency": "USD"
+    },
+    {
+      "name": "vs_nfl",
+      "slug": "vs_nfl",
+      "base_currency": "USD"
+    },
+    {
+      "name": "vs_nypost",
+      "slug": "vs_nypost",
+      "base_currency": "USD"
+    },
+    {
+      "name": "vs_onversus",
+      "slug": "vs_onversus",
+      "base_currency": "USD"
+    },
+    {
+      "name": "vs_shutterstock",
+      "slug": "vs_shutterstock",
+      "base_currency": "USD"
+    },
+    {
+      "name": "vs_soapoperadigest",
+      "slug": "vs_soapoperadigest",
+      "base_currency": "USD"
+    },
+    {
+      "name": "vs_spin",
+      "slug": "vs_spin",
+      "base_currency": "USD"
+    },
+    {
+      "name": "vs_stocktwits",
+      "slug": "vs_stocktwits",
+      "base_currency": "USD"
+    },
+    {
+      "name": "vs_suggest",
+      "slug": "vs_suggest",
+      "base_currency": "USD"
+    },
+    {
+      "name": "vs_test",
+      "slug": "vs_test",
+      "base_currency": "USD"
+    },
+    {
+      "name": "vs_ufc",
+      "slug": "vs_ufc",
+      "base_currency": "USD"
+    },
+    {
+      "name": "vs_vice",
+      "slug": "vs_vice",
+      "base_currency": "USD"
+    },
+    {
+      "name": "vs_wideopenspaces",
+      "slug": "vs_wideopenspaces",
+      "base_currency": "USD"
+    },
+    {
+      "name": "webmd-widget",
+      "slug": "webmd-widget",
+      "base_currency": "USD"
+    },
+    {
+      "name": "westeros",
+      "slug": "westeros",
+      "base_currency": "USD"
+    },
+    {
+      "name": "whatstheword",
+      "slug": "whatstheword",
+      "base_currency": "USD"
+    },
+    {
+      "name": "whitehare",
+      "slug": "whitehare",
+      "base_currency": "USD"
+    },
+    {
+      "name": "wideopencountry",
+      "slug": "wideopencountry",
+      "base_currency": "USD"
+    },
+    {
+      "name": "wonderwall",
+      "slug": "wonderwall",
+      "base_currency": "USD"
+    },
+    {
+      "name": "woot",
+      "slug": "woot",
+      "base_currency": "USD"
+    },
+    {
+      "name": "wordga",
+      "slug": "wordga",
+      "base_currency": "USD"
+    },
+    {
+      "name": "zombsroyale",
+      "slug": "zombsroyale",
       "base_currency": "USD"
     }
   ]

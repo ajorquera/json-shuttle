@@ -7,7 +7,7 @@
                 "fields": [
                     {
                         "type": "string",
-                        "value": "",
+                        "value": true,
                         "options": {
                             "fullWidth": true
                         },
@@ -15,7 +15,7 @@
                     },
                     {
                         "type": "switch",
-                        "value": false,
+                        "value": true,
                         "options": {
                             "fullWidth": true
                         },
@@ -34,7 +34,7 @@
                     "true": [
                         {
                             "type": "string",
-                            "value": "1006408",
+                            "value": "22020501169",
                             "options": {
                                 "fullWidth": true
                             },
@@ -43,14 +43,9 @@
                         },
                         {
                             "type": "select",
-                            "value": "23199345221",
+                            "value": "",
                             "options": {
-                                "options": [
-                                    {
-                                        "label": "/1006408/collegeconfidential (23199345221)",
-                                        "value": "23199345221"
-                                    }
-                                ]
+                                "options": []
                             },
                             "label": "GAM Parent Unit ID",
                             "name": "gam_parent_ad_unit_id"
@@ -86,7 +81,7 @@
                     "false": [
                         {
                             "type": "string",
-                            "value": "1006408",
+                            "value": "22020501169",
                             "options": {
                                 "fullWidth": true
                             },
@@ -106,5 +101,19 @@
                 }
             }
         }
-    ]
+    ],
+    "validation": {
+        "lngtd_unit_name": {
+            "required": true,
+            "type": "string"
+        },
+        "gam_parent_ad_unit_id": {
+            "required": true,
+            "type": "string"
+        },
+        "gam_unit_name": {
+            "required": true,
+            "type": "string"
+        }
+    }
 }
